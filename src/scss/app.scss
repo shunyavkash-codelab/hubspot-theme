@@ -4,6 +4,7 @@
 
 body{
   font-family: 'Montserrat',sans-serif;
+  // font-family: "Heebo";
 }
 
 /* default btn */
@@ -63,4 +64,15 @@ body{
   height: 100%;
   opacity: 0.8;
 
+}
+
+
+
+.accordian-button{
+  &.show{
+    .accordian-icon{
+      @apply rotate-90;
+    }
+  }
+  
 }
