@@ -76,3 +76,12 @@ body{
   }
   
 }
+
+.accordian-item{
+  &.show{
+     @apply py-3 border-2 border-primary;
+    .accordian-icon{
+      @apply rotate-90;
+    }
+  }
+}

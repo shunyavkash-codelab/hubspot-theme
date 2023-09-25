@@ -11,7 +11,7 @@
 
 <body>
 
-    <header class="border-b border-black/30 bg-secondary">
+    <header class="border-b border-black/60 bg-secondary">
         <div class="container">
             <nav class="py-2">
                 <div class="flex items-center justify-between">
@@ -141,7 +141,7 @@
     </section>
 
     <!-- Inner Hero section start -->
-    <section id="test" class="inner-bg-image">
+    <section id="test" class="inner-bg-image  before:bg-primary/30 before:w-full before:h-full before:absolute ">
         <div class="container relative">
             <div class="max-w-3xl py-16 mx-auto text-center sm:py-24">
                 <h3 class="text-3xl font-semibold leading-none text-white sm:text-4xl">
@@ -166,10 +166,10 @@
                     </div>
                     <div class="md:w-1/2 md:h-1/2">
                         <div class="accordian-content transform transition-all space-y-5">
-                            <div class="accordian-item ">
+                            <div class="px-3 accordian-item transform transition-all duration-300 border-2 border-transparent">
                                 <a href="javascript:void(0);" class="accordian-button show flex items-center justify-between ">
-                                    <h4 class="text-2xl">Neue Marke, noch keine Kunden?</h4>
-                                    <span class="accordian-icon transition-all duration-300  inline-block w-8 h-8">
+                                    <h4 class="text-lg">Neue Marke, noch keine Kunden?</h4>
+                                    <span class="accordian-icon transition-all duration-300  inline-block w-6 h-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full icon icon-tabler icon-tabler-chevron-right" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                             <path d="M9 6l6 6l-6 6"></path>
@@ -184,10 +184,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordian-item ">
+                            <div class="px-3 accordian-item transform transition-all duration-300 border-2 border-transparent">
                                 <a href="javascript:void(0);" class="accordian-button flex items-center justify-between ">
-                                    <h4 class="text-2xl">Neue Marke, noch keine Kunden?</h4>
-                                    <span class="accordian-icon inline-block w-8 h-8">
+                                    <h4 class="text-lg">Neue Marke, noch keine Kunden?</h4>
+                                    <span class="accordian-icon inline-block w-6 h-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full icon icon-tabler icon-tabler-chevron-right" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                             <path d="M9 6l6 6l-6 6"></path>
@@ -202,10 +202,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordian-item ">
+                            <div class="px-3 accordian-item transform transition-all duration-300 border-2 border-transparent">
                                 <a href="javascript:void(0);" class="accordian-button flex items-center justify-between ">
-                                    <h4 class="text-2xl">Neue Marke, noch keine Kunden?</h4>
-                                    <span class="accordian-icon inline-block w-8 h-8">
+                                    <h4 class="text-lg">Neue Marke, noch keine Kunden?</h4>
+                                    <span class="accordian-icon inline-block w-6 h-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full icon icon-tabler icon-tabler-chevron-right" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                             <path d="M9 6l6 6l-6 6"></path>
@@ -229,28 +229,22 @@
     </section>
     <!-- FAQs Section End -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
     <script>
+        // custom accordian open
 
-        $('.accordian-button').click(function () {
-            $('.accordian-item').addClass('show');
+        $(".accordian-item.show .accordian-body").slideDown();
 
-            if ($('.accordian-item').hasClass('show')) {
-                $('.accordian-item').removeClass('show');
-                $('.accordian-item').children('accordian-body').slideUp();
-            }
-        });
+        $(".accordian-button").click(function () {
+            if ($(this).parents(".accordian-item").hasClass("show")) {
+                $(this).parents(".accordian-item").removeClass("show");
+                $(this).parents().children(".accordian-body").slideUp();
 
-        $('.accordian-item.show .accordian-body').slideDown();
-        $('.accordian-item.show .accordian-button').click(function () {
-            if ($('.accordian-item').hasClass('show')) {
-                $('.accordian-item').removeClass('show');
-                $('.accordian-item').next().slideUp();
             } else {
-                $('.accordian-item.show .accordian-button').next().slideUp();
-                $('.accordian-item.show .accordian-button').removeClass('show');
-                $('.accordian-item').addClass('show');
-                console.log(0);
-                $(this).next().slideDown();
+                $(".accordian-item").removeClass("show");
+                $(".accordian-item .accordian-body").slideUp();
+                $(this).parents(".accordian-item").addClass("show");
+                $(this).parents().children(".accordian-body").slideDown();
             }
         });
     </script>
