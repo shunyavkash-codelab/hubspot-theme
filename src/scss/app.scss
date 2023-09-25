@@ -8,12 +8,14 @@ body {
 }
 
 /* default btn */
-.btn {
-  @apply text-white font-medium text-sm list-none py-3 px-5 bg-primary  rounded-md inline-block transform transition-all;
+.btn,
+.btn-cta {
+  @apply text-white font-medium text-sm list-none py-3 px-5 bg-primary rounded-md inline-block transform transition-all duration-300;
 }
 
-.btn:hover {
-  @apply bg-primary;
+.btn:hover,
+.btn-cta:hover {
+  @apply bg-primary/80;
 }
 
 .box-s {
@@ -51,7 +53,6 @@ body {
   background-position: right center;
   background-color: black;
 }
-
 
 .accordian-button {
   &.show {
