@@ -52,14 +52,6 @@ body {
   background-color: black;
 }
 
-.inner-bg-image::before {
-  @apply bg-primary;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
 
 .accordian-button {
   &.show {
@@ -71,7 +63,6 @@ body {
 
 .accordian-item {
   &.show {
-    @apply py-3 border-2 border-primary;
     .accordian-icon {
       @apply rotate-90;
     }
