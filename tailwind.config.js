@@ -10,10 +10,7 @@ module.exports = {
         // custom
         current: "currentColor",
         primary: "#3D0C11",
-        secondary: {
-          DEFAULT: "#fdf6e9",
-          200: "#fdf6e9",
-        },
+        secondary: "#fdf6e9",
         tertiary: "#5789A8",
         dark: "#272322",
         light: {
@@ -47,10 +44,8 @@ module.exports = {
       },
 
       screens: {
-         sm: "576px",
-        '2xl': "1400px",
-
-        
+        sm: "576px",
+        "2xl": "1400px",
       },
     },
   },
