@@ -68,3 +68,14 @@ body {
     }
   }
 }
+
+.hero-v2::before{
+  content: '';
+  background: linear-gradient(90deg, rgba(61,13,17,1) 50%, rgba(0,0,0,0.20772058823529416) 100%);
+}
+
+.hero-v2{
+  background-image: url('https://img.freepik.com/free-photo/two-young-businesswomen-working-with-laptop-her-office_1301-6822.jpg?w=1060&t=st=1695633224~exp=1695633824~hmac=8b31470f4c61830bb38683652fd82e1ab4ddb3213add4846f20894a93114c767');
+  
+  
+}
