@@ -1,0 +1,13 @@
+.scroll-y-none::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs-nav {
+  > li {
+    &.active {
+      a {
+        @apply border-primary;
+      }
+    }
+  }
+}

@@ -2,25 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  font-family: 'Montserrat',sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
   // font-family: "Heebo";
 }
 
 /* default btn */
-.btn{
-    @apply  text-white font-medium text-sm list-none py-3 px-5 bg-primary  rounded-md inline-block transform transition-all;
+.btn {
+  @apply text-white font-medium text-sm list-none py-3 px-5 bg-primary  rounded-md inline-block transform transition-all;
 }
 
-.btn:hover{
-     @apply bg-primary;
+.btn:hover {
+  @apply bg-primary;
 }
 
-.box-s{
-  box-shadow: 20px 8px 0 rgba(0,0,0,0.2);
+.box-s {
+  box-shadow: 20px 8px 0 rgba(0, 0, 0, 0.2);
 }
-
-
 
 .richtext > *:not(:first-child) {
   margin-top: 20px;
@@ -44,43 +42,37 @@ body{
   top: 50%;
   transform: translateY(-50%);
 }
-.inner-bg-image{
+.inner-bg-image {
+  @apply relative;
 
-    @apply relative;
-
-    background-image: url(/public/Images/background/bg-second-img.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right center;
-    background-color: black;
-    
+  background-image: url(/public/Images/background/bg-second-img.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  background-color: black;
 }
 
-.inner-bg-image::before{
-@apply  bg-primary;
-  content: '';
+.inner-bg-image::before {
+  @apply bg-primary;
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   opacity: 0.8;
-
 }
 
-
-
-.accordian-button{
-  &.show{
-    .accordian-icon{
+.accordian-button {
+  &.show {
+    .accordian-icon {
       @apply rotate-90;
     }
   }
-  
 }
 
-.accordian-item{
-  &.show{
-     @apply py-3 border-2 border-primary;
-    .accordian-icon{
+.accordian-item {
+  &.show {
+    @apply py-3 border-2 border-primary;
+    .accordian-icon {
       @apply rotate-90;
     }
   }
