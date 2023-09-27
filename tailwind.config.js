@@ -9,10 +9,10 @@ module.exports = {
       colors: ({ colors }) => ({
         // custom
         current: "currentColor",
-        primary: "#3D0C11",
-        secondary: "#fdf6e9",
-        tertiary: "#5789A8",
-        dark: "#272322",
+        primary: "#FEF3DF",
+        secondary: "#E0F1F1",
+        tertiary: "#E6EBE4",
+        dark: "#2E3349",
         light: {
           DEFAULT: "#CDCDCD",
           200: "#E9E9E9",

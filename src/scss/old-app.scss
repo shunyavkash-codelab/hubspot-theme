@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Montserrat", sans-serif;
+  // font-family: "Heebo";
+}
+
+// btn
+.btn,
+.btn-cta {
+  @apply text-white font-medium text-sm list-none py-3 px-5 bg-primary rounded-md inline-block transform transition-all duration-300;
+  &:hover {
+    @apply bg-primary/80;
+  }
+  &.btn-secondary {
+    @apply bg-secondary text-primary;
+    &:hover {
+      @apply bg-secondary/80;
+    }
+  }
+}
+
+// richtext
+.richtext {
+  > p {
+    @apply text-sm sm:text-base;
+    &:not(:first-child) {
+      @apply mt-5;
+    }
+  }
+
+  .list-dots {
+    @apply space-y-3 sm:space-y-4;
+    li {
+      @apply relative pl-3 text-sm leading-tight font-medium;
+      &:before {
+        @apply absolute content-[""] w-1 h-1 bg-primary left-0 top-[7px] rounded-full;
+      }
+    }
+    &.dots-secondary {
+      li {
+        &:before {
+          @apply bg-secondary;
+        }
+      }
+    }
+  }
+}
+
+// accordian
+.accordian-item {
+  &.show {
+    .accordian-icon {
+      @apply rotate-90;
+    }
+  }
+}
+
+// scroll y none
+.scroll-y-none::-webkit-scrollbar {
+  display: none;
+}
+
+// tab
+.tabs-nav {
+  > li {
+    &.active {
+      a {
+        @apply border-primary;
+      }
+    }
+  }
+}
+
+.hero-v2::before {
+  content: "";
+  background: linear-gradient(90deg,rgba(61, 13, 17, 1) 50%,rgba(0, 0, 0, 0.2) 100%);
+}
+
+.hero-v2 {
+  background-image: url("https://img.freepik.com/free-photo/two-young-businesswomen-working-with-laptop-her-office_1301-6822.jpg?w=1060&t=st=1695633224~exp=1695633824~hmac=8b31470f4c61830bb38683652fd82e1ab4ddb3213add4846f20894a93114c767");
+}
+
+.testimonial{
+  @apply -mx-4;
+  .slick-slide{
+     @apply p-4;
+  }
+  
+
+}
