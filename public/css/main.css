@@ -1,145 +1,201 @@
 @font-face {
-  font-family: "Figtree";
-  src: url("../../public/fonts/Figtree-Bold.eot");
-  src: url("../../public/fonts/Figtree-Bold.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/Figtree-Bold.woff2") format("woff2"), url("../../public/fonts/Figtree-Bold.woff") format("woff"), url("../../public/fonts/Figtree-Bold.ttf") format("truetype");
+  font-family: "Gabarito";
+  src: url("../fonts/Gabarito-ExtraBold.eot");
+  src: url("../fonts/Gabarito-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gabarito-ExtraBold.woff2") format("woff2"), url("../fonts/Gabarito-ExtraBold.woff") format("woff"), url("../fonts/Gabarito-ExtraBold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Figtree";
-  src: url("../../public/fonts/Figtree-Black.eot");
-  src: url("../../public/fonts/Figtree-Black.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/Figtree-Black.woff2") format("woff2"), url("../../public/fonts/Figtree-Black.woff") format("woff"), url("../../public/fonts/Figtree-Black.ttf") format("truetype");
+  font-family: "Gabarito";
+  src: url("../fonts/Gabarito-Bold.eot");
+  src: url("../fonts/Gabarito-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gabarito-Bold.woff2") format("woff2"), url("../fonts/Gabarito-Bold.woff") format("woff"), url("../fonts/Gabarito-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gabarito";
+  src: url("../fonts/Gabarito-Black.eot");
+  src: url("../fonts/Gabarito-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Gabarito-Black.woff2") format("woff2"), url("../fonts/Gabarito-Black.woff") format("woff"), url("../fonts/Gabarito-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Figtree";
-  src: url("../../public/fonts/Figtree-Light.eot");
-  src: url("../../public/fonts/Figtree-Light.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/Figtree-Light.woff2") format("woff2"), url("../../public/fonts/Figtree-Light.woff") format("woff"), url("../../public/fonts/Figtree-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Figtree";
-  src: url("../../public/fonts/Figtree-ExtraBold.eot");
-  src: url("../../public/fonts/Figtree-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/Figtree-ExtraBold.woff2") format("woff2"), url("../../public/fonts/Figtree-ExtraBold.woff") format("woff"), url("../../public/fonts/Figtree-ExtraBold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Figtree";
-  src: url("../../public/fonts/Figtree-Medium.eot");
-  src: url("../../public/fonts/Figtree-Medium.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/Figtree-Medium.woff2") format("woff2"), url("../../public/fonts/Figtree-Medium.woff") format("woff"), url("../../public/fonts/Figtree-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Figtree";
-  src: url("../../public/fonts/Figtree-SemiBold.eot");
-  src: url("../../public/fonts/Figtree-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/Figtree-SemiBold.woff2") format("woff2"), url("../../public/fonts/Figtree-SemiBold.woff") format("woff"), url("../../public/fonts/Figtree-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Figtree";
-  src: url("../../public/fonts/Figtree-Regular.eot");
-  src: url("../../public/fonts/Figtree-Regular.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/Figtree-Regular.woff2") format("woff2"), url("../../public/fonts/Figtree-Regular.woff") format("woff"), url("../../public/fonts/Figtree-Regular.ttf") format("truetype");
+  font-family: "Gabarito";
+  src: url("../fonts/Gabarito-Regular.eot");
+  src: url("../fonts/Gabarito-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gabarito-Regular.woff2") format("woff2"), url("../fonts/Gabarito-Regular.woff") format("woff"), url("../fonts/Gabarito-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Figtree";
-  src: url("../../public/fonts/Figtree-Light_1.eot");
-  src: url("../../public/fonts/Figtree-Light_1.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/Figtree-Light_1.woff2") format("woff2"), url("../../public/fonts/Figtree-Light_1.woff") format("woff"), url("../../public/fonts/Figtree-Light_1.ttf") format("truetype");
-  font-weight: 300;
+  font-family: "Gabarito";
+  src: url("../fonts/Gabarito-Regular_1.eot");
+  src: url("../fonts/Gabarito-Regular_1.eot?#iefix") format("embedded-opentype"), url("../fonts/Gabarito-Regular_1.woff2") format("woff2"), url("../fonts/Gabarito-Regular_1.woff") format("woff"), url("../fonts/Gabarito-Regular_1.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Urbanist";
-  src: url("../../public/fonts/Urbanist-Light.eot");
-  src: url("../../public/fonts/Urbanist-Light.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/Urbanist-Light.woff2") format("woff2"), url("../../public/fonts/Urbanist-Light.woff") format("woff"), url("../../public/fonts/Urbanist-Light.ttf") format("truetype");
-  font-weight: 300;
+  font-family: "Gabarito";
+  src: url("../fonts/Gabarito-SemiBold.eot");
+  src: url("../fonts/Gabarito-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gabarito-SemiBold.woff2") format("woff2"), url("../fonts/Gabarito-SemiBold.woff") format("woff"), url("../fonts/Gabarito-SemiBold.ttf") format("truetype");
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Urbanist";
-  src: url("../../public/fonts/Urbanist-ExtraLight.eot");
-  src: url("../../public/fonts/Urbanist-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/Urbanist-ExtraLight.woff2") format("woff2"), url("../../public/fonts/Urbanist-ExtraLight.woff") format("woff"), url("../../public/fonts/Urbanist-ExtraLight.ttf") format("truetype");
+  font-family: "Gabarito";
+  src: url("../fonts/Gabarito-Medium.eot");
+  src: url("../fonts/Gabarito-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gabarito-Medium.woff2") format("woff2"), url("../fonts/Gabarito-Medium.woff") format("woff"), url("../fonts/Gabarito-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-BlackItalic.eot");
+  src: url("../fonts/Poppins-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-BlackItalic.woff2") format("woff2"), url("../fonts/Poppins-BlackItalic.woff") format("woff"), url("../fonts/Poppins-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-ExtraBold.eot");
+  src: url("../fonts/Poppins-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-ExtraBold.woff2") format("woff2"), url("../fonts/Poppins-ExtraBold.woff") format("woff"), url("../fonts/Poppins-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-ExtraLight.eot");
+  src: url("../fonts/Poppins-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-ExtraLight.woff2") format("woff2"), url("../fonts/Poppins-ExtraLight.woff") format("woff"), url("../fonts/Poppins-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Urbanist";
-  src: url("../../public/fonts/Urbanist-Black.eot");
-  src: url("../../public/fonts/Urbanist-Black.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/Urbanist-Black.woff2") format("woff2"), url("../../public/fonts/Urbanist-Black.woff") format("woff"), url("../../public/fonts/Urbanist-Black.ttf") format("truetype");
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-ExtraLightItalic.eot");
+  src: url("../fonts/Poppins-ExtraLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-ExtraLightItalic.woff2") format("woff2"), url("../fonts/Poppins-ExtraLightItalic.woff") format("woff"), url("../fonts/Poppins-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-ExtraBoldItalic.eot");
+  src: url("../fonts/Poppins-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Poppins-ExtraBoldItalic.woff") format("woff"), url("../fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-BoldItalic.eot");
+  src: url("../fonts/Poppins-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-BoldItalic.woff2") format("woff2"), url("../fonts/Poppins-BoldItalic.woff") format("woff"), url("../fonts/Poppins-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.eot");
+  src: url("../fonts/Poppins-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff"), url("../fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Black.eot");
+  src: url("../fonts/Poppins-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Black.woff2") format("woff2"), url("../fonts/Poppins-Black.woff") format("woff"), url("../fonts/Poppins-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Urbanist";
-  src: url("../../public/fonts/Urbanist-ExtraBold.eot");
-  src: url("../../public/fonts/Urbanist-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/Urbanist-ExtraBold.woff2") format("woff2"), url("../../public/fonts/Urbanist-ExtraBold.woff") format("woff"), url("../../public/fonts/Urbanist-ExtraBold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Urbanist";
-  src: url("../../public/fonts/Urbanist-Bold.eot");
-  src: url("../../public/fonts/Urbanist-Bold.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/Urbanist-Bold.woff2") format("woff2"), url("../../public/fonts/Urbanist-Bold.woff") format("woff"), url("../../public/fonts/Urbanist-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Urbanist";
-  src: url("../../public/fonts/Urbanist-Regular.eot");
-  src: url("../../public/fonts/Urbanist-Regular.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/Urbanist-Regular.woff2") format("woff2"), url("../../public/fonts/Urbanist-Regular.woff") format("woff"), url("../../public/fonts/Urbanist-Regular.ttf") format("truetype");
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.eot");
+  src: url("../fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Urbanist";
-  src: url("../../public/fonts/Urbanist-Thin.eot");
-  src: url("../../public/fonts/Urbanist-Thin.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/Urbanist-Thin.woff2") format("woff2"), url("../../public/fonts/Urbanist-Thin.woff") format("woff"), url("../../public/fonts/Urbanist-Thin.ttf") format("truetype");
-  font-weight: 100;
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-MediumItalic.eot");
+  src: url("../fonts/Poppins-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-MediumItalic.woff2") format("woff2"), url("../fonts/Poppins-MediumItalic.woff") format("woff"), url("../fonts/Poppins-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBoldItalic.eot");
+  src: url("../fonts/Poppins-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-SemiBoldItalic.woff2") format("woff2"), url("../fonts/Poppins-SemiBoldItalic.woff") format("woff"), url("../fonts/Poppins-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Light.eot");
+  src: url("../fonts/Poppins-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Light.woff2") format("woff2"), url("../fonts/Poppins-Light.woff") format("woff"), url("../fonts/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Urbanist";
-  src: url("../../public/fonts/Urbanist-Regular_1.eot");
-  src: url("../../public/fonts/Urbanist-Regular_1.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/Urbanist-Regular_1.woff2") format("woff2"), url("../../public/fonts/Urbanist-Regular_1.woff") format("woff"), url("../../public/fonts/Urbanist-Regular_1.ttf") format("truetype");
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Italic.eot");
+  src: url("../fonts/Poppins-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Italic.woff2") format("woff2"), url("../fonts/Poppins-Italic.woff") format("woff"), url("../fonts/Poppins-Italic.ttf") format("truetype");
   font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.eot");
+  src: url("../fonts/Poppins-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins-Medium.woff") format("woff"), url("../fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Urbanist";
-  src: url("../../public/fonts/Urbanist-SemiBold.eot");
-  src: url("../../public/fonts/Urbanist-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/Urbanist-SemiBold.woff2") format("woff2"), url("../../public/fonts/Urbanist-SemiBold.woff") format("woff"), url("../../public/fonts/Urbanist-SemiBold.ttf") format("truetype");
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.eot");
+  src: url("../fonts/Poppins-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/Poppins-SemiBold.woff") format("woff"), url("../fonts/Poppins-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Urbanist";
-  src: url("../../public/fonts/Urbanist-Medium.eot");
-  src: url("../../public/fonts/Urbanist-Medium.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/Urbanist-Medium.woff2") format("woff2"), url("../../public/fonts/Urbanist-Medium.woff") format("woff"), url("../../public/fonts/Urbanist-Medium.ttf") format("truetype");
-  font-weight: 500;
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-LightItalic.eot");
+  src: url("../fonts/Poppins-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-LightItalic.woff2") format("woff2"), url("../fonts/Poppins-LightItalic.woff") format("woff"), url("../fonts/Poppins-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Thin.eot");
+  src: url("../fonts/Poppins-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Thin.woff2") format("woff2"), url("../fonts/Poppins-Thin.woff") format("woff"), url("../fonts/Poppins-Thin.ttf") format("truetype");
+  font-weight: 100;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-ThinItalic.eot");
+  src: url("../fonts/Poppins-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-ThinItalic.woff2") format("woff2"), url("../fonts/Poppins-ThinItalic.woff") format("woff"), url("../fonts/Poppins-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
   font-display: swap;
 }
 /*
@@ -1023,9 +1079,6 @@ video {
 .pb-4 {
   padding-bottom: 1rem;
 }
-.pb-6 {
-  padding-bottom: 1.5rem;
-}
 .pb-7 {
   padding-bottom: 1.75rem;
 }
@@ -1054,10 +1107,6 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 .text-5xl {
   font-size: 3rem;
@@ -1706,19 +1755,15 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
-  .lg\:pl-\[117px\] {
-    padding-left: 117px;
-  }
   .lg\:pb-6 {
     padding-bottom: 1.5rem;
+  }
+  .lg\:pl-\[117px\] {
+    padding-left: 117px;
   }
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-  .lg\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
   .lg\:text-4xl {
     font-size: 2.25rem;
@@ -1727,6 +1772,10 @@ h1, h2, h3, h4, h5, h6 {
   .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+  .lg\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
   .lg\:opacity-0 {
     opacity: 0;
