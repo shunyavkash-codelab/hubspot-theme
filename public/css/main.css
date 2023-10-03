@@ -661,11 +661,20 @@ video {
 .left-4 {
   left: 1rem;
 }
+.left-auto {
+  left: auto;
+}
 .right-4 {
   right: 1rem;
 }
+.right-\[10\%\] {
+  right: 10%;
+}
 .top-0 {
   top: 0px;
+}
+.top-1\/2 {
+  top: 50%;
 }
 .z-10 {
   z-index: 10;
@@ -770,6 +779,9 @@ video {
 .h-\[40px\] {
   height: 40px;
 }
+.h-\[500px\] {
+  height: 500px;
+}
 .h-\[80px\] {
   height: 80px;
 }
@@ -805,6 +817,9 @@ video {
 }
 .w-\[320px\] {
   width: 320px;
+}
+.w-\[500px\] {
+  width: 500px;
 }
 .w-\[80px\] {
   width: 80px;
@@ -852,6 +867,9 @@ video {
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.resize {
+  resize: both;
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -1203,6 +1221,9 @@ video {
 .opacity-70 {
   opacity: 0.7;
 }
+.opacity-60 {
+  opacity: 0.6;
+}
 .shadow-\[0_0_10px_2px_rgba\(0\2c 0\2c 0\2c 5\%\)\] {
   --tw-shadow: 0 0 10px 2px rgba(0,0,0,5%);
   --tw-shadow-colored: 0 0 10px 2px var(--tw-shadow-color);
@@ -1249,6 +1270,10 @@ video {
 body {
   font-family: "Poppins", sans-serif;
   color: #333333;
+}
+
+.hero {
+  height: var(--app-height);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1401,6 +1426,10 @@ h6 {
   background-repeat: no-repeat;
   --tw-content: "";
   content: var(--tw-content);
+}
+
+.hero-slider .slick-list {
+  height: 100%;
 }
 
 .menu-content.open {

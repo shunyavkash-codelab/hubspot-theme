@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 body {
  font-family: 'Poppins', sans-serif;
  color: #333333;
+}
+.hero{
+  height: var(--app-height);
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -96,3 +101,7 @@ h6{
   background-image: url('/public/Images/background/Icoon_Wave.png');
    @apply content-['']  bg-no-repeat bg-center bg-contain absolute left-1/2 transform -translate-x-1/2 top-5 w-40  h-full;    
 }
+
+.hero-slider .slick-list{
+  @apply h-full ;
+  }

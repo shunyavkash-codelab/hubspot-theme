@@ -11,7 +11,7 @@
 
 <body>
     <!-- Header -->
-    <header class="border-b border-transparent shadow-md">
+    <header class=" shadow-md">
         <div class="container">
             <nav class="py-6">
                 <div class="flex items-center justify-between">
@@ -42,10 +42,10 @@
                                 </div>
                             </div>
                             <ul class="flex menu max-lg:flex-col lg:space-x-10 max-lg:w-full">
-                                <li><a href="javascript:void(0);" class="text-lg inline-block py-4  font-medium text-gray-900 rounded-md max-lg:w-full lg:py-5">Home</a></li>
+                                <li><a href="javascript:void(0);" class="text-md inline-block py-4  font-medium text-gray-900 rounded-md max-lg:w-full lg:py-5">Home</a></li>
                                 <li class="relative group">
                                     <div class="flex items-center max-lg:justify-between">
-                                        <a href="javascript:void(0);" class="inline-block text-lg py-4  font-medium text-gray-900 rounded-md max-lg:w-full  lg:py-5">About Us</a>
+                                        <a href="javascript:void(0);" class="inline-block text-md py-4  font-medium text-gray-900 rounded-md max-lg:w-full  lg:py-5">About Us</a>
                                         <div class="ml-2 transition-all duration-500 menu-icon lg:group-hover:rotate-180">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -62,9 +62,9 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a href="javascript:void(0);" class="text-lg inline-block py-4  font-medium text-gray-900 rounded-md max-lg:w-full lg:py-5">CBSE Information</a></li>
-                                <li><a href="javascript:void(0);" class="text-lg inline-block py-4  font-medium text-gray-900 rounded-md max-lg:w-full lg:py-5">Academics</a></li>
-                                <li><a href="javascript:void(0);" class="text-lg inline-block py-4  font-medium text-gray-900 rounded-md max-lg:w-full lg:py-5">Curricular Activities</a></li>
+                                <li><a href="javascript:void(0);" class="text-md inline-block py-4  font-medium text-gray-900 rounded-md max-lg:w-full lg:py-5">CBSE Information</a></li>
+                                <li><a href="javascript:void(0);" class="text-md inline-block py-4  font-medium text-gray-900 rounded-md max-lg:w-full lg:py-5">Academics</a></li>
+                                <li><a href="javascript:void(0);" class="text-md inline-block py-4  font-medium text-gray-900 rounded-md max-lg:w-full lg:py-5">Curricular Activities</a></li>
                             </ul>
                             <!-- <div class="lg:ml-10">
                                 <a href="javascript:void(0);" class="btn">Get in touch</a>
@@ -78,14 +78,16 @@
     <!-- End Header -->
 
     <!-- Hero 2 Section -->
-    <section class="relative">
-        <div class="hero-slider">
+    <section class="relative hero">
+        <div class="hero-slider h-full">
             <div>
-                <div class="relative">
-                    <div class="">
-                        <img src="" alt="" srcset="">
+                <div class="relative ">
+                    <div class="h-screen">
+                        <img src="./Images/hero/hero.jpg" alt="" srcset="" class="w-full h-full object-cover">
                     </div>
+                    <div class="bg-white w-[500px] h-[500px] absolute top-1/2 -translate-y-1/2 left-auto right-[10%] z-50 rounded-xl opacity-70">
 
+                    </div>
                 </div>
             </div>
             <div>
@@ -202,19 +204,22 @@
     </section> -->
     <!-- Logo section End-->
 
-    <!-- tow col section start -->
-    <script class="relative bg-secondary">
-        <div class="container">
 
-        </div>
-    </script>
-    <!-- tow col section End -->
 
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/app.js"></script>
+    <script>
+        let header = document.querySelector('header').clientHeight;
+        const appHeight = () => {
+            const doc = document.documentElement
+            doc.style.setProperty('--app-height', `${window.innerHeight - header}px`)
+        }
+        window.addEventListener('resize', appHeight)
+        appHeight()
+    </script>
     <script>
         $('.hero-slider').slick({
             arrows: false,
