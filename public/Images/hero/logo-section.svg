@@ -1,0 +1,26 @@
+<svg
+  version="1.2"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 156 23"
+  width="156"
+  height="23"
+>
+	<title>New Project</title>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 30px;fill: #0d0d0d;font-weight: 400;font-family: "Akshar-Regular", "Akshar" } 
+	</style>
+	<text id="XYZ LOGO" style="transform: matrix(1,0,0,1,-0.852,22)">
+		<tspan x="0" y="0" class="t0">X</tspan><tspan y="0" class="t0">Y</tspan><tspan
+      y="0"
+      class="t0"
+    >Z</tspan><tspan y="0" class="t0"> </tspan><tspan
+      y="0"
+      class="t0"
+    >L</tspan><tspan y="0" class="t0">O</tspan><tspan
+      y="0"
+      class="t0"
+    >G</tspan><tspan y="0" class="t0">O</tspan><tspan y="0" class="t0">
+</tspan>
+	</text>
+</svg>

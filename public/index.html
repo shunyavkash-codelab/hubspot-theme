@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -15,7 +16,7 @@
             <nav class="py-6">
                 <div class="flex items-center justify-between">
                     <a href="javascript:void(0);" class=" h-[40px] flex items-center flex-shrink-0 transition-all duration-500 logo-img">
-                        Logo
+                        <img src="./Images/hero/xyz-logo.svg" alt="" srcset="" class="w-full h-full object-cover">
                     </a>
                     <div class="flex-shrink-0 lg:hidden">
                         <button type="button" class="relative inline-flex items-center justify-center  text-gray-400 rounded-md toggle-menu" aria-controls="mobile-menu" aria-expanded="false">
@@ -53,11 +54,11 @@
                                     </div>
                                     <div class="sub-menu  z-50 lg:absolute lg:top-full lg:left-0 lg:min-w-[200px] lg:bg-white lg:rounded-md lg:shadow-[0_0_10px_2px_rgba(0,0,0,0.08)] transition-all duration-500 lg:invisible lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 lg:group-hover:max-h-max max-h-0 overflow-hidden">
                                         <ul class="max-lg:pl-3 max-lg:pb-2.5 max-lg:pr-0 space-y-3 lg:p-3">
-                                            <li><a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm hover:text-green-400">House System</a></li>
-                                            <li><a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm hover:text-green-400">Excursions & Field Trips</a></li>
-                                            <li><a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm hover:text-green-400 ">Sports Infrastructure</a></li>
-                                            <li><a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm hover:text-green-400 ">Community Service</a></li>
-                                            <li><a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm hover:text-green-400 ">Environmental Care</a></li>
+                                            <li><a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm ">House System</a></li>
+                                            <li><a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm ">Excursions & Field Trips</a></li>
+                                            <li><a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm ">Sports Infrastructure</a></li>
+                                            <li><a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm ">Community Service</a></li>
+                                            <li><a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm ">Environmental Care</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -77,32 +78,25 @@
     <!-- End Header -->
 
     <!-- Hero 2 Section -->
-    <section class="relative py-8 lg:py-20 bg-gray-200">
-        <div class="container">
-            <div class="flex w-full max-lg:flex-col lg:items-center">
-                <div class="lg:w-1/2 max-lg:order-2 max-lg:text-center pt-12 flex-grow-1 lg:pl-[117px]">
-                    <div class="relative">
-                        <span class="block mb-3 text-black opacity-70 capitalize">icome is the most intulitive, affordable</span>
-                        <h1 class="mb-3 text-5xl leading-tight font-semibold animation-text">Find Your <span>PerFect</span> Courees And Improve Your Skills</h1>
-                        <div class="max-w-lg mb-3 richtext max-lg:mx-auto">
-                            <p>We Have 40k+ Online Courses & 500K+ Online Registered Student.</p>
-                        </div>
-                        <div class="btn btn-primary">
-                            <a href="javascript:void(0);">Explore All Courses</a>
-                        </div>
+    <section class="relative">
+        <div class="hero-slider">
+            <div>
+                <div class="relative">
+                    <div class="">
+                        <img src="" alt="" srcset="">
                     </div>
-                </div>
-                <div class="flex-shrink-0 lg:w-1/2">
-                    <div class="w-[320px] h-[320px] lg:w-[450px] lg:h-[450px] mx-auto relative">
-                        <div class="">
-                            <img src="./Images/hero/working-women.png" alt="" srcset="" class="w-full h-full">
-                        </div>
-                    </div>
+
                 </div>
             </div>
+            <div>
+                2
+            </div>
+            <div>
+                3
+            </div>
         </div>
-
     </section>
+
     <!-- Hero 2 section -->
 
     <!-- Hero Section Start -->
@@ -163,7 +157,7 @@
     <!-- Hero Section End  -->
 
     <!-- Logo section -->
-    <section class="relative py-16 lg:py-20">
+    <!-- <section class="relative py-16 lg:py-20">
         <div class="container">
             <div class="text-center">
                 <h3 class="text-2xl lg:text-4xl relative text-dark font-semibold pb-4 mb-2 lg:pb-6 line-heading">I work with the best companies</h3>
@@ -205,7 +199,7 @@
         </div>
 
 
-    </section>
+    </section> -->
     <!-- Logo section End-->
 
     <!-- tow col section start -->
@@ -218,10 +212,18 @@
 
 
 
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/app.js"></script>
     <script>
+        $('.hero-slider').slick({
+            arrows: false,
+            dots: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+
+        });
         if (window.innerWidth < 1024) {
             // menu-open
             $(".toggle-menu").click(function () {

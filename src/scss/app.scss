@@ -11,6 +11,34 @@ h1,h2,h3,h4,h5,h6{
   font-family: 'Gabarito', cursive;
 }
 
+h1{
+  @apply text-[56px];
+  
+}
+
+h2{
+  @apply text-[42px];
+}
+
+h3{
+  @apply text-4xl;
+}
+
+h4{
+  @apply text-2xl;
+}
+
+h5{
+  @apply text-base;
+}
+
+h6{
+  @apply text-sm;
+}
+
+
+
+
 
 // btn
 .btn,

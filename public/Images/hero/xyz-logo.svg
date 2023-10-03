@@ -1,0 +1,12 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 110" width="398" height="70">
+	<title>New Project</title>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 150px;fill: #22668d;font-weight: 400;font-family: "Alatsi-Regular", "Alatsi" } 
+		.t1 { font-size: 150px;fill: #8ecddd;font-weight: 400;font-family: "Alatsi-Regular", "Alatsi" } 
+	</style>
+	<text id="XYZ LOGO" style="transform: matrix(1,0,0,1,315,107)" >
+		<tspan x="-316.4" y="0" class="t0">X</tspan><tspan  y="0" class="t0">Y</tspan><tspan  y="0" class="t0">Z</tspan><tspan  y="0" class="t0"> </tspan><tspan  y="0" class="t1">L</tspan><tspan  y="0" class="t1">O</tspan><tspan  y="0" class="t1">G</tspan><tspan  y="0" class="t1">O
+</tspan>
+	</text>
+</svg>
