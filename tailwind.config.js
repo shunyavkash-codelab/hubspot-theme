@@ -3,16 +3,19 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: "1rem",
+      padding: "12px",
     },
     extend: {
+      lineClamp: {
+        7: "7",
+      },
       colors: ({ colors }) => ({
         // custom
         current: "currentColor",
         primary: "#FFCC70",
         secondary: "#FFFADD",
         tertiary: "#8ECDDD",
-        
+
         dark: "#22668D",
         light: {
           DEFAULT: "#CDCDCD",

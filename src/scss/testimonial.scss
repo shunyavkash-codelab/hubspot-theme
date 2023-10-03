@@ -1,0 +1,18 @@
+.truncate {
+  @apply whitespace-normal;
+}
+
+.testimonial-slider {
+  .richtext {
+    p {
+      @apply leading-relaxed text-sm;
+    }
+  }
+}
+
+.testimonial-slider {
+  &:before {
+    width: calc(100% * 25);
+    @apply md:content-[''] md:absolute md:h-full md:right-full md:top-0 md:bg-tertiary md:z-10;
+  }
+}
