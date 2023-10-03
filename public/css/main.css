@@ -972,31 +972,31 @@ video {
 }
 .border-primary {
   --tw-border-opacity: 1;
-  border-color: rgb(254 243 223 / var(--tw-border-opacity));
+  border-color: rgb(255 204 112 / var(--tw-border-opacity));
 }
 .border-primary\/10 {
-  border-color: rgb(254 243 223 / 0.1);
+  border-color: rgb(255 204 112 / 0.1);
 }
 .border-primary\/20 {
-  border-color: rgb(254 243 223 / 0.2);
+  border-color: rgb(255 204 112 / 0.2);
 }
 .border-secondary\/20 {
-  border-color: rgb(224 241 241 / 0.2);
+  border-color: rgb(255 250 221 / 0.2);
 }
 .border-transparent {
   border-color: transparent;
 }
 .bg-dark {
   --tw-bg-opacity: 1;
-  background-color: rgb(46 51 73 / var(--tw-bg-opacity));
+  background-color: rgb(34 102 141 / var(--tw-bg-opacity));
 }
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(254 243 223 / var(--tw-bg-opacity));
+  background-color: rgb(255 204 112 / var(--tw-bg-opacity));
 }
 .bg-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgb(224 241 241 / var(--tw-bg-opacity));
+  background-color: rgb(255 250 221 / var(--tw-bg-opacity));
 }
 .bg-white {
   --tw-bg-opacity: 1;
@@ -1155,7 +1155,7 @@ video {
 }
 .text-dark {
   --tw-text-opacity: 1;
-  color: rgb(46 51 73 / var(--tw-text-opacity));
+  color: rgb(34 102 141 / var(--tw-text-opacity));
 }
 .text-gray-300 {
   --tw-text-opacity: 1;
@@ -1187,11 +1187,11 @@ video {
 }
 .text-primary {
   --tw-text-opacity: 1;
-  color: rgb(254 243 223 / var(--tw-text-opacity));
+  color: rgb(255 204 112 / var(--tw-text-opacity));
 }
 .text-secondary {
   --tw-text-opacity: 1;
-  color: rgb(224 241 241 / var(--tw-text-opacity));
+  color: rgb(255 250 221 / var(--tw-text-opacity));
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -1247,11 +1247,11 @@ video {
   transition-duration: 500ms;
 }
 body {
-  font-family: "Figtree", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Gabarito", cursive;
 }
 
 .line-heading::before {
@@ -1422,12 +1422,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .before\:bg-primary\/70::before {
   content: var(--tw-content);
-  background-color: rgb(254 243 223 / 0.7);
+  background-color: rgb(255 204 112 / 0.7);
 }
 
 .hover\:border-primary:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(254 243 223 / var(--tw-border-opacity));
+  border-color: rgb(255 204 112 / var(--tw-border-opacity));
 }
 
 .hover\:text-gray-400:hover {
