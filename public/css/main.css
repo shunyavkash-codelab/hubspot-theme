@@ -661,6 +661,9 @@ video {
 .bottom-0 {
   bottom: 0px;
 }
+.left-1\/2 {
+  left: 50%;
+}
 .left-4 {
   left: 1rem;
 }
@@ -806,9 +809,6 @@ video {
 .h-\[80px\] {
   height: 80px;
 }
-.h-auto {
-  height: auto;
-}
 .h-full {
   height: 100%;
 }
@@ -826,9 +826,6 @@ video {
 }
 .w-4 {
   width: 1rem;
-}
-.w-40 {
-  width: 10rem;
 }
 .w-5 {
   width: 1.25rem;
@@ -857,9 +854,6 @@ video {
 .max-w-3xl {
   max-width: 48rem;
 }
-.max-w-\[1100px\] {
-  max-width: 1100px;
-}
 .max-w-\[950px\] {
   max-width: 950px;
 }
@@ -882,6 +876,10 @@ video {
 .flex-shrink-0 {
   flex-shrink: 0;
 }
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -903,9 +901,6 @@ video {
 }
 .flex-col {
   flex-direction: column;
-}
-.flex-wrap {
-  flex-wrap: wrap;
 }
 .items-center {
   align-items: center;
@@ -933,9 +928,6 @@ video {
 }
 .gap-7 {
   gap: 1.75rem;
-}
-.gap-8 {
-  gap: 2rem;
 }
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -1594,6 +1586,101 @@ h6 {
   }
 }
 
+.line-heading::before {
+  background-image: url("/public/Images/background/Icoon_Wave.png");
+  position: absolute;
+  left: 50%;
+  top: 1.25rem;
+  height: 100%;
+  width: 10rem;
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  --tw-content: "";
+  content: var(--tw-content);
+}
+
+.hero-slider-two .hero-img {
+  position: relative;
+}
+.hero-slider-two .hero-img::before {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  opacity: 0.5;
+  --tw-content: "";
+  content: var(--tw-content);
+}
+
+.hero-slider-two [class*=slick-] {
+  height: 100%;
+}
+.hero-slider-two [class*=slick-] .hero-video iframe {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  min-height: 100%;
+  min-width: 100%;
+}
+.hero-slider-two [class*=slick-] .slick-active .slide-box {
+  transform: translateX(0);
+  opacity: 1;
+}
+.hero-slider-two [class*=slick-] .container {
+  overflow: hidden;
+}
+.hero-slider-two [class*=slick-] .slide-box {
+  transform: translateX(calc(100% + 12px));
+  opacity: 0;
+  transition-delay: 500ms;
+}
+
+.hero-slider .hero-img {
+  position: relative;
+}
+.hero-slider .hero-img::before {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  opacity: 0.5;
+  --tw-content: "";
+  content: var(--tw-content);
+}
+
+.hero-slider [class*=slick-] {
+  height: 100%;
+}
+.hero-slider [class*=slick-] .hero-video iframe {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  min-height: 100%;
+  min-width: 100%;
+}
+.hero-slider [class*=slick-] .slick-active .slide-box {
+  transform: translateX(0);
+  opacity: 1;
+}
+.hero-slider [class*=slick-] .container {
+  overflow: hidden;
+}
+.hero-slider [class*=slick-] .slide-box {
+  transform: translateX(calc(100% + 12px));
+  opacity: 0;
+  transition-delay: 500ms;
+}
 @media not all and (min-width: 1024px) {
   .max-lg\:container {
     width: 100%;
@@ -1706,57 +1793,46 @@ h6 {
     }
   }
 }
-
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
 }
-
 .before\:left-0::before {
   content: var(--tw-content);
   left: 0px;
 }
-
 .before\:top-0::before {
   content: var(--tw-content);
   top: 0px;
 }
-
 .before\:h-full::before {
   content: var(--tw-content);
   height: 100%;
 }
-
 .before\:w-full::before {
   content: var(--tw-content);
   width: 100%;
 }
-
 .before\:bg-primary\/70::before {
   content: var(--tw-content);
   background-color: rgb(34 102 141 / 0.7);
 }
-
 .hover\:border-primary:hover {
   --tw-border-opacity: 1;
   border-color: rgb(34 102 141 / var(--tw-border-opacity));
 }
-
 .hover\:text-gray-400:hover {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
-
 .hover\:text-green-400:hover {
   --tw-text-opacity: 1;
   color: rgb(74 222 128 / var(--tw-text-opacity));
 }
-
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-
 @media not all and (min-width: 1024px) {
   .max-lg\:fixed {
     position: fixed;
@@ -1840,13 +1916,11 @@ h6 {
     line-height: 1.5rem;
   }
 }
-
 @media not all and (min-width: 768px) {
   .max-md\:mb-8 {
     margin-bottom: 2rem;
   }
 }
-
 @media not all and (min-width: 576px) {
   .max-sm\:-mx-4 {
     margin-left: -1rem;
@@ -1860,7 +1934,6 @@ h6 {
          column-gap: 0px;
   }
 }
-
 @media (min-width: 576px) {
   .sm\:-mt-12 {
     margin-top: -3rem;
@@ -1939,10 +2012,13 @@ h6 {
     line-height: 1.75rem;
   }
 }
-
 @media (min-width: 768px) {
   .md\:col-span-6 {
     grid-column: span 6 / span 6;
+  }
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
   .md\:mb-12 {
     margin-bottom: 3rem;
@@ -1986,7 +2062,6 @@ h6 {
     }
   }
 }
-
 @media (min-width: 1024px) {
   .lg\:invisible {
     visibility: hidden;
@@ -2105,23 +2180,12 @@ h6 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
-  .lg\:pb-6 {
-    padding-bottom: 1.5rem;
-  }
   .lg\:pl-\[117px\] {
     padding-left: 117px;
   }
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-  .lg\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
   .lg\:text-sm {
     font-size: 0.875rem;
@@ -2150,7 +2214,6 @@ h6 {
     opacity: 1;
   }
 }
-
 @media (min-width: 1280px) {
   .xl\:w-\[30\%\] {
     width: 30%;

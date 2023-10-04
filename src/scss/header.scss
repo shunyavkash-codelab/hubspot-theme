@@ -1,18 +1,21 @@
 .menu-content.open {
-  transform: translate(0);
+    transform: translate(0);
 }
 
-.menu  {
+.menu {
     li.menu-open {
-        .sub-menu{
+        .sub-menu {
             max-height: 500px;
         }
     }
 }
 
-.menu  {
+.menu {
     li.menu-open {
-        .menu-icon{
+        .menu-icon {
+
+
+
             transform: rotate(180deg);
         }
     }
