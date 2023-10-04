@@ -5,15 +5,15 @@
 
 
 body {
- font-family: 'Poppins', sans-serif;
- color: #333333;
+ @apply font-body text-lightBlack;
+
 }
 .hero{
   height: var(--app-height);
 }
 
 h1,h2,h3,h4,h5,h6{
-  font-family: 'Gabarito', cursive;
+  @apply font-title;
 }
 
 h1{
@@ -48,7 +48,7 @@ h6{
 // btn
 .btn,
 .btn-cta {
-  @apply text-black font-medium text-sm list-none py-3 px-5 bg-primary rounded-md inline-block transform transition-all duration-300;
+  @apply text-white font-medium text-sm bg-primary list-none py-3 px-5  rounded-sm inline-block transform transition-all duration-300;
   &:hover {
     @apply bg-primary/80;
   }
@@ -94,14 +94,28 @@ h6{
     }
   }
   }
-
 }
 
 .line-heading::before{
   background-image: url('/public/Images/background/Icoon_Wave.png');
    @apply content-['']  bg-no-repeat bg-center bg-contain absolute left-1/2 transform -translate-x-1/2 top-5 w-40  h-full;    
 }
-
-.hero-slider .slick-list{
-  @apply h-full ;
+.hero-slider{
+  .hero-img{
+    @apply relative;
+    &::before{
+    @apply content-[''] absolute left-0 top-0 w-full h-full  bg-black opacity-50  z-0;
+    }
   }
+}
+
+.hero-slider [class*="slick-"] {
+   @apply h-full;
+
+   .hero-video iframe{
+     
+      @apply min-w-full min-h-full absolute left-0 top-0 ;
+   }
+}
+  
+

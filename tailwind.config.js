@@ -12,33 +12,15 @@ module.exports = {
       colors: ({ colors }) => ({
         // custom
         current: "currentColor",
-        primary: "#FFCC70",
-        secondary: "#FFFADD",
-        tertiary: "#8ECDDD",
-
-        dark: "#22668D",
-        light: {
-          DEFAULT: "#CDCDCD",
-          200: "#E9E9E9",
-          300: "#EAEAEA",
-          400: "#BCBCBC",
-          500: "#f2f2f2",
-          600: "#D9D9D9",
-          700: "#F1F1F1",
-        },
-        red: {
-          DEFAULT: "#FF0078",
-          error: "#FF0000",
-        },
-        "light-gray": "#A8A8A8",
-        "amber-light": "#FBF3E8",
-        "slate-gray": "#f8f8f8",
+        primary: "#22668D",
+        secondary: "#FFCC70",
+        tertiary: "#FFFADD",
+        dark: "#8ECDDD",
+        lightBlack:"#333333",
       }),
       fontFamily: {
-        title: ["Bebas Neue"],
-        title2: ["Bebas"],
-        body: ["Grotesque MT Std"],
-        body2: ["Roboto"],
+        title: ['Gabarito', 'cursive'],
+        body: ['Poppins', 'sans-serif'],
       },
       padding: {
         4.5: "1.15rem",
