@@ -12,7 +12,6 @@
 
 .testimonial-slider {
   &:before {
-    width: calc(100% * 25);
-    @apply md:content-[''] md:absolute md:h-full md:right-full md:top-0 md:bg-tertiary md:z-10;
+    @apply md:content-[''] md:absolute md:h-full md:right-full md:top-0 md:bg-tertiary md:z-10 md:w-[calc(100%*25)];
   }
 }
