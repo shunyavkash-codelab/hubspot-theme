@@ -2,53 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 body {
- @apply font-body text-lightBlack;
-
+  @apply font-body text-lightBlack;
 }
-.hero{
+.hero {
   height: var(--app-height);
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   @apply font-title;
 }
 
-h1{
+h1 {
   @apply text-[56px];
-  
 }
 
-h2{
+h2 {
   @apply text-[42px];
 }
 
-h3{
+h3 {
   @apply text-4xl;
 }
 
-h4{
+h4 {
   @apply text-2xl;
 }
 
-h5{
+h5 {
   @apply text-base;
 }
 
-h6{
+h6 {
   @apply text-sm;
 }
-
-
-
-
 
 // btn
 .btn,
 .btn-cta {
-  @apply text-white font-medium text-sm bg-primary list-none py-3 px-5  rounded-sm inline-block transform transition-all duration-300;
+  @apply text-white font-medium text-sm bg-primary list-none py-3 px-5 leading-none rounded-sm inline-block transform transition-all duration-300;
   &:hover {
     @apply bg-primary/80;
   }
@@ -60,62 +57,46 @@ h6{
   }
 }
 
-.animation-text{
-  span{
-      @apply relative;
+.animation-text {
+  span {
+    @apply relative;
 
-    &::before{
+    &::before {
       @apply content-[''] absolute w-full h-full left-0 top-0 bg-primary z-0;
     }
   }
 }
 
+.truncate {
+  @apply whitespace-normal;
+}
+
 // richtext
 .richtext {
+  @apply text-sm leading-normal;
   > p {
-    @apply text-sm sm:text-base;
     &:not(:first-child) {
       @apply mt-5;
     }
   }
   .list-dots {
-  @apply space-y-3 sm:space-y-4;
-  li {
-    @apply relative pl-3 text-sm leading-tight font-medium;
-    &:before {
-      @apply absolute content-[""] w-1 h-1 bg-primary left-0 top-[7px] rounded-full;
-    }
-  }
-  &.dots-secondary {
+    @apply max-sm:space-y-3 sm:space-y-4;
     li {
+      @apply relative pl-3 text-sm leading-tight font-medium;
       &:before {
-        @apply bg-secondary;
+        @apply absolute content-[""] w-1 h-1 bg-primary left-0 top-[7px] rounded-full;
+      }
+    }
+    &.dots-secondary {
+      li {
+        &:before {
+          @apply bg-secondary;
+        }
       }
     }
   }
-  }
 }
 
-.line-heading::before{
-  background-image: url('/public/Images/background/Icoon_Wave.png');
-   @apply content-['']  bg-no-repeat bg-center bg-contain absolute left-1/2 transform -translate-x-1/2 top-5 w-40  h-full;    
+.scroll-none::-webkit-scrollbar {
+  display: none;
 }
-.hero-slider{
-  .hero-img{
-    @apply relative;
-    &::before{
-    @apply content-[''] absolute left-0 top-0 w-full h-full  bg-black opacity-50  z-0;
-    }
-  }
-}
-
-.hero-slider [class*="slick-"] {
-   @apply h-full;
-
-   .hero-video iframe{
-     
-      @apply min-w-full min-h-full absolute left-0 top-0 ;
-   }
-}
-  
-

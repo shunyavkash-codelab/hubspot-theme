@@ -1,0 +1,7 @@
+.tab-section {
+  .filter-tab-btn {
+    &.active {
+      @apply bg-primary;
+    }
+  }
+}
