@@ -75,13 +75,13 @@
   }
 
   .slick-arrow {
-    @apply absolute top-1/2 -translate-y-1/2 w-12 h-12 bg-secondary z-40 rounded-full max-md:hidden;
+    @apply absolute top-1/2 -translate-y-1/2 w-12 h-12 bg-secondary z-40 rounded-full;
 
     &.slick-next {
       @apply right-12 text-transparent;
 
       &::before {
-        @apply content-[''] absolute bg-[url('/public/images/hero/icon/next.svg')] bg-no-repeat bg-cover bg-center left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-12 h-12;
+        @apply content-[''] absolute bg-[url('/public/images/hero/icon/next.svg')] bg-no-repeat bg-cover bg-center left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8;
       }
     }
 
@@ -89,7 +89,7 @@
       @apply left-12 text-transparent;
 
       &::before {
-        @apply content-[''] absolute bg-[url('/public/images/hero/icon/prev.svg')] bg-no-repeat bg-cover bg-center left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-12 h-12;
+        @apply content-[''] absolute bg-[url('/public/images/hero/icon/prev.svg')] bg-no-repeat bg-cover bg-center left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8;
       }
     }
   }
