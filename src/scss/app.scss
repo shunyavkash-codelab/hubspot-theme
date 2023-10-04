@@ -19,33 +19,39 @@ h6 {
 }
 
 h1 {
+  // font-size: 56px;
   @apply text-[56px];
 }
 
 h2 {
+  // font-size: 42px;
   @apply text-[42px];
 }
 
 h3 {
+  // font-size: 36px;
   @apply text-4xl;
 }
 
 h4 {
+  // font-size: 24px;
   @apply text-2xl;
 }
 
 h5 {
+  // font-size: 16px;
   @apply text-base;
 }
 
 h6 {
+  // font-size: 14px;
   @apply text-sm;
 }
 
 // btn
 .btn,
 .btn-cta {
-  @apply text-white font-medium text-sm bg-primary list-none py-3 px-5 leading-none rounded-sm inline-block transform transition-all duration-300;
+  @apply text-white font-medium text-sm bg-primary list-none py-3 px-5 leading-none rounded-sm inline-block transform transition-all duration-300 capitalize;
   &:hover {
     @apply bg-primary/80;
   }
@@ -73,10 +79,10 @@ h6 {
 
 // richtext
 .richtext {
-  @apply text-sm leading-normal;
+  @apply text-sm leading-[1.75];
   > p {
     &:not(:first-child) {
-      @apply mt-5;
+      @apply mt-2;
     }
   }
   .list-dots {
