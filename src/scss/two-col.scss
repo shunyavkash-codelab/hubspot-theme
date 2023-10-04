@@ -1,0 +1,14 @@
+.grid-row-reverse {
+  .img-content {
+    @apply md:order-2;
+    > div {
+      @apply left-auto right-0;
+    }
+    img {
+      @apply rounded-l-sm rounded-r-none;
+    }
+  }
+  .content {
+    @apply md:pr-4 max-lg:pl-0;
+  }
+}

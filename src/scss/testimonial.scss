@@ -1,8 +1,0 @@
-.testimonial-slider {
-  &:before {
-    @apply md:content-[''] md:absolute md:h-full md:right-full md:top-0 md:bg-dark md:z-10 md:w-[calc(100%*25)];
-  }
-  .richtext {
-    @apply leading-relaxed;
-  }
-}
