@@ -1,106 +1,94 @@
-.line-heading::before {
-  background-image: url("/public/images/background/Icoon_Wave.png");
-  @apply content-[''] bg-no-repeat bg-center bg-contain absolute left-1/2 transform -translate-x-1/2 top-5 w-40 h-full;
-}
+// .line-heading::before {
+//   background-image: url("/public/images/background/Icoon_Wave.png");
+//   @apply content-[''] bg-no-repeat bg-center bg-contain absolute left-1/2 transform -translate-x-1/2 top-5 w-40 h-full;
+// }
 
-.hero-slider-two {
-  .hero-img {
-    @apply relative;
-
-    &::before {
-      @apply content-[''] absolute left-0 top-0 w-full h-full bg-black/50 z-0;
-    }
-  }
-}
-
-.hero-slider-two [class*="slick-"] {
-  @apply h-full;
-
-  .hero-video iframe {
-    @apply min-w-full min-h-full absolute left-0 top-0;
-  }
-
-  .slick-active .slide-box {
-    transform: translateX(0);
-    opacity: 1;
-  }
-
-  .container {
-    overflow: hidden;
-  }
-
-  .slide-box {
-    transform: translateX(calc(100% + 12px));
-    opacity: 0;
-    transition-delay: 500ms;
-  }
-}
-
-.hero-slider {
-  .hero-img {
-    @apply relative;
-
-    &::before {
-      @apply content-[''] absolute left-0 top-0 w-full h-full bg-black opacity-50 z-0;
-    }
-  }
-}
-
-.hero-slider [class*="slick-"] {
-  @apply h-full;
-
-  .hero-video iframe {
-    @apply min-w-full min-h-full absolute left-0 top-0;
-  }
-
-  .slick-active .slide-box {
-    transform: translateX(0);
-    opacity: 1;
-  }
-
-  .container {
-    overflow: hidden;
-  }
-
-  .slide-box {
-    transform: translateX(calc(100% + 12px));
-    opacity: 0;
-    transition-delay: 500ms;
-  }
-}
-
-.hero-slider-two {
-  .btn-secondary {
-    @apply text-black;
-  }
-
-  .slick-arrow {
-    @apply absolute top-1/2 -translate-y-1/2 w-12 h-12 bg-secondary z-40 rounded-full;
-
-    &.slick-next {
-      @apply right-12 text-transparent;
+.hero {
+  .hero-slider {
+    .hero-img {
+      @apply relative;
 
       &::before {
-        @apply content-[''] absolute bg-[url('/public/images/hero/icon/next.svg')] bg-no-repeat bg-cover bg-center left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8;
+        @apply content-[''] absolute left-0 top-0 w-full h-full bg-black opacity-50 z-0;
       }
     }
+    [class*="slick-"] {
+      @apply h-full;
 
-    &.slick-prev {
-      @apply left-12 text-transparent;
+      .hero-video iframe {
+        @apply min-w-full min-h-full absolute left-0 top-0;
+      }
 
-      &::before {
-        @apply content-[''] absolute bg-[url('/public/images/hero/icon/prev.svg')] bg-no-repeat bg-cover bg-center left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8;
+      .slick-active .slide-box {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      .container {
+        overflow: hidden;
+      }
+
+      .slide-box {
+        transform: translateX(calc(100% + 12px));
+        opacity: 0;
+        transition-delay: 500ms;
       }
     }
   }
 }
 
-.tab-two {
-  .filter-tab-nav {
-    .filter-tab-btn {
-      @apply transition-all duration-300;
-      &.active {
-        @apply text-secondary border-b-2 border-secondary;
+.hero-v3 {
+  .hero-slider-v2 {
+    .hero-img {
+      @apply relative;
+
+      &::before {
+        @apply content-[''] absolute left-0 top-0 w-full h-full bg-black/50 z-0;
+      }
+    }
+    [class*="slick-"] {
+      @apply h-full;
+
+      .hero-video iframe {
+        @apply min-w-full min-h-full absolute left-0 top-0;
+      }
+
+      .slick-active .slide-box {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      .container {
+        overflow: hidden;
+      }
+
+      .slide-box {
+        transform: translateX(calc(100% + 12px));
+        opacity: 0;
+        transition-delay: 500ms;
+      }
+    }
+    .btn-secondary {
+      @apply text-black;
+    }
+
+    .slick-arrow {
+      @apply absolute top-1/2 -translate-y-1/2 w-12 h-12 bg-secondary z-40 rounded-full;
+
+      &.slick-next {
+        @apply right-12 text-transparent;
+
+        &::before {
+          @apply content-[''] absolute bg-[url('/public/images/hero/icon/next.svg')] bg-no-repeat bg-cover bg-center left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8;
+        }
+      }
+
+      &.slick-prev {
+        @apply left-12 text-transparent;
+
+        &::before {
+          @apply content-[''] absolute bg-[url('/public/images/hero/icon/prev.svg')] bg-no-repeat bg-cover bg-center left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8;
+        }
       }
     }
   }

@@ -4,7 +4,6 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  // font-family: "Heebo";
 }
 
 // btn
@@ -28,7 +27,7 @@ body {
 // richtext
 .richtext {
   > p {
-    @apply text-sm sm: text-base;
+    @apply text-sm sm:text-base;
 
     &:not(:first-child) {
       @apply mt-5;
@@ -36,7 +35,7 @@ body {
   }
 
   .list-dots {
-    @apply space-y-3 sm: space-y-4;
+    @apply space-y-3 sm:space-y-4;
 
     li {
       @apply relative pl-3 text-sm leading-tight font-medium;
@@ -91,7 +90,7 @@ body {
 }
 
 .hero-v2 {
-  background-image: url("https://img.freepik.com/free-photo/two-young-businesswomen-working-with-laptop-her-office_1301-6822.jpg?w=1060&t=st=1695633224~exp=1695633824~hmac=8b31470f4c61830bb38683652fd82e1ab4ddb3213add4846f20894a93114c767");
+  @apply bg-[url('https://img.freepik.com/free-photo/two-young-businesswomen-working-with-laptop-her-office_1301-6822.jpg?w=1060&t=st=1695633224~exp=1695633824~hmac=8b31470f4c61830bb38683652fd82e1ab4ddb3213add4846f20894a93114c767')];
 }
 
 .testimonial {

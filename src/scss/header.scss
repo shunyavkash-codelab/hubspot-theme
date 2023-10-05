@@ -1,19 +1,19 @@
-.menu-content.open {
-  transform: translate(0);
-}
-
-.menu {
-  li.menu-open {
-    .sub-menu {
-      max-height: 500px;
+header {
+  .menu-content.open {
+    transform: translate(0);
+  }
+  .menu {
+    li.menu-open {
+      .sub-menu {
+        max-height: 500px;
+      }
     }
   }
-}
-
-.menu {
-  li.menu-open {
-    .menu-icon {
-      transform: rotate(180deg);
+  .menu {
+    li.menu-open {
+      .menu-icon {
+        transform: rotate(180deg);
+      }
     }
   }
 }

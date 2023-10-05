@@ -6,7 +6,7 @@ body {
   @apply font-body text-lightBlack;
 }
 .hero {
-  height: var(--app-height);
+  @apply h-[var(--app-height)];
 }
 
 h1,
@@ -51,7 +51,7 @@ h6 {
 // btn
 .btn,
 .btn-cta {
-  @apply text-white font-medium text-sm bg-primary list-none py-3 px-5 leading-none rounded-sm inline-block transform transition-all duration-300 capitalize;
+  @apply text-white font-medium text-sm bg-primary list-none py-4 px-6 leading-none rounded-sm inline-block transform transition-all duration-300 capitalize;
   &:hover {
     @apply bg-primary/80;
   }
@@ -63,15 +63,14 @@ h6 {
   }
 }
 
-.animation-text {
-  span {
-    @apply relative;
-
-    &::before {
-      @apply content-[''] absolute w-full h-full left-0 top-0 bg-primary z-0;
-    }
-  }
-}
+// .animation-text {
+//   span {
+//     @apply relative;
+//     &::before {
+//       @apply content-[''] absolute w-full h-full left-0 top-0 bg-primary z-0;
+//     }
+//   }
+// }
 
 .truncate {
   @apply whitespace-normal;
@@ -104,5 +103,5 @@ h6 {
 }
 
 .scroll-none::-webkit-scrollbar {
-  display: none;
+  @apply hidden;
 }
