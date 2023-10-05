@@ -13,7 +13,7 @@
 <body>
 
     <!-- tab section -->
-    <section class="py-10 tab-section bg-[#F6F5F2]">
+    <section class="py-10 tab-section bg-[#F6F5F2] hidden">
         <div class="container">
             <div class="space-y-5 sm:space-y-10">
                 <div class="gap-10 md:flex md:items-center md:justify-between">
@@ -100,27 +100,27 @@
     <!-- End tab section -->
 
     <!-- tab-v2 section -->
-    <section class="relative hidden py-10 tab-v2-section sm:py-20">
+    <section class="relative  py-10 tab-v2-section sm:py-20">
         <div class="container">
             <h3 class="text-[28px] sm:text-4xl leading-none mb-16">The Main Events tab</h3>
-            <div class="justify-center gap-10 border-b-2 border-gray-300 md:flex md:items-center">
-                <div class="md:shrink-0">
-                    <ul class="flex items-center justify-center gap-8 filter-tab-nav max-sm:overflow-x-auto max-sm:px-3 max-sm:-mx-3 scroll-none">
-                        <li class="pb-6 leading-none shrink-0 filter-tab-btn active" data-filter="all"><a href="javascript:void(0);" class="text-lg font-semibold capitalize">All</a></li>
-                        <li class="pb-6 leading-none shrink-0 filter-tab-btn " data-filter="happening"><a href="javascript:void(0);" class="text-lg font-semibold capitalize ">Happening</a></li>
-                        <li class="pb-6 leading-none shrink-0 filter-tab-btn " data-filter="upcoming"><a href="javascript:void(0);" class="text-lg font-semibold capitalize ">Upcoming</a></li>
-                        <li class="pb-6 leading-none shrink-0 filter-tab-btn " data-filter="expired"><a href="javascript:void(0);" class="text-lg font-semibold capitalize ">Expired</a></li>
-                    </ul>
-                </div>
+            <div class="justify-center gap-10 max-sm:-mx-3 border-b-2 border-gray-300 md:flex md:items-center">
+                <ul class="flex items-center md:justify-center gap-8 filter-tab-nav max-sm:overflow-x-auto max-sm:px-3  scroll-none">
+                    <li class="pb-6 leading-none shrink-0 border-b-2 border-transparent filter-tab-btn active" data-filter="all"><a href="javascript:void(0);" class="text-lg font-semibold capitalize">All</a></li>
+                    <li class="pb-6 leading-none shrink-0 filter-tab-btn  border-b-2 border-transparent" data-filter="happening"><a href="javascript:void(0);" class="text-lg font-semibold capitalize ">Happening</a></li>
+                    <li class="pb-6 leading-none shrink-0 filter-tab-btn border-b-2 border-transparent" data-filter="upcoming"><a href="javascript:void(0);" class="text-lg font-semibold capitalize ">Upcoming</a></li>
+                    <li class="pb-6 leading-none shrink-0 filter-tab-btn border-b-2 border-transparent" data-filter="expired"><a href="javascript:void(0);" class="text-lg font-semibold capitalize ">Expired</a></li>
+                </ul>
             </div>
-            <div class="flex flex-wrap items-center -mx-3 gap-y-6 blog-cards">
-                <div class="w-full px-3 happening all">
-                    <div class="items-center p-4 md:grid md:grid-cols-12 gap-7">
-                        <div class="col-span-2 p-4 md:text-center">
-                            <span class="block text-6xl font-semibold text-secondary">30</span>
-                            <span class="block text-lg font-medium">September</span>
+            <div class="flex flex-wrap items-center  gap-y-6 blog-cards">
+                <div class="max-md:relative w-full lg:px-3 happening all">
+                    <div class="items-center lg:p-4 grid lg:grid-cols-12 lg:gap-7">
+                        <div class="max-md:top-6 max-md:left-6 max-md:absolute max-md:order-3  col-span-12 lg:col-span-2 md:my-4 md:text-center">
+                            <div class="max-md:bg-white max-md:p-2 max-md:rounded-sm">
+                                <span class="block text-4xl text-center  md:text-6xl font-semibold text-secondary">30</span>
+                                <span class="block text-lg font-medium">September</span>
+                            </div>
                         </div>
-                        <div class="col-span-6 p-4">
+                        <div class="max-md:order-2 col-span-12 lg:col-span-6 md:my-4">
                             <h3 class="mb-2 text-3xl font-semibold">Autumn Science Lecture</h3>
                             <div class="flex items-center gap-2 mb-2">
                                 <div class="flex items-center gap-2">
@@ -144,78 +144,8 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam non perferendis laborum, sequi odit doloribus fugiat nulla animi? Fugit deleniti vitae esse in distinctio. Omnis vero unde quibusdam repudiandae labore?</p>
                             </div>
                         </div>
-                        <div class="col-span-4 p-4">
+                        <div class="max-md:order-1 col-span-12 lg:col-span-4 md:my-4">
                             <img src="https://images.pexels.com/photos/7128957/pexels-photo-7128957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="object-cover w-full h-full">
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full px-3 upcoming all">
-                    <div class="items-center p-4 md:grid md:grid-cols-12 gap-7">
-                        <div class="col-span-2 p-4 md:text-center">
-                            <span class="block text-6xl font-semibold text-secondary">29</span>
-                            <span class="block text-lg font-medium">September</span>
-                        </div>
-                        <div class="col-span-6 p-4">
-                            <h3 class="mb-2 text-3xl font-semibold">Change career teaching</h3>
-                            <div class="flex items-center gap-2 mb-2">
-                                <div class="flex items-center gap-2">
-                                    <span class="inline-block w-5 h-5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-full h-full">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                    </span>
-                                    <span>08:00 - 17:00</span>
-                                </div>
-                                <div class="flex items-center gap-2">
-                                    <span class="inline-block w-5 h-5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-full h-full">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                    </span>
-                                    <span>08:00 - 17:00</span>
-                                </div>
-                            </div>
-                            <div class="truncate richtext line-clamp-3">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam non perferendis laborum, sequi odit doloribus fugiat nulla animi? Fugit deleniti vitae esse in distinctio. Omnis vero unde quibusdam repudiandae labore?</p>
-                            </div>
-                        </div>
-                        <div class="col-span-4 p-4">
-                            <img src="https://images.pexels.com/photos/5083407/pexels-photo-5083407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="object-cover w-full h-full">
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full px-3 expired all">
-                    <div class="items-center p-4 md:grid md:grid-cols-12 gap-7">
-                        <div class="col-span-2 p-4 md:text-center">
-                            <span class="block text-6xl font-semibold text-secondary">15</span>
-                            <span class="block text-lg font-medium">Jun</span>
-                        </div>
-                        <div class="col-span-6 p-4">
-                            <h3 class="mb-2 text-3xl font-semibold">Positive Psychology</h3>
-                            <div class="flex items-center gap-2 mb-2">
-                                <div class="flex items-center gap-2">
-                                    <span class="inline-block w-5 h-5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-full h-full">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                    </span>
-                                    <span>08:00 - 17:00</span>
-                                </div>
-                                <div class="flex items-center gap-2">
-                                    <span class="inline-block w-5 h-5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-full h-full">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                    </span>
-                                    <span>08:00 - 17:00</span>
-                                </div>
-                            </div>
-                            <div class="truncate richtext line-clamp-3">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam non perferendis laborum, sequi odit doloribus fugiat nulla animi? Fugit deleniti vitae esse in distinctio. Omnis vero unde quibusdam repudiandae labore?</p>
-                            </div>
-                        </div>
-                        <div class="col-span-4 p-4">
-                            <img src="https://images.pexels.com/photos/4134783/pexels-photo-4134783.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="object-cover w-full h-full">
                         </div>
                     </div>
                 </div>
