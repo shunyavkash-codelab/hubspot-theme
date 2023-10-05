@@ -27,7 +27,7 @@ body {
 
 // richtext
 .richtext {
-  >p {
+  > p {
     @apply text-sm sm: text-base;
 
     &:not(:first-child) {
@@ -72,7 +72,7 @@ body {
 
 // tab
 .tabs-nav {
-  >li {
+  > li {
     &.active {
       a {
         @apply border-primary;
@@ -83,7 +83,11 @@ body {
 
 .hero-v2::before {
   content: "";
-  background: linear-gradient(90deg, rgba(61, 13, 17, 1) 50%, rgba(0, 0, 0, 0.2) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(61, 13, 17, 1) 50%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
 }
 
 .hero-v2 {
@@ -96,6 +100,4 @@ body {
   .slick-slide {
     @apply p-4;
   }
-
-
 }
