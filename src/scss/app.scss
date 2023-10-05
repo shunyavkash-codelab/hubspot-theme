@@ -102,3 +102,12 @@ h6 {
 .scroll-none::-webkit-scrollbar {
   @apply hidden;
 }
+
+// accordian
+.accordian-item {
+  &.show {
+    .accordian-icon {
+      @apply rotate-90;
+    }
+  }
+}
