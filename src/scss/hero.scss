@@ -1,5 +1,5 @@
 .line-heading::before {
-  background-image: url("/public/Images/background/Icoon_Wave.png");
+  background-image: url("/public/images/background/Icoon_Wave.png");
   @apply content-[''] bg-no-repeat bg-center bg-contain absolute left-1/2 transform -translate-x-1/2 top-5 w-40 h-full;
 }
 
@@ -8,7 +8,7 @@
     @apply relative;
 
     &::before {
-      @apply content-[''] absolute left-0 top-0 w-full h-full bg-black opacity-50 z-0;
+      @apply content-[''] absolute left-0 top-0 w-full h-full bg-black/50 z-0;
     }
   }
 }
