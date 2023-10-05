@@ -3,6 +3,10 @@
 //   @apply content-[''] bg-no-repeat bg-center bg-contain absolute left-1/2 transform -translate-x-1/2 top-5 w-40 h-full;
 // }
 
+.fixed-header-hero {
+  @apply h-[var(--app-height)];
+}
+
 .hero {
   .hero-slider {
     .hero-img {
