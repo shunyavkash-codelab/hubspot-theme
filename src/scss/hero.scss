@@ -94,3 +94,14 @@
     }
   }
 }
+
+.tab-two {
+  .filter-tab-nav {
+    .filter-tab-btn {
+      @apply transition-all duration-300;
+      &.active {
+        @apply text-secondary border-b-2 border-secondary;
+      }
+    }
+  }
+}
