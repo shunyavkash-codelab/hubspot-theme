@@ -186,6 +186,67 @@
     </section>
     <!-- End hero-3 -->
 
+    <!-- logo section -->
+    <section class="py-10 bg-[#f3f3f3]">
+        <div class="container">
+            <div class="text-center max-sm:mb-5 sm:mb-10">
+                <h2 class="font-semibold leading-none capitalize max-sm:text-3xl sm:text-4xl">We wre <span class="inline-block text-secondary">partership</span> with this</h2>
+            </div>
+        </div>
+        <div class="logo-slider slick-indicator">
+            <div class="img-content grayscale">
+                <img src="images/logo/cukurova-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/temple-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/purdue-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/newcastle-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/nanjing-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/murdoch-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/keiser-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/drexel-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/cukurova-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/temple-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/purdue-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/newcastle-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/nanjing-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/murdoch-university.svg" class="w-auto h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/keiser-university.svg" class="w-auto h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/drexel-university.svg" class="w-auto h-full" alt="logo">
+            </div>
+        </div>
+
+    </section>
+    <!-- End logo section -->
+
     <!-- two-col section -->
     <section class="max-sm:py-10 sm:py-20 two-col-section">
         <div class="container">
@@ -217,7 +278,6 @@
         </div>
     </section>
     <!-- End two-col section -->
-
 
     <!-- tab section -->
     <section class="py-10 tab-section bg-[#F6F5F2] ">
@@ -437,7 +497,7 @@
     <!-- FAQs End -->
 
     <!-- testimonial section -->
-    <section class="max-sm:py-10 sm:py-20 overflow-hidden  bg-dark testimonial-section">
+    <section class="overflow-hidden max-sm:py-10 sm:py-20 bg-dark testimonial-section">
         <div class="container">
             <div class="md:flex md:items-center md:gap-7">
                 <div class="w-full md:w-1/2 lg:w-1/3 xl:w-[30%] text-white relative z-20 max-md:mb-8 section-header">
@@ -637,6 +697,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/app.js"></script>
+
+    <script>
+        $(".logo-slider").slick({
+            arrows: false,
+            dots: false,
+            slidesToShow: 9,
+            slidesToScroll: 2,
+            autoplay: false,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 6
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }
+            ]
+        });
+    </script>
+
     <script>
         $('.testimonial-slider').slick({
             infinite: true,
@@ -659,6 +751,7 @@
             ]
         });
     </script>
+
     <script>
         // tab-filter
         $(document).ready(function () {
@@ -686,6 +779,7 @@
             });
         });
     </script>
+
     <script>
         if (window.innerWidth < 1024) {
             // menu-open
@@ -717,6 +811,7 @@
             });
         }
     </script>
+
     <script>
         let header = document.querySelector("header").clientHeight;
         const appHeight = () => {
@@ -729,6 +824,7 @@
         window.addEventListener("resize", appHeight);
         appHeight();
     </script>
+
     <script>
         $(".hero-slider-v2").slick({
             arrows: true,
@@ -747,6 +843,7 @@
             ]
         });
     </script>
+
     <script>
         // faqs accordian
         $(".accordian-item.show .accordian-body").slideDown();
@@ -754,7 +851,6 @@
             if ($(this).parents(".accordian-item").hasClass("show")) {
                 $(this).parents(".accordian-item").removeClass("show");
                 $(this).parents().children(".accordian-body").slideUp();
-
             } else {
                 $(".accordian-item").removeClass("show");
                 $(".accordian-item .accordian-body").slideUp();
@@ -762,8 +858,8 @@
                 $(this).parents().children(".accordian-body").slideDown();
             }
         });
-
     </script>
+
 </body>
 
 </html>

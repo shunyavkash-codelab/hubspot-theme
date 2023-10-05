@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+
+    <!-- logo section -->
+    <section class="py-10 bg-[#f3f3f3]">
+        <div class="container">
+            <div class="text-center max-sm:mb-5 sm:mb-10">
+                <h2 class="font-semibold leading-none capitalize max-sm:text-3xl sm:text-4xl">We wre <span class="inline-block text-secondary">partership</span> with this</h2>
+            </div>
+        </div>
+        <div class="logo-slider slick-indicator">
+            <div class="img-content grayscale">
+                <img src="images/logo/cukurova-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/temple-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/purdue-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/newcastle-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/nanjing-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/murdoch-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/keiser-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/drexel-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/cukurova-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/temple-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/purdue-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/newcastle-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/nanjing-university.svg" class="w-full h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/murdoch-university.svg" class="w-auto h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/keiser-university.svg" class="w-auto h-full" alt="logo">
+            </div>
+            <div class="img-content grayscale">
+                <img src="images/logo/drexel-university.svg" class="w-auto h-full" alt="logo">
+            </div>
+        </div>
+
+    </section>
+    <!-- End logo section -->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/app.js"></script>
+
+    <script>
+        $(".logo-slider").slick({
+            arrows: false,
+            dots: false,
+            slidesToShow: 9,
+            slidesToScroll: 2,
+            autoplay: false,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 6
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }
+            ]
+        });
+    </script>
+
+</body>
+
+</html>

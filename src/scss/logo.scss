@@ -1,0 +1,10 @@
+.logo-slider {
+  &.slick-indicator {
+    .img-content {
+      @apply max-sm:h-12 sm:h-16 flex items-center justify-center px-2;
+      img {
+        @apply max-w-[130px];
+      }
+    }
+  }
+}
