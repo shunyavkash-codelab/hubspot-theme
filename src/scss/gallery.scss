@@ -1,0 +1,12 @@
+.gallary-section {
+  .filter-tab-nav {
+    .filter-tab-btn {
+      &.active {
+        @apply border-dark;
+        span {
+          @apply text-dark;
+        }
+      }
+    }
+  }
+}
