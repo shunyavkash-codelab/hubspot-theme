@@ -6,6 +6,10 @@ body {
   @apply font-body text-lightBlack;
 }
 
+::selection {
+  @apply text-white bg-secondary;
+}
+
 h1,
 h2,
 h3,
