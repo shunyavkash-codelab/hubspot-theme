@@ -1216,6 +1216,11 @@ video {
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
 .divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
@@ -1560,6 +1565,9 @@ video {
 }
 .pt-7 {
   padding-top: 1.75rem;
+}
+.pt-28 {
+  padding-top: 7rem;
 }
 .text-left {
   text-align: left;
@@ -2165,19 +2173,20 @@ header .menu li.menu-open .menu-icon {
   content: var(--tw-content);
 }
 
+.tab-section {
+  background-image: linear-gradient(160deg, #f3f3f3 50%, #ffcc70 200%);
+}
 .tab-section .filter-tab-btn {
   border-radius: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-
 @media not all and (min-width: 576px) {
   .tab-section .filter-tab-btn {
     padding-left: 0.625rem;
     padding-right: 0.625rem;
   }
 }
-
 @media (min-width: 576px) {
   .tab-section .filter-tab-btn {
     padding-left: 0.75rem;
@@ -2241,26 +2250,27 @@ header .menu li.menu-open .menu-icon {
   }
 }
 
-.logo-slider.slick-indicator .img-content {
+.logo-section {
+  background-image: linear-gradient(160deg, #f3f3f3 50%, #ffcc70 200%);
+}
+.logo-section .logo-slider.slick-indicator .img-content {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-
 @media not all and (min-width: 576px) {
-  .logo-slider.slick-indicator .img-content {
+  .logo-section .logo-slider.slick-indicator .img-content {
     height: 3rem;
   }
 }
-
 @media (min-width: 576px) {
-  .logo-slider.slick-indicator .img-content {
+  .logo-section .logo-slider.slick-indicator .img-content {
     height: 4rem;
   }
 }
-.logo-slider.slick-indicator .img-content img {
+.logo-section .logo-slider.slick-indicator .img-content img {
   max-width: 130px;
 }
 
@@ -2771,6 +2781,9 @@ header .menu li.menu-open .menu-icon {
   .max-sm\:mt-5 {
     margin-top: 1.25rem;
   }
+  .max-sm\:mt-6 {
+    margin-top: 1.5rem;
+  }
   .max-sm\:hidden {
     display: none;
   }
@@ -2826,6 +2839,10 @@ header .menu li.menu-open .menu-icon {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
+  .max-sm\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
   .max-sm\:pb-1 {
     padding-bottom: 0.25rem;
   }
@@ -2834,6 +2851,12 @@ header .menu li.menu-open .menu-icon {
   }
   .max-sm\:pb-4 {
     padding-bottom: 1rem;
+  }
+  .max-sm\:pb-12 {
+    padding-bottom: 3rem;
+  }
+  .max-sm\:pt-12 {
+    padding-top: 3rem;
   }
   .max-sm\:text-2xl {
     font-size: 1.5rem;
@@ -2915,6 +2938,9 @@ header .menu li.menu-open .menu-icon {
   .sm\:mt-5 {
     margin-top: 1.25rem;
   }
+  .sm\:mt-12 {
+    margin-top: 3rem;
+  }
   .sm\:h-10 {
     height: 2.5rem;
   }
@@ -2967,6 +2993,11 @@ header .menu li.menu-open .menu-icon {
     --tw-space-y-reverse: 0;
     margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+  }
+  .sm\:space-y-12 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(3rem * var(--tw-space-y-reverse));
   }
   .sm\:overflow-hidden {
     overflow: hidden;
@@ -3030,6 +3061,10 @@ header .menu li.menu-open .menu-icon {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
+  .sm\:py-28 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
   .sm\:pb-1 {
     padding-bottom: 0.25rem;
   }
@@ -3044,6 +3079,9 @@ header .menu li.menu-open .menu-icon {
   }
   .sm\:pl-6 {
     padding-left: 1.5rem;
+  }
+  .sm\:pt-28 {
+    padding-top: 7rem;
   }
   .sm\:text-2xl {
     font-size: 1.5rem;
@@ -3204,6 +3242,10 @@ header .menu li.menu-open .menu-icon {
   .md\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+  .md\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
   .md\:pl-11 {
     padding-left: 2.75rem;

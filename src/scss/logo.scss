@@ -1,9 +1,12 @@
-.logo-slider {
-  &.slick-indicator {
-    .img-content {
-      @apply max-sm:h-12 sm:h-16 flex items-center justify-center px-2;
-      img {
-        @apply max-w-[130px];
+.logo-section {
+  background-image: linear-gradient(160deg, #f3f3f3 50%, #ffcc70 200%);
+  .logo-slider {
+    &.slick-indicator {
+      .img-content {
+        @apply max-sm:h-12 sm:h-16 flex items-center justify-center px-2;
+        img {
+          @apply max-w-[130px];
+        }
       }
     }
   }
