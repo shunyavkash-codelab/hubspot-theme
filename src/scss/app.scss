@@ -135,3 +135,12 @@ h6 {
     }
   }
 }
+
+.trustee-section {
+  .main-card {
+    @apply -mx-5;
+    .card {
+      @apply px-5;
+    }
+  }
+}
