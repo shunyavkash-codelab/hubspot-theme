@@ -1474,10 +1474,6 @@ video {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -1799,6 +1795,11 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -1872,10 +1873,8 @@ h6 {
 .btn,
 .btn-cta {
   position: relative;
-  z-index: 10;
   display: inline-block;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  list-style-type: none;
   overflow: hidden;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
@@ -1896,7 +1895,7 @@ h6 {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 700ms;
+  transition-duration: 500ms;
 }
 .btn:before,
 .btn-cta:before {
@@ -1924,7 +1923,8 @@ h6 {
 }
 .btn:hover,
 .btn-cta:hover {
-  background-color: rgb(34 102 141 / 0.8);
+  --tw-bg-opacity: 1;
+  background-color: rgb(142 205 221 / var(--tw-bg-opacity));
 }
 .btn:hover:before,
 .btn-cta:hover:before {
@@ -2020,6 +2020,9 @@ header .menu li.menu-open .menu-icon {
   height: var(--app-height);
 }
 
+.hero .hero-slider:not(.slick-initialized) {
+  display: flex;
+}
 .hero .hero-slider .hero-img {
   position: relative;
 }
@@ -2059,6 +2062,9 @@ header .menu li.menu-open .menu-icon {
   transition-delay: 500ms;
 }
 
+.hero-v3 .hero-slider-v2:not(.slick-initialized) {
+  display: flex;
+}
 .hero-v3 .hero-slider-v2 .hero-img {
   position: relative;
 }
@@ -2464,6 +2470,10 @@ header .menu li.menu-open .menu-icon {
   content: var(--tw-content);
   left: 0px;
 }
+.before\:left-1\/2::before {
+  content: var(--tw-content);
+  left: 50%;
+}
 .before\:top-0::before {
   content: var(--tw-content);
   top: 0px;
@@ -2484,13 +2494,18 @@ header .menu li.menu-open .menu-icon {
   content: var(--tw-content);
   height: 100%;
 }
-.before\:w-2\/5::before {
+.before\:w-1\/2::before {
   content: var(--tw-content);
-  width: 40%;
+  width: 50%;
 }
 .before\:w-full::before {
   content: var(--tw-content);
   width: 100%;
+}
+.before\:-translate-x-1\/2::before {
+  content: var(--tw-content);
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .before\:bg-black\/50::before {
   content: var(--tw-content);
@@ -2573,8 +2588,14 @@ header .menu li.menu-open .menu-icon {
   .max-lg\:mt-5 {
     margin-top: 1.25rem;
   }
+  .max-lg\:h-6 {
+    height: 1.5rem;
+  }
   .max-lg\:h-screen {
     height: 100vh;
+  }
+  .max-lg\:w-6 {
+    width: 1.5rem;
   }
   .max-lg\:w-full {
     width: 100%;
@@ -2631,6 +2652,9 @@ header .menu li.menu-open .menu-icon {
   }
   .max-lg\:pt-2 {
     padding-top: 0.5rem;
+  }
+  .max-lg\:pt-4 {
+    padding-top: 1rem;
   }
   .max-lg\:text-center {
     text-align: center;
@@ -2833,13 +2857,13 @@ header .menu li.menu-open .menu-icon {
     font-size: 1rem;
     line-height: 1.5rem;
   }
-  .max-sm\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
   .max-sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+  .max-sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 @media (min-width: 576px) {
@@ -2953,13 +2977,6 @@ header .menu li.menu-open .menu-icon {
   .sm\:rounded-xl {
     border-radius: 0.75rem;
   }
-  .sm\:rounded-md {
-    border-radius: 0.375rem;
-  }
-  .sm\:rounded-r-md {
-    border-top-right-radius: 0.375rem;
-    border-bottom-right-radius: 0.375rem;
-  }
   .sm\:p-3 {
     padding: 0.75rem;
   }
@@ -3022,11 +3039,11 @@ header .menu li.menu-open .menu-icon {
   .sm\:pb-20 {
     padding-bottom: 5rem;
   }
-  .sm\:pl-6 {
-    padding-left: 1.5rem;
-  }
   .sm\:pb-5 {
     padding-bottom: 1.25rem;
+  }
+  .sm\:pl-6 {
+    padding-left: 1.5rem;
   }
   .sm\:text-2xl {
     font-size: 1.5rem;
@@ -3066,6 +3083,14 @@ header .menu li.menu-open .menu-icon {
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+  @media not all and (min-width: 768px) {
+    .sm\:max-md\:h-80 {
+      height: 20rem;
+    }
+    .sm\:max-md\:rounded-md {
+      border-radius: 0.375rem;
+    }
   }
 }
 @media (min-width: 768px) {
@@ -3116,8 +3141,11 @@ header .menu li.menu-open .menu-icon {
   .md\:h-1\/2 {
     height: 50%;
   }
-  .md\:h-\[450px\] {
-    height: 450px;
+  .md\:h-full {
+    height: 100%;
+  }
+  .md\:min-h-\[450px\] {
+    min-height: 450px;
   }
   .md\:w-1\/2 {
     width: 50%;
@@ -3161,23 +3189,27 @@ header .menu li.menu-open .menu-icon {
   .md\:gap-8 {
     gap: 2rem;
   }
+  .md\:rounded-r-md {
+    border-top-right-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+  }
   .md\:px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
-  }
-  .md\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
   }
   .md\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .md\:pl-11 {
+    padding-left: 2.75rem;
+  }
   .md\:pl-12 {
     padding-left: 3rem;
-  }
-  .md\:pl-16 {
-    padding-left: 4rem;
   }
   .md\:pl-6 {
     padding-left: 1.5rem;
@@ -3187,9 +3219,6 @@ header .menu li.menu-open .menu-icon {
   }
   .md\:pr-6 {
     padding-right: 1.5rem;
-  }
-  .md\:pl-11 {
-    padding-left: 2.75rem;
   }
   .md\:text-center {
     text-align: center;
@@ -3303,6 +3332,9 @@ header .menu li.menu-open .menu-icon {
   .lg\:h-3 {
     height: 0.75rem;
   }
+  .lg\:h-4 {
+    height: 1rem;
+  }
   .lg\:h-\[450px\] {
     height: 450px;
   }
@@ -3323,6 +3355,9 @@ header .menu li.menu-open .menu-icon {
   }
   .lg\:w-3 {
     width: 0.75rem;
+  }
+  .lg\:w-4 {
+    width: 1rem;
   }
   .lg\:w-\[450px\] {
     width: 450px;
@@ -3458,6 +3493,10 @@ header .menu li.menu-open .menu-icon {
   .lg\:leading-9 {
     line-height: 2.25rem;
   }
+  .lg\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
   .lg\:opacity-0 {
     opacity: 0;
   }
@@ -3465,6 +3504,10 @@ header .menu li.menu-open .menu-icon {
     --tw-shadow: 0 0 10px 2px rgba(0,0,0,0.08);
     --tw-shadow-colored: 0 0 10px 2px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+  .lg\:hover\:text-secondary:hover {
+    --tw-text-opacity: 1;
+    color: rgb(255 204 112 / var(--tw-text-opacity));
   }
   .group:hover .lg\:group-hover\:visible {
     visibility: visible;
@@ -3476,6 +3519,10 @@ header .menu li.menu-open .menu-icon {
   .group:hover .lg\:group-hover\:rotate-180 {
     --tw-rotate: 180deg;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .group:hover .lg\:group-hover\:text-secondary {
+    --tw-text-opacity: 1;
+    color: rgb(255 204 112 / var(--tw-text-opacity));
   }
   .group:hover .lg\:group-hover\:opacity-100 {
     opacity: 1;

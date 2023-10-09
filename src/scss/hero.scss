@@ -4,6 +4,9 @@
 
 .hero {
   .hero-slider {
+    &:not(.slick-initialized) {
+      @apply flex;
+    }
     .hero-img {
       @apply relative;
 
@@ -38,6 +41,9 @@
 
 .hero-v3 {
   .hero-slider-v2 {
+    &:not(.slick-initialized) {
+      @apply flex;
+    }
     .hero-img {
       @apply relative;
 
