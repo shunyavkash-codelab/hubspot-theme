@@ -32,7 +32,7 @@ h1 {
 
 h2 {
   // font-size: 42px;
-  @apply text-[42px];
+  @apply text-[44px];
 }
 
 h3 {
@@ -58,7 +58,7 @@ h6 {
 // btn
 .btn,
 .btn-cta {
-  @apply text-light-black font-medium bg-secondary overflow-hidden  text-sm  list-none py-4 px-7 leading-none rounded-md inline-block transform z-10  capitalize relative shadow-md transition-all duration-700;
+  @apply text-light-black font-medium bg-secondary overflow-hidden text-sm list-none py-4 px-7 leading-none rounded-md inline-block transform z-10 capitalize relative shadow-md transition-all duration-700;
 
   &:before {
     @apply content-[''] absolute left-1/2  top-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-dark transition-all duration-700 rounded-[200px] text-secondary -z-10 scale-[0] transform;
