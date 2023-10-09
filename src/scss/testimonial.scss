@@ -27,8 +27,7 @@
   }
   .testimonial-slider-content{
     .testimonial-content:before {
-      @apply content-[''] absolute top-1/2 left-1/2 w-full h-full opacity-5;
-      transform: translate(-50%, -50%);
+      @apply content-[''] absolute top-1/2 left-1/2 w-full h-full opacity-5  transform -translate-x-1/2 -translate-y-1/2;
       background: url("../Images/testimonials/quote-1.svg"), url("../Images/testimonials/quote-2.svg");
       background-repeat: no-repeat;
       background-position: 20% 20%, 80% 80%;
@@ -56,6 +55,10 @@
     &.slick-active.slick-center{
       transform: scale(1);
     }
+    .richtext:before {
+      @apply content-[''] absolute top-1/2 left-1/2 w-full h-full opacity-5  transform -translate-x-1/2 -translate-y-1/2 bg-[url('../Images/testimonials/quote-1.svg')] bg-no-repeat;
+      background-position: 20% 20%;
+    }
   }
 }
 .testimonial-slider-sec-v2{
@@ -71,16 +74,15 @@
       li{
         @apply mx-1 w-4 h-4 border border-solid border-black rounded-full shrink-0;
           &:before{
-            @apply content-[''] absolute rounded-full top-1/2 left-1/2 w-[10px] h-[10px] bg-black opacity-0;
-              transform: translate(-50%, -50%);
+            @apply content-[''] absolute rounded-full top-1/2 left-1/2 w-[10px] h-[10px] bg-black opacity-0 transform -translate-x-1/2 -translate-y-1/2;
             }
             button{
-              display: none;
+              @apply hidden;
             }
             &.slick-active{
               @apply relative;
                 &:before{
-                    opacity: 1;
+                  @apply opacity-100;
                 }
             }
           }
