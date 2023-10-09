@@ -1,8 +1,3 @@
-// .line-heading::before {
-//   background-image: url("/public/images/background/Icoon_Wave.png");
-//   @apply content-[''] bg-no-repeat bg-center bg-contain absolute left-1/2 transform -translate-x-1/2 top-5 w-40 h-full;
-// }
-
 .fixed-header-hero {
   @apply h-[var(--app-height)];
 }
@@ -50,6 +45,9 @@
         @apply content-[''] absolute left-0 top-0 w-full h-full bg-black/50 z-0;
       }
     }
+    .richtext {
+      @apply sm:text-[16px];
+    }
     [class*="slick-"] {
       @apply h-full;
 
@@ -58,18 +56,15 @@
       }
 
       .slick-active .slide-box {
-        transform: translateX(0);
-        opacity: 1;
+        @apply opacity-100 translate-x-0;
       }
 
       .container {
-        overflow: hidden;
+        @apply overflow-hidden;
       }
 
       .slide-box {
-        transform: translateX(calc(100% + 12px));
-        opacity: 0;
-        transition-delay: 500ms;
+        @apply delay-500 opacity-0 translate-x-[calc(100%+12px)];
       }
     }
     .btn-secondary {
@@ -80,7 +75,7 @@
       @apply absolute top-1/2 -translate-y-1/2 w-12 h-12 bg-secondary z-40 rounded-full;
 
       &.slick-next {
-        @apply right-8 text-transparent;
+        @apply right-6 text-transparent;
 
         &::before {
           @apply content-[''] absolute bg-[url('/public/images/hero/icon/next.svg')] bg-no-repeat bg-cover bg-center left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8;
@@ -88,7 +83,7 @@
       }
 
       &.slick-prev {
-        @apply left-8 text-transparent;
+        @apply left-6 text-transparent;
 
         &::before {
           @apply content-[''] absolute bg-[url('/public/images/hero/icon/prev.svg')] bg-no-repeat bg-cover bg-center left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8;
