@@ -10,6 +10,12 @@ body {
   @apply text-white bg-secondary;
 }
 
+p {
+  &::first-letter {
+    @apply capitalize;
+  }
+}
+
 h1,
 h2,
 h3,
