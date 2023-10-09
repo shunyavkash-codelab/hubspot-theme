@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply font-body text-lightBlack;
+  @apply font-body text-light-black;
 }
 
 ::selection {
@@ -52,12 +52,21 @@ h6 {
 // btn
 .btn,
 .btn-cta {
-  @apply text-white font-medium text-sm bg-primary list-none py-4 px-6 leading-none rounded-sm inline-block transform transition-all duration-300 capitalize;
+  @apply text-light-black font-medium bg-secondary overflow-hidden  text-sm  list-none py-4 px-7 leading-none rounded-md inline-block transform z-10  capitalize relative shadow-md transition-all duration-700;
+
+  &:before {
+    @apply content-[''] absolute left-1/2  top-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-dark transition-all duration-700 rounded-[200px] text-secondary -z-10 scale-[0] transform;
+  }
+
   &:hover {
     @apply bg-primary/80;
+
+    &:before {
+      @apply w-full h-full transform scale-[1.5];
+    }
   }
   &.btn-secondary {
-    @apply bg-secondary text-lightBlack;
+    @apply bg-secondary text-light-black;
     &:hover {
       @apply bg-secondary/80;
     }

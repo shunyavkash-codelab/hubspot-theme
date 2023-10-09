@@ -16,11 +16,11 @@ module.exports = {
         secondary: "#FFCC70",
         tertiary: "#FFFADD",
         dark: "#8ECDDD",
-        lightBlack:"#333333",
+        "light-black": "#333333",
       }),
       fontFamily: {
-        title: ['Gabarito', 'cursive'],
-        body: ['Poppins', 'sans-serif'],
+        title: ["Gabarito", "cursive"],
+        body: ["Poppins", "sans-serif"],
       },
       padding: {
         4.5: "1.15rem",
