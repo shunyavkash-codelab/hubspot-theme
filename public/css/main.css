@@ -1369,6 +1369,9 @@ video {
 .border-transparent {
   border-color: transparent;
 }
+.border-primary\/40 {
+  border-color: rgb(34 102 141 / 0.4);
+}
 .bg-\[\#F6F5F2\] {
   --tw-bg-opacity: 1;
   background-color: rgb(246 245 242 / var(--tw-bg-opacity));
@@ -1420,6 +1423,9 @@ video {
 }
 .bg-white\/80 {
   background-color: rgb(255 255 255 / 0.8);
+}
+.bg-dark\/80 {
+  background-color: rgb(142 205 221 / 0.8);
 }
 .bg-\[url\(\'\.\.\/Images\/testimonials\/bg-line-2\.png\'\)\] {
   background-image: url('../Images/testimonials/bg-line-2.png');
@@ -2983,6 +2989,9 @@ header .menu li.menu-open .menu-icon {
   .max-sm\:h-64 {
     height: 16rem;
   }
+  .max-sm\:w-full {
+    width: 100%;
+  }
   .max-sm\:max-w-sm {
     max-width: 24rem;
   }
@@ -3154,6 +3163,15 @@ header .menu li.menu-open .menu-icon {
   }
   .sm\:w-16 {
     width: 4rem;
+  }
+  .sm\:w-\[314px\] {
+    width: 314px;
+  }
+  .sm\:w-\[400px\] {
+    width: 400px;
+  }
+  .sm\:w-full {
+    width: 100%;
   }
   .sm\:max-w-2xl {
     max-width: 42rem;
@@ -3383,6 +3401,9 @@ header .menu li.menu-open .menu-icon {
   }
   .md\:w-\[500px\] {
     width: 500px;
+  }
+  .md\:w-\[314px\] {
+    width: 314px;
   }
   .md\:shrink-0 {
     flex-shrink: 0;

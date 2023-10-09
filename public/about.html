@@ -12,50 +12,47 @@
 </head>
 
 <body>
-
     <!-- header -->
     <header class="py-4 shadow-md bg-light-black">
         <div class="container">
             <nav>
                 <div class="flex items-center justify-between">
-                    <a href="javascript:void(0);" class="flex items-center flex-shrink-0 h-12 transition-all duration-500 logo-img">
-                        <img src="images/logo/logo-1.png" class="object-cover w-auto h-full" alt="" />
+                    <a href="index.html" class="flex items-center flex-shrink-0 h-12 transition-all duration-500 logo-img">
+                        <img src="images/logo/logo-1.png" class="object-cover w-auto h-full" alt="logo" />
                     </a>
-                    <div class="flex-shrink-0 leading-none lg:hidden">
-                        <button type="button" class="relative inline-flex items-center justify-center text-gray-400 rounded-md toggle-menu" aria-controls="mobile-menu" aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                    <div class="inline-flex flex-shrink-0 lg:hidden">
+                        <button type="button" class="relative inline-flex items-center justify-center text-white toggle-menu" aria-controls="mobile-menu" aria-expanded="false">
+                            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
                             </svg>
                         </button>
                     </div>
-                    <div class="menu-content max-lg:bg-[#ebebeb] max-lg:fixed max-lg:top-0 max-lg:left-0  max-lg:w-full max-lg:h-screen max-lg:-translate-y-full transition-all duration-500 max-lg:pt-2 max-lg:pb-2 max-lg:overflow-y-auto max-lg:z-50">
+                    <div class="menu-content max-lg:bg-[#ebebeb] max-lg:fixed max-lg:top-0 max-lg:left-0  max-lg:w-full max-lg:h-screen max-lg:-translate-y-full transition-all duration-500 max-lg:pt-4 max-lg:pb-2 max-lg:overflow-y-auto max-lg:z-50">
                         <div class="flex items-center lg:ml-6 max-lg:container max-lg:mx-auto max-lg:px-3 max-lg:flex-col max-lg:items-start">
                             <div class="flex items-center justify-between w-full mb-5 lg:hidden">
-                                <a href="javascript:void(0);" class="flex items-center flex-shrink-0 h-12 transition-all duration-500 logo-img">
-                                    <img src="images/logo/logo-1.png" class="object-cover w-auto h-full" alt="" />
+                                <a href="index.html" class="flex items-center flex-shrink-0 h-12 transition-all duration-500 logo-img">
+                                    <img src="images/logo/logo-1.png" class="object-cover w-auto h-full" alt="logo" />
                                 </a>
-                                <div>
-                                    <button type="button" class="relative inline-flex items-center justify-center text-gray-400 rounded-md toggle-menu" aria-controls="mobile-menu" aria-expanded="false">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                            <path d="M18 6l-12 12"></path>
-                                            <path d="M6 6l12 12"></path>
+                                <div class="inline-flex">
+                                    <button type="button" class="relative inline-flex items-center justify-center rotate-45 text-light-black toggle-menu" aria-controls="mobile-menu" aria-expanded="false">
+                                        <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
                                         </svg>
                                     </button>
                                 </div>
                             </div>
-                            <ul class="flex menu max-lg:flex-col lg:space-x-10 max-lg:w-full">
+                            <ul class="flex lg:items-center menu max-lg:flex-col lg:space-x-10 max-lg:w-full">
                                 <li>
-                                    <a href="index.html" class="inline-block py-4 text-sm font-medium text-white rounded-md max-lg:w-full lg:py-5">Home</a>
+                                    <a href="index.html" class="inline-block py-4 text-xl font-medium transition-colors duration-500 ease-in-out rounded-md lg:text-sm lg:text-white max-lg:w-full lg:py-5 lg:hover:text-secondary">Home</a>
                                 </li>
                                 <li>
-                                    <a href="about.html" class="inline-block py-4 text-sm font-medium text-white rounded-md max-lg:w-full lg:py-5">About Us</a>
+                                    <a href="about.html" class="inline-block py-4 text-xl font-medium transition-colors duration-500 ease-in-out rounded-md lg:text-sm lg:text-white max-lg:w-full lg:py-5 lg:hover:text-secondary">About Us</a>
                                 </li>
                                 <li class="relative group">
                                     <div class="flex items-center max-lg:justify-between">
-                                        <a href="javascript:void(0);" class="inline-block py-4 text-sm font-medium text-white rounded-md max-lg:w-full lg:py-5">School Information</a>
-                                        <div class="ml-2 transition-all duration-500 menu-icon lg:group-hover:rotate-180 text-white">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                        <a href="javascript:void(0);" class="inline-block py-4 text-xl font-medium transition-colors duration-500 ease-in-out rounded-md lg:text-sm lg:text-white max-lg:w-full lg:py-5 lg:group-hover:text-secondary">School Information</a>
+                                        <div class="ml-2 transition-all duration-500 lg:text-white menu-icon lg:group-hover:rotate-180">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="max-lg:w-6 lg:w-4 max-lg:h-6 lg:h-4">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                                             </svg>
                                         </div>
@@ -63,34 +60,32 @@
                                     <div class="sub-menu  z-50 lg:absolute lg:top-full lg:left-0 lg:min-w-[200px] lg:bg-white lg:rounded-md lg:shadow-[0_0_10px_2px_rgba(0,0,0,0.08)] transition-all duration-500 lg:invisible lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 lg:group-hover:max-h-max max-h-0 overflow-hidden">
                                         <ul class="max-lg:pl-3 max-lg:pb-2.5 max-lg:pr-0 space-y-3 lg:p-3">
                                             <li>
-                                                <a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm ">House System</a>
+                                                <a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm lg:hover:text-secondary">House System</a>
                                             </li>
                                             <li>
-                                                <a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm ">Excursions & Field Trips</a>
+                                                <a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm lg:hover:text-secondary">Excursions & Field Trips</a>
                                             </li>
                                             <li>
-                                                <a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm ">Sports Infrastructure</a>
+                                                <a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm lg:hover:text-secondary">Sports Infrastructure</a>
                                             </li>
                                             <li>
-                                                <a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm ">Community Service</a>
+                                                <a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm lg:hover:text-secondary">Community Service</a>
                                             </li>
                                             <li>
-                                                <a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm ">Environmental Care</a>
+                                                <a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm lg:hover:text-secondary">Environmental Care</a>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="inline-block py-4 text-sm font-medium text-white rounded-md max-lg:w-full lg:py-5">Admissions</a>
+                                    <a href="javascript:void(0);" class="inline-block py-4 text-xl font-medium transition-colors duration-500 ease-in-out rounded-md lg:text-sm lg:text-white max-lg:w-full lg:py-5 lg:hover:text-secondary">Admissions</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="inline-block py-4 text-sm font-medium text-white rounded-md max-lg:w-full lg:py-5">
-                                        Contact</a>
+                                    <div class="inline-flex max-lg:mt-8">
+                                        <a href="javascript:void(0);" class="btn">get in touch</a>
+                                    </div>
                                 </li>
                             </ul>
-                            <!-- <div class="lg:ml-10">
-                                        <a href="javascript:void(0);" class="btn">Get in touch</a>
-                                    </div> -->
                         </div>
                     </div>
                 </div>
@@ -113,66 +108,68 @@
     <section class="relative max-sm:py-10 sm:py-20 trustee-section">
         <div class="container">
             <div class="mb-4">
-                <h2 class="font-semibold leading-none capitalize max-sm:text-4xl mb-4"> <span class="text-secondary inline-block">Trustees</span> profile</h2>
-                <p class=" text-light-black/70 richtext max-w-4xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi velit neque consequatur unde. Nihil fugit excepturi ut, illo suscipit porro eos illum voluptatem? Qui quaerat unde itaque placeat consectetur rerum?</p>
+                <h2 class="font-semibold leading-none capitalize max-sm:text-4xl mb-4">Trustees <span class="text-secondary inline-block"> profile</span></h2>
+                <div class="line-clamp-3 truncate  text-light-black/70 richtext max-w-4xl ">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi velit neque consequatur unde. Nihil fugit excepturi ut, illo suscipit porro eos illum voluptatem? Qui quaerat unde itaque placeat consectetur rerum?</p>
+                </div>
             </div>
             <div class="flex  items-center -mx-5 justify-center flex-wrap main-card gap-y-8">
                 <div class="card px-5">
-                    <div class="w-[314px]">
+                    <div class="max-sm:w-full sm:w-[400px] md:w-[314px]">
                         <div class="relative">
                             <div class="w-full h-[450px] rounded-xl">
                                 <img src="https://worldywcacouncil.org/wp-content/uploads/2014/10/speaker-2-v2.jpg" alt="profiel-card" srcset="" class="w-full h-full rounded-xl object-cover">
                             </div>
                             <div class="absolute shadow-sm bottom-4 right-4 left-4 ">
-                                <div class="bg-white/80 p-4 w-full rounded-xl">
-                                    <h4 class="text-2xl">Oliver Noah</h4>
-                                    <p class="text-black/70 text-sm">Managing Trustee</p>
+                                <div class="bg-dark/80 p-4 w-full rounded-xl">
+                                    <h4 class="text-2xl text-white">Oliver Noah</h4>
+                                    <span class="text-black/70 text-sm">Managing Trustee</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="card px-5">
-                    <div class="w-[314px]">
+                    <div class="max-sm:w-full sm:w-[400px] md:w-[314px]">
                         <div class="relative">
                             <div class="w-full h-[450px] rounded-xl">
                                 <img src="https://salondesmaires-gard.com/wp-content/uploads/2015/04/speaker-1-v2.jpg" alt="profiel-card" srcset="" class="w-full h-full rounded-xl object-cover">
                             </div>
                             <div class="absolute shadow-sm bottom-4 right-4 left-4 ">
-                                <div class="bg-white/80 p-4 w-full rounded-xl">
-                                    <h3 class="text-2xl">Jack Liam</h3>
-                                    <p class="text-black/70 text-sm">Trustee</p>
+                                <div class="bg-dark/80 p-4 w-full rounded-xl">
+                                    <h4 class="text-2xl text-white">Jack Liam</h4>
+                                    <span class="text-black/70 text-sm">Trustee</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="card px-5">
-                    <div class="w-[314px]">
+                    <div class="max-sm:w-full sm:w-[400px] md:w-[314px]">
                         <div class="relative">
                             <div class="w-full h-[450px] rounded-xl">
                                 <img src="https://nam.edu/wp-content/uploads/2021/02/John-Doe-Headshot-scaled.jpg" alt="profiel-card" srcset="" class="w-full h-full rounded-xl object-cover">
                             </div>
                             <div class="absolute shadow-sm bottom-4 right-4 left-4 ">
-                                <div class="bg-white/80 p-4 w-full rounded-xl">
-                                    <h3 class="text-2xl">Jacob William</h3>
-                                    <p class="text-black/70 text-sm">Trustee</p>
+                                <div class="bg-dark/80 p-4 w-full rounded-xl">
+                                    <h4 class="text-2xl text-white">Jacob William</h4>
+                                    <span class="text-black/70 text-sm">Trustee</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="card px-5">
-                    <div class="w-[314px]">
+                    <div class="max-sm:w-full sm:w-[400px] md:w-[314px]">
                         <div class="relative">
                             <div class="w-full h-[450px] rounded-xl">
                                 <img src="https://worldywcacouncil.org/wp-content/uploads/2014/10/speaker-2-v2.jpg" alt="profiel-card" srcset="" class="w-full h-full rounded-xl object-cover">
                             </div>
 
                             <div class="absolute shadow-sm bottom-4 right-4 left-4 ">
-                                <div class="bg-white/80 p-4 w-full rounded-xl">
-                                    <h4 class="text-2xl">Oliver Noah</h4>
-                                    <p class="text-black/70 text-sm">Managing Trustee</p>
+                                <div class="bg-dark/80 p-4 w-full rounded-xl">
+                                    <h4 class="text-2xl text-white">Oliver Noah</h4>
+                                    <span class="text-black/70 text-sm">Trustee</span>
                                 </div>
                             </div>
                         </div>
