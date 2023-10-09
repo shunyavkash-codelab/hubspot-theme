@@ -6,3 +6,34 @@
     @apply leading-relaxed;
   }
 }
+
+
+// Puja testimonial Section
+
+.testimonial-slider-sec{
+  .slick-list{
+    padding: 0 !important;
+  }
+  .testimonial-slider-image{
+    .slick-list .slick-track{
+      @apply flex justify-center gap-5;
+      .slick-center > div{
+        @apply border-2 border-solid border-secondary filter-none;
+      }
+    }
+    .testimonial-img{
+      filter: blur(2px);
+    }
+  }
+  .testimonial-slider-content{
+    .testimonial-content:before {
+      @apply content-[''] absolute top-1/2 left-1/2 w-full h-full opacity-5;
+      transform: translate(-50%, -50%);
+      background: url("../Images/testimonials/quote-1.svg"), url("../Images/testimonials/quote-2.svg");
+      background-repeat: no-repeat;
+      background-position: 20% 20%, 80% 80%;
+    }
+  } 
+    
+}
+
