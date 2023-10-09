@@ -84,7 +84,7 @@
         @apply right-6 text-transparent;
 
         &::before {
-          @apply content-[''] absolute bg-[url('/public/images/hero/icon/next.svg')] bg-no-repeat bg-cover bg-center left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8;
+          @apply content-[''] absolute bg-[url('../images/hero/icon/next.svg')] bg-no-repeat bg-cover bg-center left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8;
         }
       }
 
@@ -92,7 +92,7 @@
         @apply left-6 text-transparent;
 
         &::before {
-          @apply content-[''] absolute bg-[url('/public/images/hero/icon/prev.svg')] bg-no-repeat bg-cover bg-center left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8;
+          @apply content-[''] absolute bg-[url('../images/hero/icon/prev.svg')] bg-no-repeat bg-cover bg-center left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8;
         }
       }
     }
