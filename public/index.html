@@ -115,7 +115,7 @@
                                 <div class="max-w-4xl mx-auto truncate richtext line-clamp-3">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus in nobis porro numquam, similique est accusantium enim totam aut soluta magnam ipsum dolorum saepe, cumque amet mollitia, dignissimos laboriosam dolore!</p>
                                 </div>
-                                <div>
+                                <div class="inline-flex">
                                     <a href="javascript:void(0);" class="btn btn-secondary">Click here</a>
                                 </div>
                             </div>
@@ -246,7 +246,7 @@
     <section class="max-sm:py-10 sm:py-20 two-col-section">
         <div class="container">
             <div class="mb-4 text-center section-header">
-                <span class="inline-block mb-3 sm:mb-4 text-lg !leading-none capitalize sm:text-xl text-secondary">welcome!</span>
+                <span class="inline-block mb-3 sm:mb-4 text-lg !leading-none capitalize sm:text-xl text-secondary relative pb-2 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-2/5 before:h-0.5 before:bg-light-black">welcome!</span>
                 <h2 class="font-semibold leading-none capitalize max-sm:text-4xl">To <span class="inline-block text-secondary">XYZ</span> School</h2>
             </div>
         </div>
@@ -258,13 +258,13 @@
                             <img src="https://img.freepik.com/free-photo/kids-getting-back-school-together_23-2149507650.jpg" class="object-cover w-full h-full rounded-r-sm" alt="two-col">
                         </div>
                     </div>
-                    <div class="space-y-3 content sm:space-y-5 md:pl-12 lg:pl-20 max-md:mt-5">
+                    <div class="space-y-3 content sm:space-y-5 md:pl-12 lg:pl-16 max-md:mt-5">
                         <h3 class="font-semibold leading-none capitalize max-sm:text-3xl sm:text-4xl">about <span class="inline-block text-secondary">us</span></h3>
                         <div class="max-w-lg richtext">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus et suscipit, soluta vero voluptatibus iste natus enim dolorum quas laboriosam cum omnis animi pariatur blanditiis nulla facilis esse labore ratione.</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consequatur at quos, nostrum quae nobis, magnam, rem totam provident deleniti earum inventore quaerat molestiae iusto. Quo aliquam esse sapiente deleniti omnis magnam nostrum ab dolor nemo.</p>
                         </div>
-                        <div>
+                        <div class="inline-flex">
                             <a href="javascript:void(0);" class="btn">read more</a>
                         </div>
                     </div>
@@ -284,10 +284,10 @@
                     </div>
                     <div class="lg:shrink-0">
                         <ul class="flex items-center gap-3 filter-tab-nav max-md:overflow-x-auto max-sm:px-3 max-sm:-mx-3 scroll-none">
-                            <li class="leading-none shrink-0"><a href="javascript:void(0);" data-filter="all" class="btn filter-tab-btn active">see all</a></li>
-                            <li class="leading-none shrink-0"><a href="javascript:void(0);" data-filter="sport" class="btn filter-tab-btn">sports</a></li>
-                            <li class="leading-none shrink-0"><a href="javascript:void(0);" data-filter="event" class="btn filter-tab-btn">events</a></li>
-                            <li class="leading-none shrink-0"><a href="javascript:void(0);" data-filter="teaching" class="btn filter-tab-btn">teaching</a></li>
+                            <li class="inline-flex shrink-0"><a href="javascript:void(0);" data-filter="all" class="btn filter-tab-btn active">see all</a></li>
+                            <li class="inline-flex shrink-0"><a href="javascript:void(0);" data-filter="sport" class="btn filter-tab-btn">sports</a></li>
+                            <li class="inline-flex shrink-0"><a href="javascript:void(0);" data-filter="event" class="btn filter-tab-btn">events</a></li>
+                            <li class="inline-flex shrink-0"><a href="javascript:void(0);" data-filter="teaching" class="btn filter-tab-btn">teaching</a></li>
                         </ul>
                     </div>
                 </div>
@@ -353,7 +353,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="text-center">
+                <div class="inline-flex justify-center w-full">
                     <a href="javascript:void(0);" class="btn">view all</a>
                 </div>
             </div>
@@ -371,10 +371,10 @@
                             <img src="https://images.pexels.com/photos/1001914/pexels-photo-1001914.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="object-cover w-full h-full">
                         </div>
                     </div>
-                    <div class="py-12 md:pl-20 md:w-1/2 ">
-                        <div class=" transition-all transform accordian-content">
-                            <div class=" transition-all duration-300 transform border-b-2 accordian-item border-primary/50 show">
-                                <a href="javascript:void(0);" class="flex items-center justify-between accordian-button py-5">
+                    <div class="py-12 md:pl-16 md:w-1/2">
+                        <div class="transition-all transform accordian-content">
+                            <div class="transition-all duration-300 transform border-b-2 accordian-item border-primary/50 show">
+                                <a href="javascript:void(0);" class="flex items-center justify-between py-5 accordian-button">
                                     <h4 class="text-xl">Neue Marke, noch keine Kunden?</h4>
                                     <span class="inline-block w-6 h-6 transition-all duration-300 transform accordian-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full icon icon-tabler icon-tabler-chevron-right" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -383,16 +383,14 @@
                                         </svg>
                                     </span>
                                 </a>
-                                <div class="hidden accordian-body ">
-                                    <div class="py-5 richtext">
-                                        <p>Wenn du ein neues Unternehmen oder Produkt launchst, fangen wir ganz oben im Funnel an.
-                                            Mit Performance Marketing und einer modernen Website sorgen wir für Aufmerksamkeit, Sichtbarkeit und Leads
-                                            auf digitalen Kanälen.</p>
+                                <div class="hidden accordian-body">
+                                    <div class="pb-5 richtext">
+                                        <p>Wenn du ein neues Unternehmen oder Produkt launchst, fangen wir ganz oben im Funnel an. Mit Performance Marketing und einer modernen Website sorgen wir für Aufmerksamkeit Sichtbarkeit und Leads auf digitalen Kanälen.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class=" transition-all duration-300 transform border-b-2 accordian-item border-primary/50">
-                                <a href="javascript:void(0);" class="flex items-center justify-between accordian-button py-5">
+                            <div class="transition-all duration-300 transform border-b-2 accordian-item border-primary/50">
+                                <a href="javascript:void(0);" class="flex items-center justify-between py-5 accordian-button">
                                     <h4 class="text-xl">Neue Marke, noch keine Kunden?</h4>
                                     <span class="inline-block w-6 h-6 transition-all duration-300 transform accordian-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full icon icon-tabler icon-tabler-chevron-right" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -401,16 +399,14 @@
                                         </svg>
                                     </span>
                                 </a>
-                                <div class="hidden accordian-body ">
-                                    <div class="py-5 richtext">
-                                        <p>Wenn du ein neues Unternehmen oder Produkt launchst, fangen wir ganz oben im Funnel an.
-                                            Mit Performance Marketing und einer modernen Website sorgen wir für Aufmerksamkeit, Sichtbarkeit und Leads
-                                            auf digitalen Kanälen.</p>
+                                <div class="hidden accordian-body">
+                                    <div class="pb-5 richtext">
+                                        <p>Wenn du ein neues Unternehmen oder Produkt launchst, fangen wir ganz oben im Funnel an. Mit Performance Marketing und einer modernen Website sorgen wir für Aufmerksamkeit Sichtbarkeit und Leads auf digitalen Kanälen.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class=" transition-all duration-300 transform border-b-2 accordian-item border-primary/50">
-                                <a href="javascript:void(0);" class="flex items-center justify-between accordian-button py-5">
+                            <div class="transition-all duration-300 transform border-b-2 accordian-item border-primary/50">
+                                <a href="javascript:void(0);" class="flex items-center justify-between py-5 accordian-button">
                                     <h4 class="text-xl">Neue Marke, noch keine Kunden?</h4>
                                     <span class="inline-block w-6 h-6 transition-all duration-300 transform accordian-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full icon icon-tabler icon-tabler-chevron-right" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -419,16 +415,14 @@
                                         </svg>
                                     </span>
                                 </a>
-                                <div class="hidden accordian-body ">
-                                    <div class="py-5 richtext">
-                                        <p>Wenn du ein neues Unternehmen oder Produkt launchst, fangen wir ganz oben im Funnel an.
-                                            Mit Performance Marketing und einer modernen Website sorgen wir für Aufmerksamkeit, Sichtbarkeit und Leads
-                                            auf digitalen Kanälen.</p>
+                                <div class="hidden accordian-body">
+                                    <div class="pb-5 richtext">
+                                        <p>Wenn du ein neues Unternehmen oder Produkt launchst, fangen wir ganz oben im Funnel an. Mit Performance Marketing und einer modernen Website sorgen wir für Aufmerksamkeit Sichtbarkeit und Leads auf digitalen Kanälen.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class=" transition-all duration-300 transform border-b-2 accordian-item border-primary/50">
-                                <a href="javascript:void(0);" class="flex items-center justify-between accordian-button py-5">
+                            <div class="transition-all duration-300 transform border-b-2 accordian-item border-primary/50">
+                                <a href="javascript:void(0);" class="flex items-center justify-between py-5 accordian-button">
                                     <h4 class="text-xl">Neue Marke, noch keine Kunden?</h4>
                                     <span class="inline-block w-6 h-6 transition-all duration-300 transform accordian-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full icon icon-tabler icon-tabler-chevron-right" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -437,16 +431,14 @@
                                         </svg>
                                     </span>
                                 </a>
-                                <div class="hidden accordian-body ">
-                                    <div class="py-5 richtext">
-                                        <p>Wenn du ein neues Unternehmen oder Produkt launchst, fangen wir ganz oben im Funnel an.
-                                            Mit Performance Marketing und einer modernen Website sorgen wir für Aufmerksamkeit, Sichtbarkeit und Leads
-                                            auf digitalen Kanälen.</p>
+                                <div class="hidden accordian-body">
+                                    <div class="pb-5 richtext">
+                                        <p>Wenn du ein neues Unternehmen oder Produkt launchst, fangen wir ganz oben im Funnel an. Mit Performance Marketing und einer modernen Website sorgen wir für Aufmerksamkeit Sichtbarkeit und Leads auf digitalen Kanälen.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class=" transition-all duration-300 transform border-b-2 accordian-item border-primary/50">
-                                <a href="javascript:void(0);" class="flex items-center justify-between accordian-button py-5">
+                            <div class="transition-all duration-300 transform border-b-2 accordian-item border-primary/50">
+                                <a href="javascript:void(0);" class="flex items-center justify-between py-5 accordian-button">
                                     <h4 class="text-xl">Neue Marke, noch keine Kunden?</h4>
                                     <span class="inline-block w-6 h-6 transition-all duration-300 transform accordian-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full icon icon-tabler icon-tabler-chevron-right" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -455,16 +447,14 @@
                                         </svg>
                                     </span>
                                 </a>
-                                <div class="hidden accordian-body ">
-                                    <div class="py-5 richtext">
-                                        <p>Wenn du ein neues Unternehmen oder Produkt launchst, fangen wir ganz oben im Funnel an.
-                                            Mit Performance Marketing und einer modernen Website sorgen wir für Aufmerksamkeit, Sichtbarkeit und Leads
-                                            auf digitalen Kanälen.</p>
+                                <div class="hidden accordian-body">
+                                    <div class="pb-5 richtext">
+                                        <p>Wenn du ein neues Unternehmen oder Produkt launchst, fangen wir ganz oben im Funnel an. Mit Performance Marketing und einer modernen Website sorgen wir für Aufmerksamkeit Sichtbarkeit und Leads auf digitalen Kanälen.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class=" transition-all duration-300 transform border-b-2 accordian-item border-primary/50">
-                                <a href="javascript:void(0);" class="flex items-center justify-between accordian-button py-5">
+                            <div class="transition-all duration-300 transform border-b-2 accordian-item border-primary/50">
+                                <a href="javascript:void(0);" class="flex items-center justify-between py-5 accordian-button">
                                     <h4 class="text-xl">Neue Marke, noch keine Kunden?</h4>
                                     <span class="inline-block w-6 h-6 transition-all duration-300 transform accordian-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full icon icon-tabler icon-tabler-chevron-right" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -473,11 +463,9 @@
                                         </svg>
                                     </span>
                                 </a>
-                                <div class="hidden accordian-body ">
-                                    <div class="py-5 richtext">
-                                        <p>Wenn du ein neues Unternehmen oder Produkt launchst, fangen wir ganz oben im Funnel an.
-                                            Mit Performance Marketing und einer modernen Website sorgen wir für Aufmerksamkeit, Sichtbarkeit und Leads
-                                            auf digitalen Kanälen.</p>
+                                <div class="hidden accordian-body">
+                                    <div class="pb-5 richtext">
+                                        <p>Wenn du ein neues Unternehmen oder Produkt launchst, fangen wir ganz oben im Funnel an. Mit Performance Marketing und einer modernen Website sorgen wir für Aufmerksamkeit Sichtbarkeit und Leads auf digitalen Kanälen.</p>
                                     </div>
                                 </div>
                             </div>
@@ -594,7 +582,7 @@
     <!-- Footer section Start-->
     <footer class="pt-20 pb-7 bg-light-black">
         <div class="container">
-            <div class="grid grid-cols-12 max-sm:gap-x-0 max-lg:gap-x-8 lg:gap-8 max-lg:gap-y-16">
+            <div class="grid grid-cols-12 max-sm:gap-x-0 max-lg:gap-x-8 lg:gap-3 max-lg:gap-y-16">
                 <div class="flex flex-col justify-between col-span-12 gap-5 md:col-span-6 lg:col-span-4">
                     <div>
                         <a href="javascript:void(0);" class="flex items-center flex-shrink-0 h-12 transition-all duration-500 logo-img">
@@ -627,46 +615,44 @@
                         </a>
                     </div>
                 </div>
-
-                <div class="grid grid-cols-2 col-span-12 lg:col-span-4 md:max-lg:order-3 md:gap-8">
+                <div class="grid grid-cols-2 col-span-12 lg:col-span-4 md:max-lg:order-3 md:gap-3">
                     <div>
-                        <h3 class="text-lg font-semibold leading-none text-white">Solutions</h3>
-                        <ul role="list" class="mt-4 space-y-5">
+                        <h3 class="text-xl font-semibold leading-none text-white">Solutions</h3>
+                        <ul role="list" class="mt-6 space-y-5">
                             <li class="leading-none">
-                                <a href="javascript:void(0);" class="text-sm text-gray-300 transition-all duration-300 hover:text-white">Marketing</a>
+                                <a href="javascript:void(0);" class="inline-block text-sm leading-none text-white transition-all duration-300 ease-in-out opacity-40 hover:opacity-100 hover:text-secondary">Marketing</a>
                             </li>
                             <li class="leading-none">
-                                <a href="javascript:void(0);" class="text-sm text-gray-300 transition-all duration-300 hover:text-white">Analytics</a>
+                                <a href="javascript:void(0);" class="inline-block text-sm leading-none text-white transition-all duration-300 ease-in-out opacity-40 hover:opacity-100 hover:text-secondary">Analytics</a>
                             </li>
                             <li class="leading-none">
-                                <a href="javascript:void(0);" class="text-sm text-gray-300 transition-all duration-300 hover:text-white">Commerce</a>
+                                <a href="javascript:void(0);" class="inline-block text-sm leading-none text-white transition-all duration-300 ease-in-out opacity-40 hover:opacity-100 hover:text-secondary">Commerce</a>
                             </li>
                             <li class="leading-none">
-                                <a href="javascript:void(0);" class="text-sm text-gray-300 transition-all duration-300 hover:text-white">Insights</a>
+                                <a href="javascript:void(0);" class="inline-block text-sm leading-none text-white transition-all duration-300 ease-in-out opacity-40 hover:opacity-100 hover:text-secondary">Insights</a>
                             </li>
                         </ul>
                     </div>
                     <div>
-                        <h3 class="text-lg font-semibold leading-none text-white">Support</h3>
-                        <ul role="list" class="mt-4 space-y-4">
-                            <li>
-                                <a href="javascript:void(0);" class="text-sm text-gray-300 transition-all duration-300 hover:text-white">Pricing</a>
+                        <h3 class="text-xl font-semibold leading-none text-white">Support</h3>
+                        <ul role="list" class="mt-6 space-y-5">
+                            <li class="leading-none">
+                                <a href="javascript:void(0);" class="inline-block text-sm leading-none text-white transition-all duration-300 ease-in-out opacity-40 hover:opacity-100 hover:text-secondary">Pricing</a>
                             </li>
-                            <li>
-                                <a href="javascript:void(0);" class="text-sm text-gray-300 transition-all duration-300 hover:text-white">Documentation</a>
+                            <li class="leading-none">
+                                <a href="javascript:void(0);" class="inline-block text-sm leading-none text-white transition-all duration-300 ease-in-out opacity-40 hover:opacity-100 hover:text-secondary">Documentation</a>
                             </li>
-                            <li>
-                                <a href="javascript:void(0);" class="text-sm text-gray-300 transition-all duration-300 hover:text-white">Guides</a>
+                            <li class="leading-none">
+                                <a href="javascript:void(0);" class="inline-block text-sm leading-none text-white transition-all duration-300 ease-in-out opacity-40 hover:opacity-100 hover:text-secondary">Guides</a>
                             </li>
-                            <li>
-                                <a href="javascript:void(0);" class="text-sm text-gray-300 transition-all duration-300 hover:text-white">API Status</a>
+                            <li class="leading-none">
+                                <a href="javascript:void(0);" class="inline-block text-sm leading-none text-white transition-all duration-300 ease-in-out opacity-40 hover:opacity-100 hover:text-secondary">API Status</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-
                 <div class="col-span-12 md:col-span-6 lg:col-span-4 w-full lg:max-w-[350px] ml-auto text-white">
-                    <h2 class="mb-4 text-lg font-semibold leading-none text-white">Newslatter</h2>
+                    <h2 class="mb-6 text-xl font-semibold leading-none text-white">Newslatter</h2>
                     <form>
                         <div class="space-y-4">
                             <input type="text" class="w-full py-2.5 px-4 leading-none text-sm rounded-md h-11 text-primary outline-none" placeholder="Email address...">
@@ -674,12 +660,10 @@
                         </div>
                     </form>
                 </div>
-
             </div>
-            <div class="mt-10 text-center border-t pt-7 border-secondary/20 sm:mt-20 lg:mt-16">
+            <div class="pt-5 mt-12 text-center border-t border-secondary/20">
                 <p class="text-sm text-white">© 2020 Your Company, Inc. All rights reserved.</p>
             </div>
-
         </div>
     </footer>
     <!-- Footer section End -->
