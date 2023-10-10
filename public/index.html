@@ -14,7 +14,7 @@
 <body>
 
     <!-- header -->
-    <header class="py-4 shadow-md bg-light-black">
+    <header class="py-4 shadow-md bg-light-black fixed left-0 top-0 w-full z-[999]">
         <div class="container">
             <nav>
                 <div class="flex items-center justify-between">
@@ -93,6 +93,7 @@
             </nav>
         </div>
     </header>
+    <div class="fake-header"></div>
     <!-- End header -->
 
     <!-- hero-v3 -->
@@ -744,6 +745,20 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/app.js"></script>
 
+    <!-- header onscroll -->
+    <!-- <script>
+        window.onscroll = function () {
+            var headerTag = document.getElementsByTagName("header");
+            var scrollAmount = document.documentElement.scrollTop;
+            if (scrollAmount >= 40) {
+                headerTag.addClass("header-fixed");
+            } else {
+                headerTag.removeClass("header-fixed");
+            }
+        };
+    </script> -->
+    <!-- End header onscroll -->
+
     <!-- header sub-menu -->
     <script>
         if (window.innerWidth < 1024) {
@@ -758,9 +773,9 @@
             $(".menu li .menu-icon").click(function () {
                 if (
                     $(this)
-                    .parent()
-                    .parent("li")
-                    .hasClass("menu-open")
+                        .parent()
+                        .parent("li")
+                        .hasClass("menu-open")
                 ) {
                     $(".menu li").removeClass("menu-open");
                     $(this)
@@ -778,9 +793,10 @@
     </script>
     <!-- End header sub-menu -->
 
-    <!-- hero height -->
+    <!-- set hero & fake-header height -->
     <script>
         let header = document.querySelector("header").clientHeight;
+        $(".fake-header").css("height", header);
         const appHeight = () => {
             const doc = document.documentElement;
             doc.style.setProperty(
@@ -791,7 +807,7 @@
         window.addEventListener("resize", appHeight);
         appHeight();
     </script>
-    <!-- End hero height -->
+    <!-- End set hero & fake-header height -->
 
     <!-- hero slider v2 -->
     <script>
@@ -807,7 +823,7 @@
                 settings: {
                     arrows: false,
                 }
-            }, ]
+            },]
         });
     </script>
     <!-- End hero slider v2 -->
@@ -840,24 +856,24 @@
             cssEase: "linear",
             draggable: false,
             responsive: [{
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 6
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 4,
-                        slidesToScroll: 1,
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 3
-                    }
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 6
                 }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
             ]
         });
     </script>
@@ -917,17 +933,17 @@
             slidesToScroll: 1,
             arrows: false,
             responsive: [{
-                    breakpoint: 1280,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                },
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 1
-                    }
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 2
                 }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
             ]
         });
     </script>
