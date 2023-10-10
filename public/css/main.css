@@ -2800,6 +2800,9 @@ header .menu li.menu-open .menu-icon {
   .max-lg\:mt-8 {
     margin-top: 2rem;
   }
+  .max-lg\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
   .max-lg\:h-6 {
     height: 1.5rem;
   }
