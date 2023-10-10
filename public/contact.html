@@ -13,6 +13,100 @@
 
 <body>
 
+    <!-- header -->
+    <header class="py-4 shadow-md bg-light-black">
+        <div class="container">
+            <nav>
+                <div class="flex items-center justify-between">
+                    <a href="index.html" class="flex items-center flex-shrink-0 h-12 transition-all duration-500 logo-img">
+                        <img src="images/logo/logo-1.png" class="object-cover w-auto h-full" alt="logo" />
+                    </a>
+                    <div class="inline-flex flex-shrink-0 lg:hidden">
+                        <button type="button" class="relative inline-flex items-center justify-center text-white toggle-menu" aria-controls="mobile-menu" aria-expanded="false">
+                            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="menu-content max-lg:bg-[#ebebeb] max-lg:fixed max-lg:top-0 max-lg:left-0  max-lg:w-full max-lg:h-screen max-lg:-translate-y-full transition-all duration-500 max-lg:pt-4 max-lg:pb-2 max-lg:overflow-y-auto max-lg:z-50">
+                        <div class="flex items-center lg:ml-6 max-lg:container max-lg:mx-auto max-lg:px-3 max-lg:flex-col max-lg:items-start">
+                            <div class="flex items-center justify-between w-full mb-5 lg:hidden">
+                                <a href="index.html" class="flex items-center flex-shrink-0 h-12 transition-all duration-500 logo-img">
+                                    <img src="images/logo/logo-1.png" class="object-cover w-auto h-full" alt="logo" />
+                                </a>
+                                <div class="inline-flex">
+                                    <button type="button" class="relative inline-flex items-center justify-center rotate-45 text-light-black toggle-menu" aria-controls="mobile-menu" aria-expanded="false">
+                                        <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <ul class="flex lg:items-center menu max-lg:flex-col lg:space-x-10 max-lg:w-full">
+                                <li>
+                                    <a href="index.html" class="inline-block py-4 text-xl font-medium transition-colors duration-500 ease-in-out rounded-md lg:text-sm lg:text-white max-lg:w-full lg:py-5 lg:hover:text-secondary">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about.html" class="inline-block py-4 text-xl font-medium transition-colors duration-500 ease-in-out rounded-md lg:text-sm lg:text-white max-lg:w-full lg:py-5 lg:hover:text-secondary">About Us</a>
+                                </li>
+                                <li class="relative group">
+                                    <div class="flex items-center max-lg:justify-between">
+                                        <a href="javascript:void(0);" class="inline-block py-4 text-xl font-medium transition-colors duration-500 ease-in-out rounded-md lg:text-sm lg:text-white max-lg:w-full lg:py-5 lg:group-hover:text-secondary">School Information</a>
+                                        <div class="ml-2 transition-all duration-500 lg:text-white menu-icon lg:group-hover:rotate-180">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="max-lg:w-6 lg:w-4 max-lg:h-6 lg:h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="sub-menu  z-50 lg:absolute lg:top-full lg:left-0 lg:min-w-[200px] lg:bg-white lg:rounded-md lg:shadow-[0_0_10px_2px_rgba(0,0,0,0.08)] transition-all duration-500 lg:invisible lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 lg:group-hover:max-h-max max-h-0 overflow-hidden">
+                                        <ul class="max-lg:pl-3 max-lg:pb-2.5 max-lg:pr-0 space-y-3 lg:p-3">
+                                            <li>
+                                                <a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm lg:hover:text-secondary">House System</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm lg:hover:text-secondary">Excursions & Field Trips</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm lg:hover:text-secondary">Sports Infrastructure</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm lg:hover:text-secondary">Community Service</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="font-medium text-gray-900 transition-all duration-500 transform max-lg:text-base lg:text-sm lg:hover:text-secondary">Environmental Care</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="admission.html" class="inline-block py-4 text-xl font-medium transition-colors duration-500 ease-in-out rounded-md lg:text-sm lg:text-white max-lg:w-full lg:py-5 lg:hover:text-secondary">Admissions</a>
+                                </li>
+                                <li>
+                                    <div class="inline-flex max-lg:mt-8">
+                                        <a href="contact.html" class="btn">get in touch</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End header -->
+
+
+
+    <!-- inner-hero section -->
+    <section style="background-image: url('https://img.freepik.com/free-photo/red-buildings-households_1127-2024.jpg?w=996&t=st=1696489722~exp=1696490322~hmac=f5b1039d735e74fcde4e5bf12fd49da28ae1d24e1171d17ab178acbd40fa4c98');" class="inner-hero-section relative bg-no-repeat bg-cover bg-center  before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-black/50 before:z-0 py-20 sm:py-36">
+        <div class="container relative">
+            <div class="text-center">
+                <h1 class="text-5xl capitalize sm:text-8xl text-secondary">Contact us</h1>
+            </div>
+        </div>
+    </section>
+    <!-- End inner-hero section -->
+
     <!-- map section -->
     <section class="max-sm:py-10 sm:py-20">
         <div class="container">

@@ -19,7 +19,7 @@ module.exports = {
         "light-black": "#333333",
       }),
       fontFamily: {
-        title: ["Gabarito", "cursive"],
+        title: ["Gabarito", "sans-serif"],
         body: ["Poppins", "sans-serif"],
       },
       padding: {
