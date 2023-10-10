@@ -3568,10 +3568,6 @@ header .menu li.menu-open .menu-icon {
     content: var(--tw-content);
     height: 100%;
   }
-  .md\:before\:h-\[calc\(100\%\*25\)\]::before {
-    content: var(--tw-content);
-    height: calc(100% * 25);
-  }
   .md\:before\:h-\[calc\(100\%\*2\)\]::before {
     content: var(--tw-content);
     height: calc(100% * 2);
