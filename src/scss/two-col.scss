@@ -1,27 +1,33 @@
-.grid-row-reverse {
-  .img-content {
-    @apply md:order-2;
-  }
-}
-
 .two-col-section {
   .grid-row-reverse {
     .img-content {
+      @apply lg:order-2;
       > div {
         @apply left-auto right-0;
       }
       img {
-        @apply rounded-l-sm rounded-r-none;
+        @apply rounded-l-sm rounded-r-none lg:order-2;
       }
     }
     .content {
-      @apply md:pr-4 max-lg:pl-0;
+      @apply lg:pr-4 max-xl:pl-0;
     }
+  }
+  .content {
+    @apply lg:pl-11 xl:pl-16;
   }
 }
 
 .two-col-v2-section {
-  .img-content {
-    @apply lg:order-2;
+  .grid-row-reverse {
+    .img-content {
+      @apply lg:order-2;
+    }
+    .content {
+      @apply lg:pr-4 max-xl:pl-0;
+    }
+  }
+  .content {
+    @apply lg:pl-11 xl:pl-16;
   }
 }
