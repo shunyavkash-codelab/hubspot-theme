@@ -752,6 +752,9 @@ video {
     max-width: 1400px;
   }
 }
+.fixed {
+  position: fixed;
+}
 .absolute {
   position: absolute;
 }
@@ -769,6 +772,9 @@ video {
 }
 .bottom-5 {
   bottom: 1.25rem;
+}
+.left-0 {
+  left: 0px;
 }
 .left-1\/2 {
   left: 50%;
@@ -805,6 +811,9 @@ video {
 }
 .z-50 {
   z-index: 50;
+}
+.z-\[999\] {
+  z-index: 999;
 }
 .col-span-12 {
   grid-column: span 12 / span 12;
@@ -3165,6 +3174,9 @@ header .menu li.menu-open .menu-icon {
   }
   .sm\:mb-10 {
     margin-bottom: 2.5rem;
+  }
+  .sm\:mb-12 {
+    margin-bottom: 3rem;
   }
   .sm\:mb-14 {
     margin-bottom: 3.5rem;
