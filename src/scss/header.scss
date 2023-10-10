@@ -1,18 +1,14 @@
 header {
   .menu-content.open {
-    transform: translate(0);
+    @apply translate-y-0 translate-x-0;
   }
   .menu {
     li.menu-open {
-      .sub-menu {
-        max-height: 500px;
+      .sub-menu-content {
+        @apply max-h-[500px];
       }
-    }
-  }
-  .menu {
-    li.menu-open {
       .menu-icon {
-        transform: rotate(180deg);
+        @apply rotate-180;
       }
     }
   }
