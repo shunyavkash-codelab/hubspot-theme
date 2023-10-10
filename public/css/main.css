@@ -817,6 +817,10 @@ video {
   margin-left: -1rem;
   margin-right: -1rem;
 }
+.-mx-5 {
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+}
 .-my-2 {
   margin-top: -0.5rem;
   margin-bottom: -0.5rem;
@@ -828,10 +832,6 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-.-mx-5 {
-  margin-left: -1.25rem;
-  margin-right: -1.25rem;
 }
 .mb-0 {
   margin-bottom: 0px;
@@ -1212,9 +1212,6 @@ video {
 .gap-y-8 {
   row-gap: 2rem;
 }
-.gap-y-5 {
-  row-gap: 1.25rem;
-}
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.5rem * var(--tw-space-x-reverse));
@@ -1369,9 +1366,6 @@ video {
 .border-transparent {
   border-color: transparent;
 }
-.border-primary\/40 {
-  border-color: rgb(34 102 141 / 0.4);
-}
 .bg-\[\#F6F5F2\] {
   --tw-bg-opacity: 1;
   background-color: rgb(246 245 242 / var(--tw-bg-opacity));
@@ -1505,6 +1499,10 @@ video {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1552,10 +1550,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 .pb-2 {
   padding-bottom: 0.5rem;
@@ -1745,6 +1739,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity));
 }
+.text-light-black {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
 .text-light-black\/70 {
   color: rgb(51 51 51 / 0.7);
 }
@@ -1766,10 +1764,6 @@ video {
 }
 .text-white\/40 {
   color: rgb(255 255 255 / 0.4);
-}
-.text-light-black {
-  --tw-text-opacity: 1;
-  color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 .line-through {
   text-decoration-line: line-through;
@@ -3164,14 +3158,8 @@ header .menu li.menu-open .menu-icon {
   .sm\:w-16 {
     width: 4rem;
   }
-  .sm\:w-\[314px\] {
-    width: 314px;
-  }
   .sm\:w-\[400px\] {
     width: 400px;
-  }
-  .sm\:w-full {
-    width: 100%;
   }
   .sm\:max-w-2xl {
     max-width: 42rem;
