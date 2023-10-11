@@ -8,7 +8,6 @@
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/main.css" />
-
 </head>
 
 <body>
@@ -91,7 +90,79 @@
     <!-- End header -->
 
     <!-- hero-v3 & hero -->
-    <section class="relative hero-v3 fixed-header-hero">
+    <section class="relative hero-v3 hero-v4 fixed-header-hero ">
+        <div class="h-full hero-slider-v2">
+            <div class="relative">
+                <div class="h-full hero-img">
+                    <img src="images/gallery/gallery-7.jpeg" class="object-cover w-full h-full" alt="hero" />
+                </div>
+                <div class="absolute z-50 w-full -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
+                    <div class="container">
+                        <div class="md:px-3 mx-auto transition-all duration-300 transform rounded-sm opacity-90">
+                            <div class="max-w-3xl text-left text-white">
+                                <div>
+                                    <h1 class="!leading-[1.1] sm:text-6xl lg:text-6xl text-white">Most Creative <span class="text-secondary">Computer </span>
+                                        Labs for Students</h1>
+                                </div>
+                                <div class="max-w-2xl pr-5 truncate richtext line-clamp-3 font-extralight !text-sm !leading-6 mt-3">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus in nobis porro numquam, similique est accusantium enim totam aut soluta magnam ipsum dolorum saepe, cumque amet mollitia, dignissimos laboriosam dolore!</p>
+                                </div>
+                                <div class="inline-flex mt-4">
+                                    <a href="about.html" class="btn btn-secondary">read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="h-full hero-img">
+                    <img src="./images/hero/pexels-photo.jpeg" class="object-cover w-full h-full" alt="hero" />
+                </div>
+                <div class="absolute z-50 w-full -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
+                    <div class="container">
+                        <div class="md:px-3 mx-auto transition-all duration-300 transform rounded-sm max-w-[621px] lg:max-w-[880px] xl:max-w-[1136px] opacity-90">
+                            <div class="space-y-3 text-center text-white sm:space-y-4">
+                                <div>
+                                    <h1 class="leading-none sm:text-6xl lg:text-6xl text-white">Most Creative <span class="text-secondary">Computer </span>
+                                        Labs</h1>
+                                </div>
+                                <div class="max-w-3xl mx-auto truncate richtext line-clamp-3 font-extralight !text-sm !leading-6">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus in nobis porro numquam, similique est accusantium enim totam aut soluta magnam ipsum dolorum saepe, cumque amet mollitia, dignissimos laboriosam dolore!</p>
+                                </div>
+                                <div class="inline-flex">
+                                    <a href="about.html" class="btn btn-secondary">read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="h-full hero-img">
+                    <img src="./images/hero/pexels-photo.jpeg" class="object-cover w-full h-full" alt="hero" />
+                </div>
+                <div class="absolute z-50 w-full -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
+                    <div class="container">
+                        <div class="md:px-3 mx-auto transition-all duration-300 transform rounded-sm max-w-[621px] lg:max-w-[880px] xl:max-w-[1136px] opacity-90">
+                            <div class="space-y-3 text-center text-white sm:space-y-4">
+                                <div>
+                                    <h1 class="leading-none sm:text-6xl lg:text-6xl text-secondary">Whole child development</h1>
+                                </div>
+                                <div class="max-w-3xl mx-auto truncate richtext line-clamp-3 font-extralight !text-sm !leading-6">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus in nobis porro numquam, similique est accusantium enim totam aut soluta magnam ipsum dolorum saepe, cumque amet mollitia, dignissimos laboriosam dolore!</p>
+                                </div>
+                                <div class="inline-flex">
+                                    <a href="about.html" class="btn btn-secondary">read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="relative hidden hero-v3 fixed-header-hero">
         <div class="h-full hero-slider-v2">
             <div class="relative">
                 <div class="h-full hero-img">
@@ -784,11 +855,11 @@
     <!-- hero slider v2 -->
     <script>
         $(".hero-slider-v2").slick({
-            arrows: true,
-            dots: false,
+            arrows: false,
+            dots: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: true,
+            // autoplay: true,
             speed: 300,
             responsive: [{
                 breakpoint: 768,
