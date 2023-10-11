@@ -64,7 +64,7 @@
                                                 <a href="facilities.html" class="inline-block font-medium text-gray-900 capitalize transition-all duration-500 transform max-lg:text-base lg:text-sm lg:hover:text-secondary">facilities</a>
                                             </li>
                                             <li>
-                                                <a href="time-table.html" class="inline-block font-medium text-gray-900 capitalize transition-all duration-500 transform max-lg:text-base lg:text-sm lg:hover:text-secondary">Holidays table</a>
+                                                <a href="holiday-table.html" class="inline-block font-medium text-gray-900 capitalize transition-all duration-500 transform max-lg:text-base lg:text-sm lg:hover:text-secondary">Holidays table</a>
                                             </li>
                                             <li>
                                                 <a href="admission.html" class="inline-block font-medium text-gray-900 capitalize transition-all duration-500 transform max-lg:text-base lg:text-sm lg:hover:text-secondary">admission</a>
@@ -91,7 +91,7 @@
     <!-- End header -->
 
     <!-- hero -->
-    <section class="relative hero">
+    <section class="relative hero fixed-header-hero">
         <div class="h-full hero-slider">
             <div class="relative">
                 <div class="h-full hero-img">
@@ -173,101 +173,13 @@
     <!-- End hero -->
 
     <!-- hero-v2 -->
-    <section class="relative hidden hero-v2">
+    <section class="relative hidden hero-v2 fixed-header-hero">
         <div class="w-full h-full">
             <video src="./images/video/hero-video.mp4" class="object-cover w-full h-full" autoplay loop muted>
             </video>
         </div>
     </section>
     <!-- End hero-2 -->
-
-    <!-- hero-v3 -->
-    <section class="relative hidden hero-v3">
-        <div class="h-full hero-slider-v2">
-            <div class="relative">
-                <div class="h-full hero-img">
-                    <img src="./images/hero/pexels-photo.jpeg" alt="" srcset="" class="object-cover w-full h-full" />
-                </div>
-                <div class="absolute z-50 w-full -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
-                    <div class="container">
-                        <div class=" transform transition-all duration-300 max-w-[1000px]   md:mx-auto  opacity-90 p-2 rounded-sm">
-                            <div class="space-y-3 text-center text-white">
-                                <div>
-                                    <h3 class="text-4xl lg:text-8xl text-secondary">This is main content</h3>
-                                </div>
-                                <div class="truncate richtext line-clamp-3">
-                                    <p class="">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Ducimus in nobis porro numquam, similique est accusantium
-                                        enim totam aut soluta magnam ipsum dolorum saepe, cumque
-                                        amet mollitia, dignissimos laboriosam dolore!
-                                    </p>
-                                </div>
-                                <div>
-                                    <a href="javascript:void(0);" class="btn btn-secondary">Click here</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="h-full hero-img">
-                    <img src="./images/hero/pexels-photo.jpeg" alt="" srcset="" class="object-cover w-full h-full" />
-                </div>
-                <div class="absolute z-50 w-full -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
-                    <div class="container">
-                        <div class=" transform transition-all duration-300 max-w-[1000px]   md:mx-auto  opacity-90 p-2 rounded-sm">
-                            <div class="space-y-3 text-center text-white">
-                                <div>
-                                    <h3 class="text-4xl lg:text-8xl text-secondary">This is main content</h3>
-                                </div>
-                                <div class="truncate richtext line-clamp-3">
-                                    <p class="">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Ducimus in nobis porro numquam, similique est accusantium
-                                        enim totam aut soluta magnam ipsum dolorum saepe, cumque
-                                        amet mollitia, dignissimos laboriosam dolore!
-                                    </p>
-                                </div>
-                                <div>
-                                    <a href="javascript:void(0);" class="btn btn-secondary">Click here</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="h-full hero-img">
-                    <img src="./images/hero/pexels-photo.jpeg" alt="" srcset="" class="object-cover w-full h-full" />
-                </div>
-                <div class="absolute z-50 w-full -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
-                    <div class="container">
-                        <div class=" transform transition-all duration-300 max-w-[1000px]   md:mx-auto  opacity-90 p-2 rounded-sm">
-                            <div class="space-y-3 text-center text-white">
-                                <div>
-                                    <h3 class="text-4xl lg:text-8xl text-secondary">This is main content</h3>
-                                </div>
-                                <div class="truncate richtext line-clamp-3">
-                                    <p class="">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Ducimus in nobis porro numquam, similique est accusantium
-                                        enim totam aut soluta magnam ipsum dolorum saepe, cumque
-                                        amet mollitia, dignissimos laboriosam dolore!
-                                    </p>
-                                </div>
-                                <div>
-                                    <a href="javascript:void(0);" class="btn btn-secondary">Click here</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End hero-3 -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -326,25 +238,6 @@
             slidesToScroll: 1,
             autoplay: true,
             speed: 300,
-        });
-    </script>
-
-    <script>
-        $(".hero-slider-v2").slick({
-            arrows: true,
-            dots: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            speed: 300,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        arrows: false,
-                    }
-                },
-            ]
         });
     </script>
 

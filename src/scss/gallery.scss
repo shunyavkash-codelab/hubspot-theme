@@ -2,9 +2,9 @@
   .filter-tab-nav {
     .filter-tab-btn {
       &.active {
-        @apply border-dark;
+        @apply border-secondary;
         span {
-          @apply text-dark;
+          @apply text-secondary;
         }
       }
     }

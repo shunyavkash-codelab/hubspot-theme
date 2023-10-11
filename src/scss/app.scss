@@ -55,7 +55,7 @@ h6 {
   @apply text-sm;
 }
 
-// btn
+/* btn */
 .btn,
 .btn-cta {
   @apply text-light-black font-medium bg-secondary overflow-hidden text-sm py-4 px-7 leading-none rounded-md inline-block transform capitalize relative shadow-md transition-all duration-500;
@@ -84,20 +84,11 @@ h6 {
   }
 }
 
-// .animation-text {
-//   span {
-//     @apply relative;
-//     &::before {
-//       @apply content-[''] absolute w-full h-full left-0 top-0 bg-primary z-0;
-//     }
-//   }
-// }
-
 .truncate {
   @apply whitespace-normal;
 }
 
-// richtext
+/* richtext */
 .richtext {
   @apply text-sm leading-[1.75];
   > p {
@@ -127,11 +118,21 @@ h6 {
   @apply hidden;
 }
 
-// accordian
+/* accordian */
 .accordian-item {
   &.show {
     .accordian-icon {
       @apply rotate-90;
     }
   }
+}
+
+/* section gap */
+.section-gap {
+  @apply max-sm:py-13 sm:py-28;
+}
+
+/* section-header gap */
+.section-header-gap {
+  @apply max-sm:mb-8 sm:mb-16;
 }

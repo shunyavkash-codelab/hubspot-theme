@@ -22,8 +22,9 @@ module.exports = {
         title: ["Gabarito", "sans-serif"],
         body: ["Poppins", "sans-serif"],
       },
-      padding: {
-        4.5: "1.15rem",
+      spacing: {
+        4.5: "1.125rem",
+        13: "3.25rem",
       },
       letterSpacing: {
         space: "0.03em",
