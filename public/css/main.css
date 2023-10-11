@@ -2706,6 +2706,10 @@ header .menu li.menu-open .menu-icon {
   --tw-border-opacity: 1;
   border-color: rgb(222 222 222 / var(--tw-border-opacity));
 }
+.focus\:border-secondary:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 204 112 / var(--tw-border-opacity));
+}
 .focus\:bg-\[\#F9F9F9\]:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(249 249 249 / var(--tw-bg-opacity));
@@ -2713,6 +2717,26 @@ header .menu li.menu-open .menu-icon {
 .focus\:bg-\[\#E7E7E7\]:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(231 231 231 / var(--tw-bg-opacity));
+}
+.focus\:shadow-\[0_0_0_14px_\#ffc5656e\]:focus {
+  --tw-shadow: 0 0 0 14px #ffc5656e;
+  --tw-shadow-colored: 0 0 0 14px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.focus\:shadow-\[0_0_14px_0_rgba\(255\2c 197\2c 101\2c 50\%\)\]:focus {
+  --tw-shadow: 0 0 14px 0 rgba(255,197,101,50%);
+  --tw-shadow-colored: 0 0 14px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.focus\:shadow-\[inset_0_14px_0_rgba\(255\2c 197\2c 101\2c 50\%\)\]:focus {
+  --tw-shadow: inset 0 14px 0 rgba(255,197,101,50%);
+  --tw-shadow-colored: inset 0 14px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.focus\:shadow-\[inset_0_0_14px_0_rgba\(255\2c 197\2c 101\2c 50\%\)\]:focus {
+  --tw-shadow: inset 0 0 14px 0 rgba(255,197,101,50%);
+  --tw-shadow-colored: inset 0 0 14px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .focus\:ring-secondary:focus {
   --tw-ring-opacity: 1;
