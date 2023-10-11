@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
     <link rel="stylesheet" href="./css/main.css">
 
 </head>
@@ -309,6 +310,7 @@
     <!-- End footer -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.1.1/shuffle.js"></script>
     <script src="./js/app.js"></script>
 
@@ -342,6 +344,7 @@
     </script>
     <!-- End header sub-menu -->
 
+    <!-- shuffle -->
     <script>
         if ($(".shuffle-filter").length > 0) {
             window.onload = function () {
@@ -361,6 +364,17 @@
             };
         }
     </script>
+    <!-- End shuffle -->
+
+    <!-- fancybox -->
+    <script>
+        Fancybox.bind("[data-fancybox]", {});
+        Fancybox.bind("[data-fancybox=school]", {});
+        Fancybox.bind("[data-fancybox=events]", {});
+        Fancybox.bind("[data-fancybox=sports]", {});
+        Fancybox.bind("[data-fancybox=teaching]", {});
+    </script>
+    <!-- End fancybox -->
 
 </body>
 
