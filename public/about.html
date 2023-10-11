@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/main.css" />
 
@@ -385,28 +386,28 @@
                     <h2 class="font-semibold leading-none capitalize max-sm:text-4xl">Our <span class="inline-block text-secondary">Gallery</span></h2>
                 </div>
                 <div class="grid gap-3 max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                    <a href="javascript:void(0);" class="block w-full overflow-hidden scale-100 rounded-md h-60 group">
+                    <a href="images/gallery/gallery-1.jpeg" class="block w-full overflow-hidden scale-100 rounded-md h-60 group" data-fancybox="gallery">
                         <img src="images/gallery/gallery-1.jpeg" class="object-cover w-full h-full transition-all duration-500 ease-in-out group-hover:scale-110" alt="gallery">
                     </a>
-                    <a href="javascript:void(0);" class="block w-full overflow-hidden scale-100 rounded-md h-60 group">
+                    <a href="images/gallery/gallery-2.jpeg" class="block w-full overflow-hidden scale-100 rounded-md h-60 group" data-fancybox="gallery">
                         <img src="images/gallery/gallery-2.jpeg" class="object-cover w-full h-full transition-all duration-500 ease-in-out group-hover:scale-110" alt="gallery">
                     </a>
-                    <a href="javascript:void(0);" class="block w-full overflow-hidden scale-100 rounded-md h-60 group">
+                    <a href="images/gallery/gallery-3.jpeg" class="block w-full overflow-hidden scale-100 rounded-md h-60 group" data-fancybox="gallery">
                         <img src="images/gallery/gallery-3.jpeg" class="object-cover w-full h-full transition-all duration-500 ease-in-out group-hover:scale-110" alt="gallery">
                     </a>
-                    <a href="javascript:void(0);" class="block w-full overflow-hidden scale-100 rounded-md h-60 group">
+                    <a href="images/gallery/gallery-4.jpeg" class="block w-full overflow-hidden scale-100 rounded-md h-60 group" data-fancybox="gallery">
                         <img src="images/gallery/gallery-4.jpeg" class="object-cover w-full h-full transition-all duration-500 ease-in-out group-hover:scale-110" alt="gallery">
                     </a>
-                    <a href="javascript:void(0);" class="block w-full overflow-hidden scale-100 rounded-md h-60 group">
+                    <a href="images/gallery/gallery-5.jpeg" class="block w-full overflow-hidden scale-100 rounded-md h-60 group" data-fancybox="gallery">
                         <img src="images/gallery/gallery-5.jpeg" class="object-cover w-full h-full transition-all duration-500 ease-in-out group-hover:scale-110" alt="gallery">
                     </a>
-                    <a href="javascript:void(0);" class="block w-full overflow-hidden scale-100 rounded-md h-60 group">
+                    <a href="images/gallery/gallery-6.jpeg" class="block w-full overflow-hidden scale-100 rounded-md h-60 group" data-fancybox="gallery">
                         <img src="images/gallery/gallery-6.jpeg" class="object-cover w-full h-full transition-all duration-500 ease-in-out group-hover:scale-110" alt="gallery">
                     </a>
-                    <a href="javascript:void(0);" class="block w-full overflow-hidden scale-100 rounded-md h-60 group">
+                    <a href="images/gallery/gallery-7.jpeg" class="block w-full overflow-hidden scale-100 rounded-md h-60 group" data-fancybox="gallery">
                         <img src="images/gallery/gallery-7.jpeg" class="object-cover w-full h-full transition-all duration-500 ease-in-out group-hover:scale-110" alt="gallery">
                     </a>
-                    <a href="javascript:void(0);" class="block w-full overflow-hidden scale-100 rounded-md h-60 group">
+                    <a href="images/gallery/gallery-8.jpeg" class="block w-full overflow-hidden scale-100 rounded-md h-60 group" data-fancybox="gallery">
                         <img src="images/gallery/gallery-8.jpeg" class="object-cover w-full h-full transition-all duration-500 ease-in-out group-hover:scale-110" alt="gallery">
                     </a>
                 </div>
@@ -505,6 +506,7 @@
     <!-- End footer -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/app.js"></script>
 
@@ -570,6 +572,13 @@
         });
     </script>
     <!-- End news slider -->
+
+    <!-- fancybox -->
+    <script>
+        Fancybox.bind("[data-fancybox]", {});
+        Fancybox.bind("[data-fancybox=gallery]", {});
+    </script>
+    <!-- End fancybox -->
 
 </body>
 
