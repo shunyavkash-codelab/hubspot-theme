@@ -2,10 +2,31 @@
   .filter-tab-nav {
     .filter-tab-btn {
       &.active {
-        @apply border-secondary;
-        span {
-          @apply text-secondary;
+        @apply border-secondary text-secondary transition-all duration-200 ease-in-out;
+        // span {
+        //   @apply text-secondary;
+        // }
+      }
+    }
+  }
+}
+// gallery Filter tab Design
+.shuffle-filter{
+  .filter-tab-nav{
+    li{
+      &:first-child{
+        .filter-tab-btn{
+          margin-left: 0 !important;
         }
+      }
+      &:last-child{
+        .filter-tab-btn{
+          margin-right: 0 !important;
+          @apply before:bg-transparent;
+        }
+      }
+      .filter-tab-btn{
+        @apply before:content-[''] before:w-[1px] before:absolute before:-right-5 before:top-1 before:bottom-5 before:bg-[#eee];
       }
     }
   }
