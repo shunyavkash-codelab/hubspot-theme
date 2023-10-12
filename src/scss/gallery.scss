@@ -26,8 +26,19 @@
         }
       }
       .filter-tab-btn{
-        @apply before:content-[''] before:w-[1px] before:absolute before:-right-5 before:top-1 before:bottom-5 before:bg-[#eee];
+        &::before{
+          content: "";
+          width: 1px;
+          // height: 14px;
+          position: absolute;
+          right: -20px;
+          top: 5px;
+          bottom: 19px;
+          background: #eee;
+        }
       }
     }
   }
 }
+
+

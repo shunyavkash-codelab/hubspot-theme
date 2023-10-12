@@ -116,7 +116,8 @@
     stroke: #fff;
   }
   .slick-dots {
-    @apply flex justify-center items-end m-0 py-4 px-0 absolute left-1/2 transform -translate-x-1/2 top-auto bottom-10 list-none h-auto;
+    @apply flex justify-center items-end m-0 py-4 px-0 absolute left-1/2 transform -translate-x-1/2 top-auto bottom-10 list-none;
+    height: auto !important;
      li {
       @apply my-0 mx-1;
       button{
