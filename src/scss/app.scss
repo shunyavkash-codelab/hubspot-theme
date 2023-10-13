@@ -140,3 +140,25 @@ h6 {
 .heading-border {
   @apply relative pb-2 before:content-[''] before:absolute before:bottom-0 before:left-0 before:border-b-2 before:border-light-black before:w-[94px];
 }
+
+.director-content{
+  box-shadow: inset 0 0 20px rgba(255,204, 112,0.31);
+  border: 1px solid rgba(255,204, 112,0.31);
+  ul{
+    li {
+      &::before {
+        
+        // content: "";
+        // position: absolute;
+        // left: 0;
+        // top: 8px;
+        // width: 5px;
+        // height: 5px;
+        // background-color: #0000005b;
+        // border-radius: 50%;
+        // -moz-border-radius: 50%;
+        // -webkit-border-radius: 50%;
+      }
+    }
+  }
+}
