@@ -22,18 +22,13 @@
       }
 
       .slick-active .slide-box {
-        transform: translateX(0);
-        opacity: 1;
-      }
-
-      .container {
-        overflow: hidden;
+        transform: rotateY(0deg);
+        @apply opacity-100;
       }
 
       .slide-box {
-        transform: translateX(calc(100% + 12px));
-        opacity: 0;
-        transition-delay: 500ms;
+        transform: rotateY(45deg);
+        @apply opacity-0 delay-500 origin-right;
       }
     }
   }
@@ -99,16 +94,20 @@
   }
 }
 
-.hero-v4{
-  .hero-slider-v2{
-    .hero-img{
-      &:before{
+.hero-v4 {
+  .hero-slider-v2 {
+    .hero-img {
+      &:before {
         @apply content-[''] absolute left-0 top-0 z-0 h-full w-full;
-        background: linear-gradient(260deg, rgb(19 24 28 / 55%) 42%, #13181C 100%);
+        background: linear-gradient(
+          260deg,
+          rgb(19 24 28 / 55%) 42%,
+          #13181c 100%
+        );
       }
     }
   }
-  .hero-v4 h1 span{
+  .hero-v4 h1 span {
     color: transparent !important;
     -webkit-text-stroke-width: 2px;
     stroke-width: 2px;
@@ -118,15 +117,15 @@
   .slick-dots {
     @apply flex justify-center items-end m-0 py-4 px-0 absolute left-1/2 transform -translate-x-1/2 top-auto bottom-10 list-none;
     height: auto !important;
-     li {
+    li {
       @apply my-0 mx-1;
-      button{
+      button {
         @apply block w-[14px] h-[14px] p-0 border-none rounded-full bg-white transition-all duration-300 ease-in-out;
         text-indent: -9999px;
       }
-      &.slick-active button{
+      &.slick-active button {
         @apply w-10 rounded-[20px] h-3 bg-secondary;
       }
     }
- }
-}  
+  }
+}

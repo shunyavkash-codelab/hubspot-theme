@@ -1356,9 +1356,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 204 112 / var(--tw-bg-opacity));
 }
-.bg-secondary\/90 {
-  background-color: rgb(255 204 112 / 0.9);
-}
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -2077,14 +2074,12 @@ header .menu li.menu-open .menu-icon {
   min-width: 100%;
 }
 .hero .hero-slider [class*=slick-] .slick-active .slide-box {
-  transform: translateX(0);
+  transform: rotateY(0deg);
   opacity: 1;
 }
-.hero .hero-slider [class*=slick-] .container {
-  overflow: hidden;
-}
 .hero .hero-slider [class*=slick-] .slide-box {
-  transform: translateX(calc(100% + 12px));
+  transform: rotateY(45deg);
+  transform-origin: right;
   opacity: 0;
   transition-delay: 500ms;
 }
@@ -2201,7 +2196,7 @@ header .menu li.menu-open .menu-icon {
   width: 100%;
   --tw-content: "";
   content: var(--tw-content);
-  background: linear-gradient(260deg, rgba(19, 24, 28, 0.55) 42%, #13181C 100%);
+  background: linear-gradient(260deg, rgba(19, 24, 28, 0.55) 42%, #13181c 100%);
 }
 .hero-v4 .hero-v4 h1 span {
   color: transparent !important;
@@ -2757,10 +2752,6 @@ header .menu li.menu-open .menu-icon {
   content: var(--tw-content);
   bottom: 0px;
 }
-.before\:bottom-5::before {
-  content: var(--tw-content);
-  bottom: 1.25rem;
-}
 .before\:left-0::before {
   content: var(--tw-content);
   left: 0px;
@@ -2864,10 +2855,6 @@ header .menu li.menu-open .menu-icon {
 .after\:-bottom-0\.5::after {
   content: var(--tw-content);
   bottom: -0.125rem;
-}
-.after\:bottom-0::after {
-  content: var(--tw-content);
-  bottom: 0px;
 }
 .after\:left-0::after {
   content: var(--tw-content);
@@ -3209,6 +3196,10 @@ header .menu li.menu-open .menu-icon {
   .max-sm\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+  .max-sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .max-sm\:pb-1 {
     padding-bottom: 0.25rem;
