@@ -89,7 +89,23 @@
     <!-- End header -->
 
     <!-- inner-hero section -->
-    <section style="background-image: url('https://img.freepik.com/free-photo/red-buildings-households_1127-2024.jpg?w=996&t=st=1696489722~exp=1696490322~hmac=f5b1039d735e74fcde4e5bf12fd49da28ae1d24e1171d17ab178acbd40fa4c98');" class="inner-hero-section relative bg-no-repeat bg-cover bg-center  before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-black/50 before:z-0 py-20 sm:py-32">
+    <section class="py-20 inner-page-hero sm:py-40">
+        <div class="container relative z-50">
+            <div class="text-center">
+                <h1 class="font-semibold leading-tight text-black capitalize sm:text-6xl lg:text-7xl">holidays schedule</h1>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="javscript:void(0);">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#000" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#000" class="w-5 h-5">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                            </svg>
+                        </a></li>
+                    <span class="separator">»</span>
+                    <li class="breadcrumb-item"><a href="javscript:void(0);" class="">Holidays Schedule</a></li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section style="background-image: url('https://img.freepik.com/free-photo/red-buildings-households_1127-2024.jpg?w=996&t=st=1696489722~exp=1696490322~hmac=f5b1039d735e74fcde4e5bf12fd49da28ae1d24e1171d17ab178acbd40fa4c98');" class="hidden inner-hero-section relative bg-no-repeat bg-cover bg-center  before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-black/50 before:z-0 py-20 sm:py-32">
         <div class="container relative">
             <div class="text-center">
                 <h1 class="font-semibold leading-tight capitalize sm:text-6xl lg:text-7xl text-secondary">holidays schedule</h1>
@@ -97,13 +113,84 @@
         </div>
     </section>
     <!-- End inner-hero section -->
+    <div class="holiday-page relative">
+    <!-- vacation-list -->
+    <section class="relative max-sm:pb-12 max-sm:pt-6 sm:pb-28 sm:pt-16 vacation-list-detail">
+        <div class="container">
+            <div class="text-center section-header-gap">
+                <h2 class="font-semibold leading-none capitalize max-sm:text-4xl mb-2.5 sm:mb-5">Holidays <span class="inline-block text-secondary">2023</span></h2>
+                <div class="max-w-4xl mx-auto truncate line-clamp-3 richtext">
+                    <p>Holidays give you the perfect opportunity to do things you cannot do during school days.<br> "Have a great and enjoy your holiday!".</p>
+                </div>
+            </div>
+            <div class="shadow max-sm:-mx-3">
+                <div class="overflow-x-auto">
+                    <table class="w-full max-sm:min-w-[460px] border-spacing-2 border border-slate-400 shadow-inner">
+                        <thead>
+                            <tr class="!leading-none sm:text-lg capitalize tabel-heading text-center">
+                                <th scope="col" rowspan="2"></th>
+                                <th scope="col" colspan="2">Summer vaction</th>
+                                <th scope="col" colspan="2">Diwali vaction</th>
+                                <th scope="col" colspan="2">Dussehra Break</th>
+                                <th scope="col" colspan="2">Winter Break</th>
+                            </tr>
+                            <tr class="font-light tabel-date-heading">
+                                <th class="">TO</th>
+                                <th>FROM</th>
+                                <th>TO</th>
+                                <th>FROM</th>
+                                <th>TO</th>
+                                <th>FROM</th>
+                                <th>TO</th>
+                                <th>FROM</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm leading-none bg-white divide-y divide-gray-200 whitespace-nowrap even:bg-dark/10">
+                            <tr>
+                                <td class="px-3 py-4.5">
+                                    <img src="Images/holiday-list/teachers-img.png" alt="teacher-img">
+                                </td>
+                                <td class="px-3 py-4.5 leading-normal">05.May.2023<br>(Monday)</td>
+                                <td class="px-3 py-4.5 leading-normal">07.Jun.2023<br>(Thursday)</td>
+                                
+                                <td class="px-3 py-4.5 leading-normal">12.Nov.2023<br>(Monday)</td>
+                                <td class="px-3 py-4.5 leading-normal">21.Nov.2023<br>(Thursday)</td>
+
+                                <td class="px-3 py-4.5 leading-normal">21.Oct.2023<br>(Monday)</td>
+                                <td class="px-3 py-4.5 leading-normal">24.Oct.2023<br>(Thursday)</td>
+
+                                <td class="px-3 py-4.5 leading-normal">24.Dec.2023<br>(Monday)</td>
+                                <td class="px-3 py-4.5 leading-normal">26.Dec.2023<br>(Thursday)</td>
+                            </tr>
+                            <tr>
+                                <td class="px-3 py-4.5">
+                                    <img src="Images/holiday-list/student.png" alt="teacher-img">
+                                </td>
+                                <td class="px-3 py-4.5 leading-normal">04.May.2023<br>(Monday)</td>
+                                <td class="px-3 py-4.5 leading-normal">11.Jun.2023<br>(Thursday)</td>
+                                
+                                <td class="px-3 py-4.5 leading-normal">9.Nov.2023<br>(Monday)</td>
+                                <td class="px-3 py-4.5 leading-normal">21.Nov.2023<br>(Thursday)</td>
+
+                                <td class="px-3 py-4.5 leading-normal">21.Oct.2023<br>(Monday)</td>
+                                <td class="px-3 py-4.5 leading-normal">24.Oct.2023<br>(Thursday)</td>
+
+                                <td class="px-3 py-4.5 leading-normal">24.Dec.2023<br>(Monday)</td>
+                                <td class="px-3 py-4.5 leading-normal">28.Dec.2023<br>(Thursday)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- holidays-table -->
-    <section class="realtive section-gap sm:pt-16 holidays-table">
+    <section class="realtive section-gap sm:pt-1 holidays-table">
         <div class="container">
-            <!-- <div class="text-center section-header max-sm:mb-6 sm:mb-16">
-                <h2 class="font-semibold leading-none capitalize max-sm:text-4xl">list of <span class="inline-block text-secondary">holidays</span> (2023-24)</h2>
-            </div> -->
+            <div class="text-left section-header max-sm:mb-6 sm:mb-8">
+                <h2 class="font-semibold leading-none capitalize max-sm:text-4xl text-3xl">list of Holidays <span class="inline-block text-secondary"> (2023-24)</span></h2>
+            </div>
             <div class="shadow max-sm:-mx-3">
                 <div class="overflow-x-auto sm:rounded-md">
                     <table class="w-full max-sm:min-w-[460px]">
@@ -153,9 +240,9 @@
         </div>
     </section>
     <!-- End holidays-table -->
-
+    </div>
     <!-- notes -->
-    <section class="relative notes">
+    <section class="hidden relative notes">
         <div class="container">
             <div class="space-y-3">
                 <h3 class="font-semibold leading-none capitalize max-sm:text-3xl sm:text-4xl">Note :</h3>
@@ -168,8 +255,8 @@
     </section>
     <!-- End notes -->
 
-    <!-- vacation-list -->
-    <section class="relative max-sm:pb-12 max-sm:pt-6 sm:pb-28 sm:pt-8 vacation-list">
+    
+    <section class="hidden relative max-sm:pb-12 max-sm:pt-6 sm:pb-28 sm:pt-8 vacation-list">
         <div class="container">
             <div class="grid gap-4 max-lg:grid-cols-1 lg:grid-cols-2">
                 <div class="overflow-hidden text-center rounded-md shadow">
