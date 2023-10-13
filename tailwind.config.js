@@ -24,12 +24,15 @@ module.exports = {
       },
       spacing: {
         4.5: "1.125rem",
+        7.5: "1.875rem",
         13: "3.25rem",
       },
       letterSpacing: {
         space: "0.03em",
       },
-
+      lineHeight: {
+        "extra-tight": 1.1,
+      },
       screens: {
         sm: "576px",
         "2xl": "1400px",
