@@ -3,49 +3,36 @@
     .filter-tab-btn {
       @apply border-b-2 border-transparent;
       &.active {
-
-        @apply  after:bg-secondary;
+        @apply after:bg-secondary;
       }
     }
   }
 }
 
-
-
-
 // inner Page Hero section
-.inner-page-hero{
-  background: linear-gradient(160deg, #8ecddd -20%, #eee 50%, #ffcc70 142%) ;
+.inner-page-hero {
+  background: linear-gradient(160deg, #8ecddd -20%, #eee 50%, #ffcc70 142%);
   // background: url("../images/gallery/gallery-8.jpeg") ;
   @apply relative bg-no-repeat bg-cover;
   clip-path: ellipse(74% 67% at 51% 32%);
-  @media screen and (max-width: 992px){
+  @media screen and (max-width: 992px) {
     clip-path: ellipse(98% 67% at 51% 32%);
   }
-  &:before{
+  &:before {
     @apply content-[''] absolute top-0 left-0 w-full h-full opacity-50 bg-top;
     // background: linear-gradient(260deg, rgba(19, 24, 28, 0.55) 42%, #13181C 100%);
     background-image: url("../images/background/inner-bg-img.svg");
   }
   .breadcrumb {
     @apply mt-5 flex justify-center items-center flex-wrap gap-[6px] p-0 list-none;
-    .separator{
+    .separator {
       @apply text-lg;
     }
-    li.breadcrumb-item a{
+    li.breadcrumb-item a {
       @apply text-black text-sm font-light tracking-wide transition-all duration-500 ease-in-out;
-      &:hover{
+      &:hover {
         @apply text-primary;
       }
     }
-    
+  }
 }
-}
-
-
-
-
-
-
-
-
