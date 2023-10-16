@@ -1,5 +1,3 @@
-// @import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,10 +5,6 @@
 body {
   @apply font-body text-light-black;
 }
-
-// .stroke-font {
-//   font-family: "Londrina Outline", sans-serif;
-// }
 
 ::selection {
   @apply text-white bg-secondary;
@@ -144,12 +138,17 @@ h6 {
 }
 
 .heading-border {
-  @apply relative pb-2 before:content-[''] before:absolute before:bottom-0 before:left-0 before:border-b-2 before:border-light-black before:w-[94px];
+  @apply relative pb-3.5 before:content-[''] before:absolute before:bottom-0 before:left-0 before:border-b-2 before:border-light-black before:w-[94px];
+  &.heading-border-center {
+    @apply before:left-1/2 before:-translate-x-1/2;
+  }
+  &.max-lg\:heading-border-center {
+    @apply max-lg:before:left-1/2 max-lg:before:-translate-x-1/2;
+  }
 }
 
 .director-content {
-  box-shadow: inset 0 0 20px rgba(255, 204, 112, 0.31);
-  border: 1px solid rgba(255, 204, 112, 0.31);
+  @apply shadow-[inset_0_0_20px_rgba(255,204,112,31%)] border border-[rgba(255,204,112,31%)];
 }
 
 .holiday-page {
@@ -157,6 +156,7 @@ h6 {
     @apply content-[''] bg-[url('../images/holiday-list/pattern-1-1.png')] absolute top-0 left-0 w-full h-full bg-no-repeat bg-fixed bg-cover -z-10 opacity-50;
   }
 }
+
 .vacation-list-detail {
   table {
     tbody {
@@ -181,28 +181,19 @@ h6 {
       @apply border-r-4;
     }
     img {
-      height: 100px;
-      max-width: 118px;
-      margin: 0 auto;
-      width: 100%;
+      @apply h-full max-w-[118px] mx-auto w-full;
     }
   }
 }
 
 // Faqs
 .accordion {
-  .accordion-button {
-    box-shadow: inset 0 0 14px rgba(255, 204, 112, 0.31);
-  }
   &.show {
     .accordian-icon {
       @apply rotate-45;
     }
     .accordion-button {
-      @apply mb-0  rounded-b-none;
-    }
-    .accordian-body {
-      @apply border-t-0 rounded-t-none;
+      @apply rounded-b-none;
     }
   }
 }
