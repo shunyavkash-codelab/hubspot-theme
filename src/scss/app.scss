@@ -189,3 +189,21 @@ h6 {
     }
   }
 }
+
+// Faqs
+.accordion{
+  .accordion-button{
+    box-shadow: inset 0 0 14px rgba(255, 204, 112, 0.31);
+  }
+  &.show{
+    .accordian-icon {
+      @apply rotate-45;
+    }
+    .accordion-button{
+      @apply mb-0  rounded-b-none;
+    }
+    .accordian-body{
+      @apply border-t-0 rounded-t-none;
+    }
+  }
+}
