@@ -1,10 +1,11 @@
 header {
-  .menu-content.open {
+  .menu-list.open {
     @apply translate-y-0 translate-x-0;
   }
   .menu {
     li.menu-open {
-      .sub-menu-content {
+      .sub-menu-content,
+      .mega-menu-content {
         @apply max-h-[500px];
       }
       .menu-icon {
@@ -12,4 +13,8 @@ header {
       }
     }
   }
+}
+
+.mega-menu-content .menu-content.menu-open {
+  @apply opacity-100 visible;
 }
