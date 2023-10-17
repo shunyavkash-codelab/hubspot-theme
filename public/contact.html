@@ -246,11 +246,13 @@
                     </div>
                 </div>
             </div>
-            <div class="flex items-center gap-6">
-                <div class="img-content w-1/2">
+            <div class="flex lg:flex-row flex-col items-center gap-6">
+                <div class="img-content lg:w-1/2 w-full">
                     <img src="images/hero/mission.svg" class="w-full h-auto mx-auto" alt="two-col">
                 </div>
-                <div class="w-1/2 mx-auto bg-dark/50 rounded-lg p-9">
+                <!-- you don't want to image please add class max-w-4xl and remove lg:w-1/2  -->
+                <!-- also you want to appply style on form please add class border border-solid border-secondary border border-solid border-secondary shadow-[inset_0_0_20px_rgba(255,204,112,31%)] rounded-lg p-9  -->
+                <div class="lg:w-1/2 w-full mx-auto ">
                     <h4 class="text-center">Send us a message</h4>
                     <form class="mt-8 space-y-5">
                         <div class="grid gap-5 sm:grid-cols-2">
