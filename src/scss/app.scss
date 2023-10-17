@@ -170,15 +170,6 @@ h6 {
   @apply hidden;
 }
 
-/* accordian */
-.accordian-item {
-  &.show {
-    .accordian-icon {
-      @apply rotate-90;
-    }
-  }
-}
-
 /* section gap */
 .section-gap {
   @apply max-sm:py-13 sm:py-28;
@@ -197,10 +188,6 @@ h6 {
   &.max-lg\:heading-border-center {
     @apply max-lg:before:left-1/2 max-lg:before:-translate-x-1/2;
   }
-}
-
-.director-content {
-  @apply shadow-[inset_0_0_20px_rgba(255,204,112,31%)] border border-[rgba(255,204,112,31%)];
 }
 
 .holiday-page {
@@ -239,10 +226,10 @@ h6 {
 }
 
 // Faqs
-.accordion {
+.accordian-item {
   &.show {
     .accordian-icon {
-      @apply rotate-45;
+      @apply rotate-90;
     }
     .accordion-button {
       @apply rounded-b-none;

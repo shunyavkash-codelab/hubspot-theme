@@ -1,14 +1,3 @@
-.gallary-section {
-  .filter-tab-nav {
-    .filter-tab-btn {
-      @apply border-b-2 border-transparent;
-      &.active {
-        @apply after:bg-secondary;
-      }
-    }
-  }
-}
-
 // inner Page Hero section
 .inner-page-hero {
   clip-path: ellipse(74% 67% at 51% 32%);
