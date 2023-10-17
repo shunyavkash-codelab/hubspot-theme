@@ -2,6 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: #22668d;
+  --secondary: #ffcc70;
+  --tertiary: #fffadd;
+  --dark: #8ecddd;
+  --light-black: #333333;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.text-dark {
+  color: var(--dark);
+}
+
+.bg-black {
+  color: var(--light-black);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-dark {
+  background-color: var(--dark);
+}
+
+.bg-light-black {
+  background-color: var(--light-black);
+}
+
 body {
   @apply font-body text-light-black;
 }
@@ -58,16 +98,16 @@ h6 {
 /* btn */
 .btn,
 .btn-cta {
-  @apply text-light-black font-medium bg-secondary overflow-hidden text-sm py-4 px-7 leading-none rounded-md inline-block transform capitalize relative shadow-md transition-all duration-500;
+  @apply font-medium overflow-hidden text-sm py-4 px-7 leading-none rounded-md inline-block transform capitalize relative shadow-md transition-all duration-500;
 
   &:before {
-    @apply content-[''] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-dark transition-all duration-700 rounded-[200px] -z-10 text-secondary scale-0;
+    @apply content-[''] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 transition-all duration-700 rounded-[200px] -z-10 scale-0;
   }
   // &:before {
   //   @apply content-[''] absolute top-1/2 left-1/2 w-full h-full bg-dark rounded-md transition-all duration-500 ease-in-out z-0 scale-0 -translate-y-1/2 -translate-x-1/2;
   // }
   &:hover {
-    @apply bg-dark;
+    // @apply bg-dark;
     &:before {
       @apply w-full h-full scale-[1.5];
     }
@@ -76,8 +116,20 @@ h6 {
     // }
   }
 
+  &.btn-primary {
+    @apply bg-dark text-light-black;
+    &:before {
+      @apply bg-secondary;
+    }
+    &:hover {
+      @apply bg-dark/80;
+    }
+  }
   &.btn-secondary {
     @apply bg-secondary text-light-black;
+    &:before {
+      @apply bg-dark;
+    }
     &:hover {
       @apply bg-secondary/80;
     }
