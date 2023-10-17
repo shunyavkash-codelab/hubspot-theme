@@ -89,18 +89,22 @@
     <!-- End header -->
 
     <!-- inner-hero section -->
-    <section class="py-20 inner-page-hero sm:py-40">
+    <section style="background: linear-gradient(160deg, #8ecddd -20%, #eee 50%, #ffcc70 142%)" class="relative py-20 inner-page-hero sm:py-40 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:opacity-50 before:bg-top">
         <div class="container relative z-50">
             <div class="text-center">
                 <h1 class="font-semibold leading-tight capitalize max-sm:text-5xl">holidays schedule</h1>
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="javscript:void(0);">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="#000" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#000" class="w-5 h-5">
+                <ol class="breadcrumb mt-5 flex justify-center items-center flex-wrap gap-[6px] p-0 list-none">
+                    <li class="breadcrumb-item">
+                        <a href="javscript:void(0);" class="transition-all duration-500 ease-in-out text-light-black hover:text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="w-5 h-5">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                             </svg>
-                        </a></li>
-                    <span class="separator">»</span>
-                    <li class="breadcrumb-item"><a href="javscript:void(0);" class="">Holidays Schedule</a></li>
+                        </a>
+                    </li>
+                    <span class="text-lg separator">»</span>
+                    <li class="breadcrumb-item">
+                        <div class="text-sm font-light tracking-wide capitalize text-light-black">Holidays Schedule</div>
+                    </li>
                 </ol>
             </div>
         </div>
@@ -113,8 +117,9 @@
         </div>
     </section>
     <!-- End inner-hero section -->
+
     <div class="relative holiday-page">
-        <!-- vacation-list -->
+        <!-- vacation-list-detail -->
         <section class="relative max-sm:pb-12 max-sm:pt-6 sm:pb-28 sm:pt-16 vacation-list-detail">
             <div class="container">
                 <div class="text-center section-header-gap">
@@ -184,6 +189,7 @@
                 </div>
             </div>
         </section>
+        <!-- End vacation-list-detail -->
 
         <!-- holidays-table -->
         <section class="realtive section-gap sm:pt-1 holidays-table">
@@ -241,6 +247,7 @@
         </section>
         <!-- End holidays-table -->
     </div>
+
     <!-- notes -->
     <section class="relative hidden notes">
         <div class="container">
@@ -255,7 +262,7 @@
     </section>
     <!-- End notes -->
 
-
+    <!-- vacation-list -->
     <section class="relative hidden max-sm:pb-12 max-sm:pt-6 sm:pb-28 sm:pt-8 vacation-list">
         <div class="container">
             <div class="grid gap-4 max-lg:grid-cols-1 lg:grid-cols-2">

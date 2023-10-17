@@ -1,12 +1,10 @@
-.two-col-section {
+.two-col-section,
+.FAQs-section {
   .grid-row-reverse {
     .img-content {
       @apply lg:order-2;
       > div {
-        @apply left-auto right-0;
-      }
-      img {
-        @apply rounded-l-sm rounded-r-none lg:order-2;
+        @apply lg:left-auto lg:right-0 lg:rounded-l-md lg:rounded-r-none;
       }
     }
     .content {
@@ -18,7 +16,8 @@
   }
 }
 
-.two-col-v2-section {
+.two-col-v2-section,
+.FAQs-section-v2 {
   .grid-row-reverse {
     .img-content {
       @apply lg:order-2;
@@ -29,5 +28,13 @@
   }
   .content {
     @apply lg:pl-11 xl:pl-16;
+  }
+}
+
+.FAQs-section {
+  .grid-row-reverse {
+    .content {
+      @apply lg:pl-0;
+    }
   }
 }
