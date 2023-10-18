@@ -115,23 +115,16 @@ h6 {
     //   @apply scale-150;
     // }
   }
-
   &.btn-primary {
     @apply bg-dark text-light-black;
     &:before {
       @apply bg-secondary;
-    }
-    &:hover {
-      @apply bg-dark/80;
     }
   }
   &.btn-secondary {
     @apply bg-secondary text-light-black;
     &:before {
       @apply bg-dark;
-    }
-    &:hover {
-      @apply bg-secondary/80;
     }
   }
 }
