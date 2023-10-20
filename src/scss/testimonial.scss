@@ -16,6 +16,7 @@
   .testimonial-slider-content {
     .testimonial-content {
       &::before {
+        @apply content-[''] absolute top-1/2 left-1/2 w-full h-full opacity-5  transform -translate-x-1/2 -translate-y-1/2;
         background-image: url("../images/testimonials/quote-1.svg"),
           url("../images/testimonials/quote-2.svg");
         background-position: 20% 20%, 80% 80%;
@@ -26,6 +27,21 @@
 
 .testimonial-slider-v3 {
   .testimonial-card-slider {
+    .slick-list {
+      padding: 0 !important;
+    }
+    .slick-slide {
+      @apply scale-90;
+      @apply flex flex-col bg-white items-center leading-tight rounded-xl transition-all duration-500 ease-in-out relative;
+      &.slick-active.slick-center {
+        @apply scale-100;
+      }
+      .richtext {
+        &:before {
+          @apply bg-[20%_20%];
+        }
+      }
+    }
     &.slick-dots-hidden {
       .slick-dots {
         display: none !important;
