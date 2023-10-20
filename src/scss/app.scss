@@ -224,8 +224,15 @@ h6 {
     .accordian-icon {
       @apply rotate-90;
     }
-    .accordion-button {
-      @apply rounded-b-none;
+  }
+}
+
+.FAQs-section-v2 {
+  .accordian-item {
+    &.show {
+      .accordian-icon {
+        @apply rotate-45;
+      }
     }
   }
 }
