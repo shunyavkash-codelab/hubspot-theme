@@ -236,3 +236,14 @@ h6 {
     }
   }
 }
+
+// inner Page Hero section
+.inner-page-hero {
+  clip-path: ellipse(74% 67% at 51% 32%);
+  @media screen and (max-width: 992px) {
+    clip-path: ellipse(98% 67% at 51% 32%);
+  }
+  &:before {
+    background-image: url("../images/background/inner-bg-img.svg");
+  }
+}
