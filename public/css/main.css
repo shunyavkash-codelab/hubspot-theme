@@ -1085,9 +1085,6 @@ video {
 .w-40 {
   width: 10rem;
 }
-.w-48 {
-  width: 12rem;
-}
 .w-5 {
   width: 1.25rem;
 }
@@ -1426,6 +1423,10 @@ video {
 .border-primary\/20 {
   border-color: rgb(34 102 141 / 0.2);
 }
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
 .border-secondary {
   --tw-border-opacity: 1;
   border-color: rgb(255 204 112 / var(--tw-border-opacity));
@@ -1446,10 +1447,6 @@ video {
 .border-transparent {
   border-color: transparent;
 }
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
-}
 .bg-\[\#f9f9f9\] {
   --tw-bg-opacity: 1;
   background-color: rgb(249 249 249 / var(--tw-bg-opacity));
@@ -1459,9 +1456,6 @@ video {
 }
 .bg-\[\#ffcc70\]\/10 {
   background-color: rgb(255 204 112 / 0.1);
-}
-.bg-black\/5 {
-  background-color: rgb(0 0 0 / 0.05);
 }
 .bg-dark {
   --tw-bg-opacity: 1;
@@ -1605,10 +1599,6 @@ video {
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
-}
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
 }
 .py-3 {
   padding-top: 0.75rem;
@@ -1844,6 +1834,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(34 102 141 / var(--tw-text-opacity));
 }
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
 .text-secondary {
   --tw-text-opacity: 1;
   color: rgb(255 204 112 / var(--tw-text-opacity));
@@ -1857,14 +1851,6 @@ video {
 }
 .text-white\/60 {
   color: rgb(255 255 255 / 0.6);
-}
-.text-red-400 {
-  --tw-text-opacity: 1;
-  color: rgb(248 113 113 / var(--tw-text-opacity));
-}
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 .line-through {
   text-decoration-line: line-through;
@@ -2195,26 +2181,26 @@ h6 {
   margin-top: 0.5rem;
 }
 @media not all and (min-width: 576px) {
-  .richtext .list-dots > :not([hidden]) ~ :not([hidden]) {
+  .richtext ul > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
   }
 }
 @media (min-width: 576px) {
-  .richtext .list-dots > :not([hidden]) ~ :not([hidden]) {
+  .richtext ul > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1rem * var(--tw-space-y-reverse));
   }
 }
-.richtext .list-dots li {
+.richtext ul li {
   position: relative;
   padding-left: 0.75rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.richtext .list-dots li:before {
+.richtext ul li:before {
   position: absolute;
   left: 0px;
   top: 0.5rem;
@@ -2227,7 +2213,7 @@ h6 {
   content: var(--tw-content);
   background-color: var(--light-black);
 }
-.richtext .list-dots.dots-secondary li:before {
+.richtext ul.dots-secondary li:before {
   --tw-bg-opacity: 1;
   background-color: rgb(255 204 112 / var(--tw-bg-opacity));
   background-color: var(--secondary);
@@ -2292,22 +2278,6 @@ h6 {
     --tw-translate-x: -50%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
-}
-
-.holiday-page::before {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: -10;
-  height: 100%;
-  width: 100%;
-  background-image: url("../images/holiday-list/pattern-1-1.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  --tw-content: "";
-  content: var(--tw-content);
 }
 
 .vacation-list-detail table tbody tr td {
@@ -3551,6 +3521,9 @@ header .menu li.menu-open .menu-icon {
   .max-sm\:h-11 {
     height: 2.75rem;
   }
+  .max-sm\:h-5 {
+    height: 1.25rem;
+  }
   .max-sm\:h-64 {
     height: 16rem;
   }
@@ -3563,8 +3536,8 @@ header .menu li.menu-open .menu-icon {
   .max-sm\:h-96 {
     height: 24rem;
   }
-  .max-sm\:h-5 {
-    height: 1.25rem;
+  .max-sm\:w-5 {
+    width: 1.25rem;
   }
   .max-sm\:w-7 {
     width: 1.75rem;
@@ -3574,9 +3547,6 @@ header .menu li.menu-open .menu-icon {
   }
   .max-sm\:w-full {
     width: 100%;
-  }
-  .max-sm\:w-5 {
-    width: 1.25rem;
   }
   .max-sm\:min-w-\[460px\] {
     min-width: 460px;
@@ -3769,6 +3739,9 @@ header .menu li.menu-open .menu-icon {
   .sm\:h-16 {
     height: 4rem;
   }
+  .sm\:h-6 {
+    height: 1.5rem;
+  }
   .sm\:h-64 {
     height: 16rem;
   }
@@ -3784,20 +3757,17 @@ header .menu li.menu-open .menu-icon {
   .sm\:h-\[450px\] {
     height: 450px;
   }
-  .sm\:h-6 {
-    height: 1.5rem;
-  }
   .sm\:w-1\/2 {
     width: 50%;
   }
   .sm\:w-16 {
     width: 4rem;
   }
-  .sm\:w-9 {
-    width: 2.25rem;
-  }
   .sm\:w-6 {
     width: 1.5rem;
+  }
+  .sm\:w-9 {
+    width: 2.25rem;
   }
   .sm\:max-w-2xl {
     max-width: 42rem;

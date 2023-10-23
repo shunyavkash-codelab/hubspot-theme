@@ -141,7 +141,7 @@ h6 {
       @apply mt-2;
     }
   }
-  .list-dots {
+  ul {
     @apply max-sm:space-y-3 sm:space-y-4;
     li {
       @apply relative pl-3 text-sm;
@@ -183,19 +183,15 @@ h6 {
   }
 }
 
-.holiday-page {
-  &::before {
-    @apply content-[''] bg-[url('../images/holiday-list/pattern-1-1.png')] absolute top-0 left-0 w-full h-full bg-no-repeat bg-fixed bg-cover -z-10 opacity-50;
-  }
-}
-
 .vacation-list-detail {
   table {
     tbody {
-      tr td {
-        @apply font-light text-center;
-        &:nth-child(odd):not(:last-child) {
-          @apply border-r-4;
+      tr {
+        td {
+          @apply font-light text-center;
+          &:nth-child(odd):not(:last-child) {
+            @apply border-r-4;
+          }
         }
       }
     }
