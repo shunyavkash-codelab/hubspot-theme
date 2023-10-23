@@ -3123,20 +3123,6 @@ header .menu li.menu-open .menu-icon {
   content: var(--tw-content);
   opacity: 0.5;
 }
-.before\:transition-all::before {
-  content: var(--tw-content);
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-.before\:duration-500::before {
-  content: var(--tw-content);
-  transition-duration: 500ms;
-}
-.before\:ease-in-out::before {
-  content: var(--tw-content);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 .before\:content-\[\'\'\]::before {
   --tw-content: '';
   content: var(--tw-content);
@@ -3145,14 +3131,6 @@ header .menu li.menu-open .menu-icon {
   content: var(--tw-content);
   position: absolute;
 }
-.after\:bottom-0::after {
-  content: var(--tw-content);
-  bottom: 0px;
-}
-.after\:left-0::after {
-  content: var(--tw-content);
-  left: 0px;
-}
 .after\:-bottom-0::after {
   content: var(--tw-content);
   bottom: -0px;
@@ -3160,6 +3138,10 @@ header .menu li.menu-open .menu-icon {
 .after\:-bottom-0\.5::after {
   content: var(--tw-content);
   bottom: -0.125rem;
+}
+.after\:left-0::after {
+  content: var(--tw-content);
+  left: 0px;
 }
 .after\:h-0::after {
   content: var(--tw-content);
@@ -3512,10 +3494,6 @@ header .menu li.menu-open .menu-icon {
     margin-top: 2.75rem;
     margin-bottom: 2.75rem;
   }
-  .max-sm\:mx-3 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-  }
   .max-sm\:mb-13 {
     margin-bottom: 3.25rem;
   }
@@ -3549,6 +3527,9 @@ header .menu li.menu-open .menu-icon {
   .max-sm\:mt-3\.5 {
     margin-top: 0.875rem;
   }
+  .max-sm\:mt-4 {
+    margin-top: 1rem;
+  }
   .max-sm\:hidden {
     display: none;
   }
@@ -3570,6 +3551,9 @@ header .menu li.menu-open .menu-icon {
   .max-sm\:h-96 {
     height: 24rem;
   }
+  .max-sm\:h-5 {
+    height: 1.25rem;
+  }
   .max-sm\:w-7 {
     width: 1.75rem;
   }
@@ -3578,6 +3562,9 @@ header .menu li.menu-open .menu-icon {
   }
   .max-sm\:w-full {
     width: 100%;
+  }
+  .max-sm\:w-5 {
+    width: 1.25rem;
   }
   .max-sm\:min-w-\[460px\] {
     min-width: 460px;
@@ -3679,6 +3666,10 @@ header .menu li.menu-open .menu-icon {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+  .max-sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
   .max-sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -3686,10 +3677,6 @@ header .menu li.menu-open .menu-icon {
   .max-sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
-  }
-  .max-sm\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
   .max-sm\:leading-tight {
     line-height: 1.25;
@@ -3714,13 +3701,13 @@ header .menu li.menu-open .menu-icon {
     margin-left: 1.25rem;
     margin-right: 1.25rem;
   }
-  .sm\:my-16 {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+  .sm\:my-16 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
   .sm\:-mt-12 {
     margin-top: -3rem;
@@ -3761,6 +3748,9 @@ header .menu li.menu-open .menu-icon {
   .sm\:mt-6 {
     margin-top: 1.5rem;
   }
+  .sm\:mt-8 {
+    margin-top: 2rem;
+  }
   .sm\:\!h-16 {
     height: 4rem !important;
   }
@@ -3782,6 +3772,9 @@ header .menu li.menu-open .menu-icon {
   .sm\:h-\[450px\] {
     height: 450px;
   }
+  .sm\:h-6 {
+    height: 1.5rem;
+  }
   .sm\:w-1\/2 {
     width: 50%;
   }
@@ -3790,6 +3783,9 @@ header .menu li.menu-open .menu-icon {
   }
   .sm\:w-9 {
     width: 2.25rem;
+  }
+  .sm\:w-6 {
+    width: 1.5rem;
   }
   .sm\:max-w-2xl {
     max-width: 42rem;
