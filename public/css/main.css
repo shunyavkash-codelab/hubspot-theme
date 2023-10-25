@@ -1161,6 +1161,9 @@ video {
 .shrink-0 {
   flex-shrink: 0;
 }
+.flex-grow {
+  flex-grow: 1;
+}
 .grow {
   flex-grow: 1;
 }
@@ -3658,6 +3661,9 @@ header .menu li.menu-open .menu-icon {
   .max-sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+  .max-sm\:text-\[44px\] {
+    font-size: 44px;
   }
   .max-sm\:leading-tight {
     line-height: 1.25;
