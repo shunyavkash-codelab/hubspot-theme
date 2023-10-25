@@ -208,9 +208,6 @@ h6 {
     .tabel-heading th:not(:last-child) {
       @apply border-r-4;
     }
-    img {
-      @apply h-full max-w-[118px] mx-auto w-full;
-    }
   }
 }
 
