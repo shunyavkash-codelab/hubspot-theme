@@ -1487,9 +1487,6 @@ video {
 .bg-white\/70 {
   background-color: rgb(255 255 255 / 0.7);
 }
-.bg-secondary\/10 {
-  background-color: rgb(255 204 112 / 0.1);
-}
 .bg-\[url\(\'\/public\/images\/background\/bg-second-img\.svg\'\)\] {
   background-image: url('/public/images/background/bg-second-img.svg');
 }
@@ -1853,9 +1850,6 @@ video {
 }
 .text-white\/60 {
   color: rgb(255 255 255 / 0.6);
-}
-.text-secondary\/10 {
-  color: rgb(255 204 112 / 0.1);
 }
 .line-through {
   text-decoration-line: line-through;
