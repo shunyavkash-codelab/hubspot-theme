@@ -1058,6 +1058,9 @@ video {
 .min-h-\[500px\] {
   min-height: 500px;
 }
+.min-h-\[600px\] {
+  min-height: 600px;
+}
 .\!w-20 {
   width: 5rem !important;
 }
@@ -1622,6 +1625,10 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 .\!pt-0 {
   padding-top: 0px !important;
